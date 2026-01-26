@@ -1,0 +1,405 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/caceta/ontologies/2026/0/untitled-ontology-129/"
+     xml:base="http://www.semanticweb.org/caceta/ontologies/2026/0/untitled-ontology-129/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://w3id.org/fedecom/energyasset/energyassetBrickAlignment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#ConversionEfficiency -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/fedecom/energyasset#ConversionEfficiency">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#conversionEfficiency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#Volume -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/fedecom/energyasset#Volume">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#volume"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#hasAzimuth -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/fedecom/energyasset#hasAzimuth">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#azimuth"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#hastilt -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/fedecom/energyasset#hastilt">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#tilt"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#azimuth -->
+
+    <owl:ObjectProperty rdf:about="https://brickschema.org/schema/Brick#azimuth"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#conversionEfficiency -->
+
+    <owl:ObjectProperty rdf:about="https://brickschema.org/schema/Brick#conversionEfficiency"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#tilt -->
+
+    <owl:ObjectProperty rdf:about="https://brickschema.org/schema/Brick#tilt"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#volume -->
+
+    <owl:ObjectProperty rdf:about="https://brickschema.org/schema/Brick#volume"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/fedecom/battery#Battery -->
+
+    <owl:Class rdf:about="http://w3id.org/fedecom/battery#Battery">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#Battery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#AirHandlingUnit -->
+
+    <owl:Class rdf:about="http://w3id.org/fedecom/energyasset#AirHandlingUnit">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#AHU"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#Azimuth -->
+
+    <owl:Class rdf:about="http://w3id.org/fedecom/energyasset#Azimuth">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/BrickShape#AzimuthShape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#Boiler -->
+
+    <owl:Class rdf:about="http://w3id.org/fedecom/energyasset#Boiler">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#Boiler"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#BypassDamper -->
+
+    <owl:Class rdf:about="http://w3id.org/fedecom/energyasset#BypassDamper">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#Bypass_Damper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#Chiller -->
+
+    <owl:Class rdf:about="http://w3id.org/fedecom/energyasset#Chiller">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#Chiller"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#CondensingGasBoiler -->
+
+    <owl:Class rdf:about="http://w3id.org/fedecom/energyasset#CondensingGasBoiler">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#Condensing_Natural_Gas_Boiler"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#ConventionalGasBoiler -->
+
+    <owl:Class rdf:about="http://w3id.org/fedecom/energyasset#ConventionalGasBoiler">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#Noncondensing_Natural_Gas_Boiler"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#Damper -->
+
+    <owl:Class rdf:about="http://w3id.org/fedecom/energyasset#Damper">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#Damper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#Efficiency -->
+
+    <owl:Class rdf:about="http://w3id.org/fedecom/energyasset#Efficiency">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/BrickShape#EfficiencyShape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#ElectricBoiler -->
+
+    <owl:Class rdf:about="http://w3id.org/fedecom/energyasset#ElectricBoiler">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#Electric_Boiler"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#ElectricMeter -->
+
+    <owl:Class rdf:about="http://w3id.org/fedecom/energyasset#ElectricMeter">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#Electrical_Meter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#FanCoil -->
+
+    <owl:Class rdf:about="http://w3id.org/fedecom/energyasset#FanCoil">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#Fan_Coil_Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#HVAC -->
+
+    <owl:Class rdf:about="http://w3id.org/fedecom/energyasset#HVAC">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#HVAC_Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#Meter -->
+
+    <owl:Class rdf:about="http://w3id.org/fedecom/energyasset#Meter">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#Meter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#NaturalGasBoiler -->
+
+    <owl:Class rdf:about="http://w3id.org/fedecom/energyasset#NaturalGasBoiler">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#Natural_Gas_Boiler"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#Sensor -->
+
+    <owl:Class rdf:about="http://w3id.org/fedecom/energyasset#Sensor">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#StorageTank -->
+
+    <owl:Class rdf:about="http://w3id.org/fedecom/energyasset#StorageTank">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#Storage_Tank"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#Tank -->
+
+    <owl:Class rdf:about="http://w3id.org/fedecom/energyasset#Tank">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#Tank"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#Tilt -->
+
+    <owl:Class rdf:about="http://w3id.org/fedecom/energyasset#Tilt">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/BrickShape#TiltShape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/fedecom/energyasset#VoltageTransformer -->
+
+    <owl:Class rdf:about="http://w3id.org/fedecom/energyasset#VoltageTransformer">
+        <skos:exactMatch rdf:resource="https://brickschema.org/schema/Brick#Transformer"/>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#AHU -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#AHU"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Battery -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Battery"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Boiler -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Boiler"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Bypass_Damper -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Bypass_Damper"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Chiller -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Chiller"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Condensing_Natural_Gas_Boiler -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Condensing_Natural_Gas_Boiler"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Damper -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Damper"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Electric_Boiler -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Electric_Boiler"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Electrical_Meter -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Electrical_Meter"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Fan_Coil_Unit -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Fan_Coil_Unit"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#HVAC_Equipment -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#HVAC_Equipment"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Meter -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Meter"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Natural_Gas_Boiler -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Natural_Gas_Boiler"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Noncondensing_Natural_Gas_Boiler -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Noncondensing_Natural_Gas_Boiler"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Sensor -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Sensor"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Storage_Tank -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Storage_Tank"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Tank -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Tank"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Transformer -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Transformer"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickShape#AzimuthShape -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/BrickShape#AzimuthShape"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickShape#EfficiencyShape -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/BrickShape#EfficiencyShape"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickShape#TiltShape -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/BrickShape#TiltShape"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

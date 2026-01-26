@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/caceta/ontologies/2026/0/untitled-ontology-132/"
+     xml:base="http://www.semanticweb.org/caceta/ontologies/2026/0/untitled-ontology-132/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://w3id.org/fedecom/lec-building/lec-buildingBOTAlignment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3c-lbd-cg.github.io/bot/#containsElement -->
+
+    <owl:ObjectProperty rdf:about="https://w3c-lbd-cg.github.io/bot/#containsElement"/>
+    
+
+
+    <!-- https://w3c-lbd-cg.github.io/bot/#hasBuilding -->
+
+    <owl:ObjectProperty rdf:about="https://w3c-lbd-cg.github.io/bot/#hasBuilding"/>
+    
+
+
+    <!-- https://w3c-lbd-cg.github.io/bot/#hasElement -->
+
+    <owl:ObjectProperty rdf:about="https://w3c-lbd-cg.github.io/bot/#hasElement"/>
+    
+
+
+    <!-- https://w3c-lbd-cg.github.io/bot/#hasSpace -->
+
+    <owl:ObjectProperty rdf:about="https://w3c-lbd-cg.github.io/bot/#hasSpace"/>
+    
+
+
+    <!-- https://w3c-lbd-cg.github.io/bot/#hasStorey -->
+
+    <owl:ObjectProperty rdf:about="https://w3c-lbd-cg.github.io/bot/#hasStorey"/>
+    
+
+
+    <!-- https://w3id.org/fedecom/lec-building#hasElement -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fedecom/lec-building#hasElement">
+        <skos:closeMatch rdf:resource="https://w3c-lbd-cg.github.io/bot/#hasElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fedecom/lec-building#hasEnergyAsset -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fedecom/lec-building#hasEnergyAsset">
+        <skos:closeMatch rdf:resource="https://w3c-lbd-cg.github.io/bot/#containsElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fedecom/lec-building#hasEquipment -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fedecom/lec-building#hasEquipment">
+        <skos:closeMatch rdf:resource="https://w3c-lbd-cg.github.io/bot/#containsElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fedecom/lec-building#hasFloor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fedecom/lec-building#hasFloor">
+        <skos:exactMatch rdf:resource="https://w3c-lbd-cg.github.io/bot/#hasStorey"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fedecom/lec-building#hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fedecom/lec-building#hasParticipant">
+        <skos:exactMatch rdf:resource="https://w3c-lbd-cg.github.io/bot/#hasBuilding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fedecom/lec-building#hasRoom -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fedecom/lec-building#hasRoom">
+        <skos:exactMatch rdf:resource="https://w3c-lbd-cg.github.io/bot/#hasSpace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3c-lbd-cg.github.io/bot/#Building -->
+
+    <owl:Class rdf:about="https://w3c-lbd-cg.github.io/bot/#Building"/>
+    
+
+
+    <!-- https://w3c-lbd-cg.github.io/bot/#Site -->
+
+    <owl:Class rdf:about="https://w3c-lbd-cg.github.io/bot/#Site"/>
+    
+
+
+    <!-- https://w3c-lbd-cg.github.io/bot/#Space -->
+
+    <owl:Class rdf:about="https://w3c-lbd-cg.github.io/bot/#Space"/>
+    
+
+
+    <!-- https://w3c-lbd-cg.github.io/bot/#Storey -->
+
+    <owl:Class rdf:about="https://w3c-lbd-cg.github.io/bot/#Storey"/>
+    
+
+
+    <!-- https://w3id.org/fedecom/lec-building#Building -->
+
+    <owl:Class rdf:about="https://w3id.org/fedecom/lec-building#Building">
+        <skos:exactMatch rdf:resource="https://w3c-lbd-cg.github.io/bot/#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fedecom/lec-building#Floor -->
+
+    <owl:Class rdf:about="https://w3id.org/fedecom/lec-building#Floor">
+        <skos:exactMatch rdf:resource="https://w3c-lbd-cg.github.io/bot/#Storey"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fedecom/lec-building#Room -->
+
+    <owl:Class rdf:about="https://w3id.org/fedecom/lec-building#Room">
+        <skos:exactMatch rdf:resource="https://w3c-lbd-cg.github.io/bot/#Space"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fedecom/lec-building#Site -->
+
+    <owl:Class rdf:about="https://w3id.org/fedecom/lec-building#Site">
+        <skos:exactMatch rdf:resource="https://w3c-lbd-cg.github.io/bot/#Site"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

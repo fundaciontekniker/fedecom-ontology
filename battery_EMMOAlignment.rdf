@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/caceta/ontologies/2026/0/untitled-ontology-135/"
+     xml:base="http://www.semanticweb.org/caceta/ontologies/2026/0/untitled-ontology-135/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://w3id.org/fedecom/battery/batteryEMMOAlignment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/emmo-bto/bto#hasBatteryManufacturer -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/emmo-bto/bto#hasBatteryManufacturer"/>
+    
+
+
+    <!-- https://w3id.org/fedecom/battery#hasManufacturer -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fedecom/battery#hasManufacturer"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/emmo-bto/bto#BatteryChemistryType -->
+
+    <owl:Class rdf:about="http://w3id.org/emmo-bto/bto#BatteryChemistryType"/>
+    
+
+
+    <!-- http://w3id.org/emmo-bto/bto#BatteryManufacturer -->
+
+    <owl:Class rdf:about="http://w3id.org/emmo-bto/bto#BatteryManufacturer"/>
+    
+
+
+    <!-- https://emmo-repo.github.io/domain-electrochemistry/electrochemistry.html#electrochemistry_79551e01_4bc6_4292_916e_08fe28a84600 -->
+
+    <owl:Class rdf:about="https://emmo-repo.github.io/domain-electrochemistry/electrochemistry.html#electrochemistry_79551e01_4bc6_4292_916e_08fe28a84600"/>
+    
+
+
+    <!-- https://emmo-repo.github.io/domain-electrochemistry/electrochemistry.html#electrochemistry_e4d666ee_d637_45cd_a904_dc33941ead4f -->
+
+    <owl:Class rdf:about="https://emmo-repo.github.io/domain-electrochemistry/electrochemistry.html#electrochemistry_e4d666ee_d637_45cd_a904_dc33941ead4f"/>
+    
+
+
+    <!-- https://w3id.org/emmo/domain/battery/battery#Battery -->
+
+    <owl:Class rdf:about="https://w3id.org/emmo/domain/battery/battery#Battery"/>
+    
+
+
+    <!-- https://w3id.org/emmo/domain/electrochemistry#electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce -->
+
+    <owl:Class rdf:about="https://w3id.org/emmo/domain/electrochemistry#electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce"/>
+    
+
+
+    <!-- https://w3id.org/emmo/domain/electrochemistry#electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 -->
+
+    <owl:Class rdf:about="https://w3id.org/emmo/domain/electrochemistry#electrochemistry_791c1915_a791_4450_acd8_7f94764743b5"/>
+    
+
+
+    <!-- https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8b2aaa50_bbe1_45da_8778_8898326246a2 -->
+
+    <owl:Class rdf:about="https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8b2aaa50_bbe1_45da_8778_8898326246a2"/>
+    
+
+
+    <!-- https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b -->
+
+    <owl:Class rdf:about="https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b"/>
+    
+
+
+    <!-- https://w3id.org/fedecom/battery#Battery -->
+
+    <owl:Class rdf:about="https://w3id.org/fedecom/battery#Battery">
+        <skos:exactMatch rdf:resource="https://w3id.org/emmo/domain/battery/battery#Battery"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fedecom/battery#BatteryChemistryType -->
+
+    <owl:Class rdf:about="https://w3id.org/fedecom/battery#BatteryChemistryType">
+        <skos:exactMatch rdf:resource="http://w3id.org/emmo-bto/bto#BatteryChemistryType"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fedecom/battery#ChargeCapacity -->
+
+    <owl:Class rdf:about="https://w3id.org/fedecom/battery#ChargeCapacity">
+        <skos:exactMatch rdf:resource="https://w3id.org/emmo/domain/electrochemistry#electrochemistry_791c1915_a791_4450_acd8_7f94764743b5"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fedecom/battery#ChargeCurrent -->
+
+    <owl:Class rdf:about="https://w3id.org/fedecom/battery#ChargeCurrent">
+        <skos:exactMatch rdf:resource="https://emmo-repo.github.io/domain-electrochemistry/electrochemistry.html#electrochemistry_79551e01_4bc6_4292_916e_08fe28a84600"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fedecom/battery#Current -->
+
+    <owl:Class rdf:about="https://w3id.org/fedecom/battery#Current">
+        <skos:exactMatch rdf:resource=""/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fedecom/battery#DischargeCurrent -->
+
+    <owl:Class rdf:about="https://w3id.org/fedecom/battery#DischargeCurrent">
+        <skos:exactMatch rdf:resource="https://emmo-repo.github.io/domain-electrochemistry/electrochemistry.html#electrochemistry_e4d666ee_d637_45cd_a904_dc33941ead4f"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fedecom/battery#Manufacturer -->
+
+    <owl:Class rdf:about="https://w3id.org/fedecom/battery#Manufacturer">
+        <skos:exactMatch rdf:resource="http://w3id.org/emmo-bto/bto#BatteryManufacturer"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fedecom/battery#OpenCircuitVoltage -->
+
+    <owl:Class rdf:about="https://w3id.org/fedecom/battery#OpenCircuitVoltage">
+        <skos:exactMatch rdf:resource="https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fedecom/battery#SOC -->
+
+    <owl:Class rdf:about="https://w3id.org/fedecom/battery#SOC">
+        <skos:exactMatch rdf:resource="https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8b2aaa50_bbe1_45da_8778_8898326246a2"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
