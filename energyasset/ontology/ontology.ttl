@@ -1,0 +1,1080 @@
+@prefix : <https://w3id.org/fedecom/energyasset#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/fedecom/energyasset> .
+
+<https://w3id.org/fedecom/energyasset> rdf:type owl:Ontology ;
+                                        owl:imports <https://w3id.org/hpont> ,
+                                                    <https://w3id.org/fedecom/battery> ,
+                                                    <https://w3id.org/fedecom/units> ;
+                                        <http://creativecommons.org/ns#license> "http://purl.org/NET/rdflicense/cc-by4.0" ;
+                                        <http://purl.org/dc/terms/contributor> """Ignacio Lázaro (Tekniker) <ignacio.lazaro@tekniker.es>
+Andoni Osorio (Tekniker) <andoni.osorio@tekniker.es>
+Marko Jelić (Institut Mihajlo Pupin) <marko.jelic@pupin.rs>
+Spyros Tzavikas (Grid Singularity) <spyros@gridsingularity.com>""" ;
+                                        <http://purl.org/dc/terms/created> "" ;
+                                        <http://purl.org/dc/terms/creator> "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>" ;
+                                        <http://purl.org/dc/terms/description> "This ontology module includes the necessary classes and properties to model energy assets." ;
+                                        <http://purl.org/dc/terms/title> "Energy Asset: Energy Asset module for the FEDECOM Ontology" ;
+                                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "energyasset" ;
+                                        <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/fedecom/energyasset#" ;
+                                        owl:versionInfo "" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/fedecom/energyasset#hasAzimuth
+:hasAzimuth rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasCharacteristic ;
+            rdfs:domain :Device ;
+            rdfs:range :Azimuth ;
+            rdfs:comment "Indicates the azimuth angle associated with an asset, typically for orientation purposes." ;
+            rdfs:label "has azimuth" ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasCOPHeating
+:hasCOPHeating rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasCoefficientOfPerformance ;
+               rdfs:domain :Device ;
+               rdfs:range :COPHeating ;
+               rdfs:comment "Specifies the COP for heating mode of an asset." ;
+               rdfs:label "has COP heating" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasCOPcooling
+:hasCOPcooling rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasCoefficientOfPerformance ;
+               rdfs:domain :Device ;
+               rdfs:range :COPCooling ;
+               rdfs:comment "Specifies the COP for cooling mode of an asset." ;
+               rdfs:label "has COP cooling" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasCapacity
+:hasCapacity rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasCharacteristic ;
+             rdfs:domain :Device ;
+             rdfs:range :Capacity ;
+             rdfs:comment "Links an asset to its overall capacity (energy, power, or material)." ;
+             rdfs:label "has capacity" ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasCharacteristic
+:hasCharacteristic rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Device ;
+                   rdfs:range :Characteristic ;
+                   rdfs:comment "Relates an asset to a specific characteristic or attribute that describes its properties." ;
+                   rdfs:label "has characteristic" ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasChargeFlowRate
+:hasChargeFlowRate rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasCharacteristic ;
+                   rdfs:domain :Device ;
+                   rdfs:range :ChargeFlowRate ;
+                   rdfs:comment "Links an asset to the rate at which it charges energy or material" ;
+                   rdfs:label "has charge flow rate" ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasChargingPoint
+:hasChargingPoint rdf:type owl:ObjectProperty ;
+                  rdfs:domain :EVCharger ;
+                  rdfs:range :EVChargingPoint ;
+                  rdfs:comment "Links an asset to a charging point for electric vehicles or devices." ;
+                  rdfs:label "has charging point" ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasCoefficientOfPerformance
+:hasCoefficientOfPerformance rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :hasCharacteristic ;
+                             rdfs:domain :Device ;
+                             rdfs:range :CoefficientOfPerformance ;
+                             rdfs:comment "Associates an asset with its COP value, representing efficiency in heating or cooling." ;
+                             rdfs:label "has coefficient of performance" ;
+                             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasConversionEfficiency
+:hasConversionEfficiency rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :hasEfficiency ;
+                         rdfs:domain :Device ;
+                         rdfs:range :ConversionEfficiency ;
+                         rdfs:comment "Specifies the efficiency of an asset in converting one energy form to another." ;
+                         rdfs:label "has conversion efficiency" ;
+                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasDischargeFlowRate
+:hasDischargeFlowRate rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasCharacteristic ;
+                      rdfs:domain :Device ;
+                      rdfs:range :DischargeFlowRate ;
+                      rdfs:comment "Links an asset to the rate at which it discharges energy or material." ;
+                      rdfs:label "has discharge flow rate" ;
+                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasEfficiency
+:hasEfficiency rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasCharacteristic ;
+               rdfs:domain :Device ;
+               rdfs:range :Efficiency ;
+               rdfs:comment "Relates an asset to its overall efficiency." ;
+               rdfs:label "has efficiency" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasElectricCapacity
+:hasElectricCapacity rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :hasCapacity ;
+                     rdfs:domain :Device ;
+                     rdfs:range :ElectricCapacity ;
+                     rdfs:comment "Specifies the electrical capacity of an asset, such as a battery or PV system." ;
+                     rdfs:label "has electric capacity" ;
+                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasElectricEfficiency
+:hasElectricEfficiency rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :hasEfficiency ;
+                       rdfs:domain :Device ;
+                       rdfs:range :ElectricEfficiency ;
+                       rdfs:comment "Indicates the efficiency of electrical energy conversion for an asset." ;
+                       rdfs:label "has electric efficiency" ;
+                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasModel
+:hasModel rdf:type owl:ObjectProperty ;
+          rdfs:domain :Device ;
+          rdfs:comment "Associates an asset with its model identifier or specification." ;
+          rdfs:label "has model" ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasOperatingLimits
+:hasOperatingLimits rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasCharacteristic ;
+                    rdfs:domain :Device ;
+                    rdfs:range :OperatingLimits .
+
+
+###  https://w3id.org/fedecom/energyasset#hasPower
+:hasPower rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :hasCharacteristic ;
+          rdfs:domain :Device ;
+          rdfs:range :Power ;
+          rdfs:comment "Associates an asset with its power value (rate of energy transfer)." ;
+          rdfs:label "has power" ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasPowerRating
+:hasPowerRating rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :hasCharacteristic ;
+                rdfs:domain :Device ;
+                rdfs:range :PowerRating ;
+                rdfs:comment "Specifies the maximum power rating of an asset." ;
+                rdfs:label "has power rating" ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasResistance
+:hasResistance rdf:type owl:ObjectProperty ;
+               rdfs:domain :Device ;
+               rdfs:range :Resistance ;
+               rdfs:comment "Links an asset to its electrical resistance value." ;
+               rdfs:label "has resistance" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasStorageCapacity
+:hasStorageCapacity rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasCapacity ;
+                    rdfs:domain :Device ;
+                    rdfs:comment "Associates an asset with its ability to store energy or material." ;
+                    rdfs:label "has storage capacity" ;
+                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasStorageTankVolume
+:hasStorageTankVolume rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasCharacteristic ;
+                      rdfs:domain :Device ;
+                      rdfs:range :StorageTankVolume ;
+                      rdfs:comment "Links an asset to the volume of its storage tank." ;
+                      rdfs:label "has storage tank volume" ;
+                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasTarget
+:hasTarget rdf:type owl:ObjectProperty ;
+           rdfs:domain :Device ;
+           rdfs:comment "Relates an asset with the space it works for." ;
+           rdfs:label "has target" ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasThermalCapacity
+:hasThermalCapacity rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasCapacity ;
+                    rdfs:domain :Device ;
+                    rdfs:range :ThermalCapacity ;
+                    rdfs:comment "Relates an asset to its thermal capacity, indicating heat storage or transfer capability." ;
+                    rdfs:label "has thermal capacity" ;
+                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasThermalEfficiency
+:hasThermalEfficiency rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasEfficiency ;
+                      rdfs:domain :Device ;
+                      rdfs:range :ThermalEfficiency ;
+                      rdfs:comment "Indicates the efficiency of thermal energy conversion for an asset." ;
+                      rdfs:label "has thermal efficiency" ;
+                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasTilt
+:hasTilt rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :hasCharacteristic ;
+         rdfs:domain :Device ;
+         rdfs:range :Tilt ;
+         rdfs:comment "Indicates the tilt angle of an asset (e.g., solar panel)." ;
+         rdfs:label "has tilt" ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasVolume
+:hasVolume rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :hasCharacteristic ;
+           rdfs:domain :Device ;
+           rdfs:range :Volume ;
+           rdfs:comment "Associates an asset with its physical volume." ;
+           rdfs:label "has volume" ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#isSubMeterOf
+:isSubMeterOf rdf:type owl:ObjectProperty ;
+              rdfs:domain :SubMeter ;
+              rdfs:range :Meter ;
+              rdfs:comment "Defines a hierarchical relationship where a sub-meter asset belongs to a main meter asset." ;
+              rdfs:label "is submeter of" ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://schema.org/name
+<http://schema.org/name> rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/fedecom/energyasset#connectionType
+:connectionType rdf:type owl:DatatypeProperty ;
+                rdfs:domain :StorageTank ;
+                rdfs:range [ rdf:type rdfs:Datatype ;
+                             owl:oneOf [ rdf:type rdf:List ;
+                                         rdf:first "parallel" ;
+                                         rdf:rest [ rdf:type rdf:List ;
+                                                    rdf:first "series" ;
+                                                    rdf:rest rdf:nil
+                                                  ]
+                                       ]
+                           ] ;
+                rdfs:comment """Specifies the type of connection configuration for an asset.
+Allowed values:
+
+parallel – Components are connected in parallel, sharing input and output points to maintain equal voltage.
+series – Components are connected in sequence, so the same current flows through each component.""" ;
+                rdfs:label "connection type" ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasCapacityRange
+:hasCapacityRange rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:comment "Defines the range of capacity values for an asset (minimum and maximum)." ;
+                  rdfs:label "capacity range" ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasMaximumPowerRating
+:hasMaximumPowerRating rdf:type owl:DatatypeProperty ;
+                       rdfs:comment "Specifies the maximum power rating of an asset." ;
+                       rdfs:label "maximum power rating" ;
+                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasOperatingLimits
+:hasOperatingLimits rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/fedecom/energyasset#hasSetpoint
+:hasSetpoint rdf:type owl:DatatypeProperty ;
+             rdfs:comment "Indicates the target value or setpoint for controlling an asset (e.g., temperature, pressure)." ;
+             rdfs:label "setpoint" ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#hasState
+:hasState rdf:type owl:DatatypeProperty ;
+          rdfs:comment "Represents the current operational state of an asset." ;
+          rdfs:label "state" ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#isGenerationEquipment
+:isGenerationEquipment rdf:type owl:DatatypeProperty ;
+                       rdfs:comment "Boolean property indicating whether an asset functions as generation equipment." ;
+                       rdfs:label "is generation equipment" ;
+                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#numberOfPanels
+:numberOfPanels rdf:type owl:DatatypeProperty ;
+                rdfs:comment "Specifies the number of panels associated with a PV system." ;
+                rdfs:label "number of panels" ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/fedecom/battery#Battery
+<http://w3id.org/fedecom/battery#Battery> rdf:type owl:Class ;
+                                          rdfs:subClassOf :Device .
+
+
+###  https://w3id.org/fedecom/energyasset#AirHandlingUnit
+:AirHandlingUnit rdf:type owl:Class ;
+                 rdfs:subClassOf :HVAC ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasCapacity ;
+                                   owl:someValuesFrom :Capacity
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasEfficiency ;
+                                   owl:someValuesFrom :Efficiency
+                                 ] ;
+                 rdfs:comment "A device that conditions and circulates air as part of an HVAC system, typically including fans, filters, and heat exchangers." ;
+                 rdfs:label "Air Handling Unit" ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#Azimuth
+:Azimuth rdf:type owl:Class ;
+         rdfs:subClassOf :Characteristic ;
+         rdfs:comment "The angular measurement in the horizontal plane between a reference direction (usually true north) and the direction of a solar panel." ;
+         rdfs:label "Azimuth" ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#BiomassBoiler
+:BiomassBoiler rdf:type owl:Class ;
+               rdfs:subClassOf :Boiler ;
+               rdfs:comment "A boiler that uses biomass (organic material) as fuel to produce heat or steam." ;
+               rdfs:label "Biomass Boiler" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#BiomassBurner
+:BiomassBurner rdf:type owl:Class ;
+               rdfs:subClassOf :Burner ;
+               rdfs:comment "A burner designed to combust biomass fuel for heat generation." ;
+               rdfs:label "Biomass Burner" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#Boiler
+:Boiler rdf:type owl:Class ;
+        rdfs:subClassOf :HVAC ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasCapacity ;
+                          owl:someValuesFrom :Capacity
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasEfficiency ;
+                          owl:someValuesFrom :Efficiency
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasResistance ;
+                          owl:someValuesFrom :Resistance
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :isGenerationEquipment ;
+                          owl:someValuesFrom xsd:boolean
+                        ] ;
+        rdfs:comment "A device that heats water or produces steam for heating or power generation." ;
+        rdfs:label "Boiler" ;
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#Burner
+:Burner rdf:type owl:Class ;
+        rdfs:subClassOf :Device ;
+        rdfs:comment "A component that mixes fuel and air and initiates combustion to produce heat." ;
+        rdfs:label "Burner" ;
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#BypassDamper
+:BypassDamper rdf:type owl:Class ;
+              rdfs:subClassOf :Damper ;
+              rdfs:comment "A damper that redirects airflow to maintain pressure or temperature balance in HVAC systems." ;
+              rdfs:label "Bypass Damper" ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#COPCooling
+:COPCooling rdf:type owl:Class ;
+            rdfs:subClassOf :CoefficientOfPerformance ;
+            rdfs:comment "The coefficient of performance for cooling mode." ;
+            rdfs:label "COP Cooling" ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#COPHeating
+:COPHeating rdf:type owl:Class ;
+            rdfs:subClassOf :CoefficientOfPerformance ;
+            rdfs:comment "The coefficient of performance for heating mode." ;
+            rdfs:label "COP Heating" ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#Capacity
+:Capacity rdf:type owl:Class ;
+          rdfs:subClassOf :Characteristic ;
+          rdfs:comment "The maximum amount of energy, power, or material that a system or component can store, produce, or handle under specified conditions." ;
+          rdfs:label "Capacity" ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#Characteristic
+:Characteristic rdf:type owl:Class ;
+                rdfs:comment "A property or attribute that describes a specific feature or quality of an entity." ;
+                rdfs:label "Characteristic" ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#ChargeFlowRate
+:ChargeFlowRate rdf:type owl:Class ;
+                rdfs:subClassOf :FlowRate ;
+                rdfs:comment "The rate at which energy or material is added to a storage system during charging." ;
+                rdfs:label "Charge Flow Rate" ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#Chiller
+:Chiller rdf:type owl:Class ;
+         rdfs:subClassOf :HVAC ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasCapacity ;
+                           owl:someValuesFrom :Capacity
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasConversionEfficiency ;
+                           owl:someValuesFrom :ConversionEfficiency
+                         ] ;
+         rdfs:comment "A device that removes heat from a liquid via vapor-compression or absorption refrigeration." ;
+         rdfs:label "Chiller" ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#CoefficientOfPerformance
+:CoefficientOfPerformance rdf:type owl:Class ;
+                          rdfs:subClassOf :Characteristic ;
+                          rdfs:comment "A ratio that measures the efficiency of a heating or cooling system." ;
+                          rdfs:label "Coefficient of Performance" ;
+                          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#ColdStorageTank
+:ColdStorageTank rdf:type owl:Class ;
+                 rdfs:subClassOf :StorageTank ;
+                 rdfs:comment "A tank used to store chilled water or other fluids for cooling applications." ;
+                 rdfs:label "Cold Storage Tank" ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#Collector
+:Collector rdf:type owl:Class ;
+           rdfs:subClassOf :Device ;
+           rdfs:comment "A component that captures and transfers energy, typically solar thermal collectors for heat." ;
+           rdfs:label "Collector" ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#CombinedHeatPower
+:CombinedHeatPower rdf:type owl:Class ;
+                   rdfs:subClassOf :Device ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasElectricCapacity ;
+                                     owl:someValuesFrom :ElectricCapacity
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasElectricEfficiency ;
+                                     owl:someValuesFrom :ElectricEfficiency
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasThermalCapacity ;
+                                     owl:someValuesFrom :ThermalCapacity
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasThermalEfficiency ;
+                                     owl:someValuesFrom :ThermalEfficiency
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :isGenerationEquipment ;
+                                     owl:someValuesFrom xsd:boolean
+                                   ] ;
+                   rdfs:comment "A system that simultaneously generates electricity and useful heat from a single energy source." ;
+                   rdfs:label "Combined Heat Power" ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#Component
+:Component rdf:type owl:Class ;
+           rdfs:comment "An individual part or element of a system that performs a specific function." ;
+           rdfs:label "Component" ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#CondensingGasBoiler
+:CondensingGasBoiler rdf:type owl:Class ;
+                     rdfs:subClassOf :NaturalGasBoiler ;
+                     rdfs:comment "A high-efficiency gas boiler that recovers latent heat from exhaust gases by condensing water vapor." ;
+                     rdfs:label "Condensing Gas Boiler" ;
+                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#ControlParameter
+:ControlParameter rdf:type owl:Class ;
+                  rdfs:comment "A variable or setting used to regulate or adjust the behavior of a system or process." ;
+                  rdfs:label "Control Parameter" ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#ConventionalGasBoiler
+:ConventionalGasBoiler rdf:type owl:Class ;
+                       rdfs:subClassOf :NaturalGasBoiler ;
+                       rdfs:comment "A standard gas-fired boiler that heats water without condensing exhaust gases." ;
+                       rdfs:label "Conventional Gas Boiler" ;
+                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#ConversionEfficiency
+:ConversionEfficiency rdf:type owl:Class ;
+                      rdfs:subClassOf :Efficiency ;
+                      rdfs:comment "The efficiency with which a system converts one form of energy into another (e.g., chemical to electrical)." ;
+                      rdfs:label "Conversion Efficiency" ;
+                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#Damper
+:Damper rdf:type owl:Class ;
+        rdfs:subClassOf :HVAC ;
+        rdfs:comment "A device that regulates airflow in ducts or ventilation systems." ;
+        rdfs:label "Damper" ;
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#Device
+:Device rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://schema.org/name> ;
+                          owl:someValuesFrom xsd:string
+                        ] ;
+        rdfs:comment "A physical or virtual entity designed to perform a specific function within a system, typically involving measurement, control, conversion, or communication of energy, signals, or materials." ;
+        rdfs:label "Device" ;
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#DischargeFlowRate
+:DischargeFlowRate rdf:type owl:Class ;
+                   rdfs:subClassOf :FlowRate ;
+                   rdfs:comment "The rate at which energy or material is removed from a storage system during discharging." ;
+                   rdfs:label "Discharge Flow Rate" ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#DistrictHeatingPlant
+:DistrictHeatingPlant rdf:type owl:Class ;
+                      rdfs:subClassOf :Device ;
+                      rdfs:comment "A centralized facility that produces heat and distributes it to multiple buildings through a network." ;
+                      rdfs:label "Electric Heating Plant" ;
+                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#EVCharger
+:EVCharger rdf:type owl:Class ;
+           rdfs:subClassOf :Device ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasCapacity ;
+                             owl:someValuesFrom :Capacity
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasCoefficientOfPerformance ;
+                             owl:someValuesFrom :CoefficientOfPerformance
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasOperatingLimits ;
+                             owl:someValuesFrom :OperatingLimits
+                           ] ;
+           rdfs:comment "A device that supplies electric energy to recharge electric vehicle batteries." ;
+           rdfs:label "EV Charger" ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#EVChargingPoint
+:EVChargingPoint rdf:type owl:Class ;
+                 rdfs:subClassOf :Device ;
+                 rdfs:comment "A physical location equipped with an EV charger for vehicle charging." ;
+                 rdfs:label "EV Charging Point" ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#Efficiency
+:Efficiency rdf:type owl:Class ;
+            rdfs:subClassOf :Characteristic ;
+            rdfs:comment "The ratio of useful output (energy, power, or work) to the total input." ;
+            rdfs:label "Efficiency" ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#ElectricBoiler
+:ElectricBoiler rdf:type owl:Class ;
+                rdfs:subClassOf :Boiler ;
+                rdfs:comment "A boiler that uses electrical energy to heat water or produce steam." ;
+                rdfs:label "Electric Boiler" ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#ElectricCapacity
+:ElectricCapacity rdf:type owl:Class ;
+                  rdfs:subClassOf :Capacity .
+
+
+###  https://w3id.org/fedecom/energyasset#ElectricEfficiency
+:ElectricEfficiency rdf:type owl:Class ;
+                    rdfs:subClassOf :Efficiency ;
+                    rdfs:comment "The efficiency of converting electrical energy into useful work or another energy form." ;
+                    rdfs:label "Electric Efficiency" ;
+                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#ElectricHeater
+:ElectricHeater rdf:type owl:Class ;
+                rdfs:subClassOf :Heater ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasState ;
+                                  owl:someValuesFrom xsd:string
+                                ] ;
+                rdfs:comment "A device that converts electrical energy into heat." ;
+                rdfs:label "Electric Heater" ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#ElectricMeter
+:ElectricMeter rdf:type owl:Class ;
+               rdfs:subClassOf :Meter ;
+               rdfs:comment "A meter that measures electrical energy consumption" ;
+               rdfs:label "Electric Meter" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#Electrolizer
+:Electrolizer rdf:type owl:Class ;
+              rdfs:subClassOf :Device ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasPower ;
+                                owl:someValuesFrom :Power
+                              ] ;
+              rdfs:comment "A device that uses electricity to split water into hydrogen and oxygen through electrolysis." ;
+              rdfs:label "Electrolizer" ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#EnergyFlowRate
+:EnergyFlowRate rdf:type owl:Class ;
+                rdfs:subClassOf :FlowRate ;
+                rdfs:comment "The amount of energy transferred per unit of time through a system or component." ;
+                rdfs:label "Energy Flow Rate" ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#Extractor
+:Extractor rdf:type owl:Class ;
+           rdfs:subClassOf :Device ;
+           rdfs:comment "A fan or device that removes air, fumes, or gases from a space." ;
+           rdfs:label "Extractor" ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#FanCoil
+:FanCoil rdf:type owl:Class ;
+         rdfs:subClassOf :Device ;
+         rdfs:comment "A unit consisting of a fan and a heat exchanger coil used for heating or cooling air." ;
+         rdfs:label "Fan Coil" ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#FlowRate
+:FlowRate rdf:type owl:Class ;
+          rdfs:subClassOf :Characteristic ;
+          rdfs:comment "The volume or mass of a substance (e.g., fluid, gas) passing through a point or system per unit of time." ;
+          rdfs:label "Flow Rate" ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#FuelCell
+:FuelCell rdf:type owl:Class ;
+          rdfs:subClassOf :Device ;
+          rdfs:comment "A device that converts chemical energy from hydrogen or other fuels into electricity through electrochemical reactions." ;
+          rdfs:label "Fuel Cell" ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#FumeRecuperator
+:FumeRecuperator rdf:type owl:Class ;
+                 rdfs:subClassOf :Device ;
+                 rdfs:comment "A heat recovery device that captures heat from exhaust fumes for reuse." ;
+                 rdfs:label "Fume Recuperator" ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#GridMeter
+:GridMeter rdf:type owl:Class ;
+           rdfs:subClassOf :Meter ;
+           rdfs:comment "A meter that measures energy exchanged between a building and the electrical grid." ;
+           rdfs:label "Grid Meter" ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#H2StorageTank
+:H2StorageTank rdf:type owl:Class ;
+               rdfs:subClassOf :StorageTank ;
+               rdfs:comment "A tank specifically designed to store hydrogen safely under controlled conditions." ;
+               rdfs:label "Hydrogen Storage Tank" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#HVAC
+:HVAC rdf:type owl:Class ;
+      rdfs:subClassOf :Device ;
+      rdfs:comment "Heating, Ventilation, and Air Conditioning equipment that regulate indoor climate." ;
+      rdfs:label "Heating Ventilation Air Conditioning Equipment" ;
+      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#HeatMeter
+:HeatMeter rdf:type owl:Class ;
+           rdfs:subClassOf :Meter ;
+           rdfs:comment "A meter that measures thermal energy consumption." ;
+           rdfs:label "Heat Meter" ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#HeatStorageTank
+:HeatStorageTank rdf:type owl:Class ;
+                 rdfs:subClassOf :StorageTank ;
+                 rdfs:comment "A tank that stores thermal energy, typically in the form of hot water or other heat-retaining materials." ;
+                 rdfs:label "Heat Storage Tank" ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#Heater
+:Heater rdf:type owl:Class ;
+        rdfs:subClassOf :Device ;
+        rdfs:comment "A device that converts energy (typically electrical, thermal, or chemical) into heat for the purpose of warming air, water, or other substances within a system or space." ;
+        rdfs:label "Heater" ;
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#HighTemperatureCircuit
+:HighTemperatureCircuit rdf:type owl:Class ;
+                        rdfs:subClassOf :Device ;
+                        rdfs:comment "A heating circuit designed to operate at high temperatures, typically for industrial or specialized applications." ;
+                        rdfs:label "High Temperature Circuit" ;
+                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#HumidityTemperatureSensor
+:HumidityTemperatureSensor rdf:type owl:Class ;
+                           rdfs:subClassOf :Sensor ;
+                           rdfs:comment "A sensor that measures both humidity and temperature in an environment." ;
+                           rdfs:label "Humidity-Temperature Sensor" ;
+                           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#Meter
+:Meter rdf:type owl:Class ;
+       rdfs:subClassOf :Device ;
+       rdfs:comment "A device that measures and records the consumption or flow of energy or resources." ;
+       rdfs:label "Meter" ;
+       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#Model
+:Model rdf:type owl:Class .
+
+
+###  https://w3id.org/fedecom/energyasset#NaturalGasBoiler
+:NaturalGasBoiler rdf:type owl:Class ;
+                  rdfs:subClassOf :Boiler .
+
+
+###  https://w3id.org/fedecom/energyasset#OperatingLimits
+:OperatingLimits rdf:type owl:Class ;
+                 rdfs:subClassOf :Characteristic ;
+                 rdfs:comment "The predefined boundaries or thresholds within which a system or component can operate safely and effectively." ;
+                 rdfs:label "Operating Limits" ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#PVSystem
+:PVSystem rdf:type owl:Class ;
+          rdfs:subClassOf :Device ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasAzimuth ;
+                            owl:someValuesFrom :Azimuth
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasTilt ;
+                            owl:someValuesFrom :Tilt
+                          ] ;
+          rdfs:comment "A photovoltaic system that converts solar energy into electrical energy using solar panels and associated components." ;
+          rdfs:label "Photovoltaic System" ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#Power
+:Power rdf:type owl:Class ;
+       rdfs:subClassOf :Characteristic ;
+       rdfs:comment "The rate at which energy is transferred, converted, or consumed by a system or component." ;
+       rdfs:label "Power" ;
+       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#PowerFlowRate
+:PowerFlowRate rdf:type owl:Class ;
+               rdfs:subClassOf :FlowRate ;
+               rdfs:comment "The rate at which power is transmitted or distributed through a system." ;
+               rdfs:label "Power Flow Rate" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#PowerRating
+:PowerRating rdf:type owl:Class ;
+             rdfs:subClassOf :Characteristic ;
+             rdfs:comment "The maximum continuous power that a device or system can deliver or handle under specified conditions." ;
+             rdfs:label "Power Rating" ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#Resistance
+:Resistance rdf:type owl:Class ;
+            rdfs:subClassOf :Characteristic ;
+            rdfs:comment "A measure of the opposition to the flow of electric current." ;
+            rdfs:label "Resistance" ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#STC
+:STC rdf:type owl:Class ;
+     rdfs:subClassOf :Device ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :hasCapacity ;
+                       owl:someValuesFrom :Capacity
+                     ] .
+
+
+###  https://w3id.org/fedecom/energyasset#Sensor
+:Sensor rdf:type owl:Class ;
+        rdfs:subClassOf :Device ;
+        rdfs:comment "A device that detects and measures physical properties (e.g., temperature, pressure, light) and converts them into signals for monitoring or control." ;
+        rdfs:label "Sensor" ;
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#SmartMeter
+:SmartMeter rdf:type owl:Class ;
+            rdfs:subClassOf :Meter ;
+            rdfs:comment "An advanced meter that records consumption and communicates data digitally for monitoring and control." ;
+            rdfs:label "Smart Meter" ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#StorageTank
+:StorageTank rdf:type owl:Class ;
+             rdfs:subClassOf :Tank ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasChargeFlowRate ;
+                               owl:someValuesFrom :ChargeFlowRate
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasDischargeFlowRate ;
+                               owl:someValuesFrom :DischargeFlowRate
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasVolume ;
+                               owl:someValuesFrom :Volume
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :connectionType ;
+                               owl:someValuesFrom xsd:string
+                             ] ;
+             rdfs:comment "A container designed to store liquids or gases for later use." ;
+             rdfs:label "Storage Tank" ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#StorageTankVolume
+:StorageTankVolume rdf:type owl:Class ;
+                   rdfs:subClassOf :Volume ;
+                   rdfs:comment "The total internal volume of a tank designed to store fluids or gases." ;
+                   rdfs:label "Storage Tank Volume" ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#SubMeter
+:SubMeter rdf:type owl:Class ;
+          rdfs:subClassOf :Meter ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :isSubMeterOf ;
+                            owl:someValuesFrom :Meter
+                          ] ;
+          rdfs:comment "A meter installed downstream of a main meter to measure consumption for a specific area or device." ;
+          rdfs:label "Submeter" ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#Tank
+:Tank rdf:type owl:Class ;
+      rdfs:subClassOf :Device .
+
+
+###  https://w3id.org/fedecom/energyasset#ThermalCapacity
+:ThermalCapacity rdf:type owl:Class ;
+                 rdfs:subClassOf :Capacity .
+
+
+###  https://w3id.org/fedecom/energyasset#ThermalEfficiency
+:ThermalEfficiency rdf:type owl:Class ;
+                   rdfs:subClassOf :Efficiency ;
+                   rdfs:comment "The efficiency of converting thermal energy into useful work or another energy form." ;
+                   rdfs:label "Thermal Efficiency" ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#ThermalStorageTank
+:ThermalStorageTank rdf:type owl:Class ;
+                    rdfs:subClassOf :StorageTank ;
+                    rdfs:comment "A tank that stores thermal energy for heating or cooling purposes, often using phase-change materials or water." ;
+                    rdfs:label "Thermal Storage Tank" ;
+                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#Tilt
+:Tilt rdf:type owl:Class ;
+      rdfs:subClassOf :Characteristic ;
+      rdfs:comment "The angle between a surface (e.g., solar panel) and the horizontal plane." ;
+      rdfs:label "Tilt" ;
+      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#VoltageTransformer
+:VoltageTransformer rdf:type owl:Class ;
+                    rdfs:subClassOf :Device ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasPowerRating ;
+                                      owl:someValuesFrom :PowerRating
+                                    ] ;
+                    rdfs:comment "An electrical device that changes the voltage level of alternating current (AC) in a power system." ;
+                    rdfs:label "Voltage Transformer" ;
+                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#Volume
+:Volume rdf:type owl:Class ;
+        rdfs:subClassOf :Characteristic ;
+        rdfs:comment "The amount of three-dimensional space occupied by an object or substance." ;
+        rdfs:label "Volume" ;
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/energyasset#3WayValve
+<https://w3id.org/fedecom/energyasset#3WayValve> rdf:type owl:Class ;
+                                                 rdfs:subClassOf :Device ;
+                                                 rdfs:comment "A valve with three ports used to control the flow and mixing of fluids in heating or cooling circuits." ;
+                                                 rdfs:label "3-Way Valve" ;
+                                                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/hpont#CoolingHeatPump
+<https://w3id.org/hpont#CoolingHeatPump> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://w3id.org/hpont#HeatPumpSystem> .
+
+
+###  https://w3id.org/hpont#HeatPumpSystem
+<https://w3id.org/hpont#HeatPumpSystem> rdfs:subClassOf :Device ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :hasCapacity ;
+                                                          owl:someValuesFrom :Capacity
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :hasCoefficientOfPerformance ;
+                                                          owl:someValuesFrom :CoefficientOfPerformance
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :hasStorageTankVolume ;
+                                                          owl:someValuesFrom :StorageTankVolume
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :isGenerationEquipment ;
+                                                          owl:someValuesFrom xsd:boolean
+                                                        ] .
+
+
+###  https://w3id.org/hpont#HeatingHeatPump
+<https://w3id.org/hpont#HeatingHeatPump> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://w3id.org/hpont#HeatPumpSystem> .
+
+
+###  https://w3id.org/hpont#ReversibleHeatPump
+<https://w3id.org/hpont#ReversibleHeatPump> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://w3id.org/hpont#HeatPumpSystem> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/fedecom/energyasset#LIC_PV2
+:LIC_PV2 rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:hasOperatingLimits rdfs:comment "Links an asset to its operational boundaries or thresholds." ;
+                    rdfs:label "has operating limits" ;
+                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

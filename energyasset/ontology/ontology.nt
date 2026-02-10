@@ -1,0 +1,975 @@
+<https://w3id.org/fedecom/energyasset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/fedecom/energyasset> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/hpont> .
+<https://w3id.org/fedecom/energyasset> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/fedecom/battery> .
+<https://w3id.org/fedecom/energyasset> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/fedecom/units> .
+<https://w3id.org/fedecom/energyasset> <http://creativecommons.org/ns#license> "http://purl.org/NET/rdflicense/cc-by4.0" .
+<https://w3id.org/fedecom/energyasset> <http://purl.org/dc/terms/contributor> "Ignacio Lázaro (Tekniker) <ignacio.lazaro@tekniker.es>\nAndoni Osorio (Tekniker) <andoni.osorio@tekniker.es>\nMarko Jelić (Institut Mihajlo Pupin) <marko.jelic@pupin.rs>\nSpyros Tzavikas (Grid Singularity) <spyros@gridsingularity.com>" .
+<https://w3id.org/fedecom/energyasset> <http://purl.org/dc/terms/created> "" .
+<https://w3id.org/fedecom/energyasset> <http://purl.org/dc/terms/creator> "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>" .
+<https://w3id.org/fedecom/energyasset> <http://purl.org/dc/terms/description> "This ontology module includes the necessary classes and properties to model energy assets." .
+<https://w3id.org/fedecom/energyasset> <http://purl.org/dc/terms/title> "Energy Asset: Energy Asset module for the FEDECOM Ontology" .
+<https://w3id.org/fedecom/energyasset> <http://purl.org/vocab/vann/preferredNamespacePrefix> "energyasset" .
+<https://w3id.org/fedecom/energyasset> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/fedecom/energyasset#" .
+<https://w3id.org/fedecom/energyasset> <http://www.w3.org/2002/07/owl#versionInfo> "" .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fedecom/energyasset#hasAzimuth
+<https://w3id.org/fedecom/energyasset#hasAzimuth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasAzimuth> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/energyasset#hasCharacteristic> .
+<https://w3id.org/fedecom/energyasset#hasAzimuth> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasAzimuth> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#Azimuth> .
+<https://w3id.org/fedecom/energyasset#hasAzimuth> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the azimuth angle associated with an asset, typically for orientation purposes." .
+<https://w3id.org/fedecom/energyasset#hasAzimuth> <http://www.w3.org/2000/01/rdf-schema#label> "has azimuth" .
+<https://w3id.org/fedecom/energyasset#hasAzimuth> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasCOPHeating
+<https://w3id.org/fedecom/energyasset#hasCOPHeating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasCOPHeating> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/energyasset#hasCoefficientOfPerformance> .
+<https://w3id.org/fedecom/energyasset#hasCOPHeating> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasCOPHeating> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#COPHeating> .
+<https://w3id.org/fedecom/energyasset#hasCOPHeating> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the COP for heating mode of an asset." .
+<https://w3id.org/fedecom/energyasset#hasCOPHeating> <http://www.w3.org/2000/01/rdf-schema#label> "has COP heating" .
+<https://w3id.org/fedecom/energyasset#hasCOPHeating> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasCOPcooling
+<https://w3id.org/fedecom/energyasset#hasCOPcooling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasCOPcooling> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/energyasset#hasCoefficientOfPerformance> .
+<https://w3id.org/fedecom/energyasset#hasCOPcooling> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasCOPcooling> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#COPCooling> .
+<https://w3id.org/fedecom/energyasset#hasCOPcooling> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the COP for cooling mode of an asset." .
+<https://w3id.org/fedecom/energyasset#hasCOPcooling> <http://www.w3.org/2000/01/rdf-schema#label> "has COP cooling" .
+<https://w3id.org/fedecom/energyasset#hasCOPcooling> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasCapacity
+<https://w3id.org/fedecom/energyasset#hasCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasCapacity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/energyasset#hasCharacteristic> .
+<https://w3id.org/fedecom/energyasset#hasCapacity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasCapacity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#Capacity> .
+<https://w3id.org/fedecom/energyasset#hasCapacity> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an asset to its overall capacity (energy, power, or material)." .
+<https://w3id.org/fedecom/energyasset#hasCapacity> <http://www.w3.org/2000/01/rdf-schema#label> "has capacity" .
+<https://w3id.org/fedecom/energyasset#hasCapacity> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasCharacteristic
+<https://w3id.org/fedecom/energyasset#hasCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#Characteristic> .
+<https://w3id.org/fedecom/energyasset#hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an asset to a specific characteristic or attribute that describes its properties." .
+<https://w3id.org/fedecom/energyasset#hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#label> "has characteristic" .
+<https://w3id.org/fedecom/energyasset#hasCharacteristic> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasChargeFlowRate
+<https://w3id.org/fedecom/energyasset#hasChargeFlowRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasChargeFlowRate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/energyasset#hasCharacteristic> .
+<https://w3id.org/fedecom/energyasset#hasChargeFlowRate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasChargeFlowRate> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#ChargeFlowRate> .
+<https://w3id.org/fedecom/energyasset#hasChargeFlowRate> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an asset to the rate at which it charges energy or material" .
+<https://w3id.org/fedecom/energyasset#hasChargeFlowRate> <http://www.w3.org/2000/01/rdf-schema#label> "has charge flow rate" .
+<https://w3id.org/fedecom/energyasset#hasChargeFlowRate> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasChargingPoint
+<https://w3id.org/fedecom/energyasset#hasChargingPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasChargingPoint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#EVCharger> .
+<https://w3id.org/fedecom/energyasset#hasChargingPoint> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#EVChargingPoint> .
+<https://w3id.org/fedecom/energyasset#hasChargingPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an asset to a charging point for electric vehicles or devices." .
+<https://w3id.org/fedecom/energyasset#hasChargingPoint> <http://www.w3.org/2000/01/rdf-schema#label> "has charging point" .
+<https://w3id.org/fedecom/energyasset#hasChargingPoint> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasCoefficientOfPerformance
+<https://w3id.org/fedecom/energyasset#hasCoefficientOfPerformance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasCoefficientOfPerformance> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/energyasset#hasCharacteristic> .
+<https://w3id.org/fedecom/energyasset#hasCoefficientOfPerformance> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasCoefficientOfPerformance> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#CoefficientOfPerformance> .
+<https://w3id.org/fedecom/energyasset#hasCoefficientOfPerformance> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates an asset with its COP value, representing efficiency in heating or cooling." .
+<https://w3id.org/fedecom/energyasset#hasCoefficientOfPerformance> <http://www.w3.org/2000/01/rdf-schema#label> "has coefficient of performance" .
+<https://w3id.org/fedecom/energyasset#hasCoefficientOfPerformance> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasConversionEfficiency
+<https://w3id.org/fedecom/energyasset#hasConversionEfficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasConversionEfficiency> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/energyasset#hasEfficiency> .
+<https://w3id.org/fedecom/energyasset#hasConversionEfficiency> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasConversionEfficiency> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#ConversionEfficiency> .
+<https://w3id.org/fedecom/energyasset#hasConversionEfficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the efficiency of an asset in converting one energy form to another." .
+<https://w3id.org/fedecom/energyasset#hasConversionEfficiency> <http://www.w3.org/2000/01/rdf-schema#label> "has conversion efficiency" .
+<https://w3id.org/fedecom/energyasset#hasConversionEfficiency> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasDischargeFlowRate
+<https://w3id.org/fedecom/energyasset#hasDischargeFlowRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasDischargeFlowRate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/energyasset#hasCharacteristic> .
+<https://w3id.org/fedecom/energyasset#hasDischargeFlowRate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasDischargeFlowRate> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#DischargeFlowRate> .
+<https://w3id.org/fedecom/energyasset#hasDischargeFlowRate> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an asset to the rate at which it discharges energy or material." .
+<https://w3id.org/fedecom/energyasset#hasDischargeFlowRate> <http://www.w3.org/2000/01/rdf-schema#label> "has discharge flow rate" .
+<https://w3id.org/fedecom/energyasset#hasDischargeFlowRate> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasEfficiency
+<https://w3id.org/fedecom/energyasset#hasEfficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasEfficiency> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/energyasset#hasCharacteristic> .
+<https://w3id.org/fedecom/energyasset#hasEfficiency> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasEfficiency> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#Efficiency> .
+<https://w3id.org/fedecom/energyasset#hasEfficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an asset to its overall efficiency." .
+<https://w3id.org/fedecom/energyasset#hasEfficiency> <http://www.w3.org/2000/01/rdf-schema#label> "has efficiency" .
+<https://w3id.org/fedecom/energyasset#hasEfficiency> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasElectricCapacity
+<https://w3id.org/fedecom/energyasset#hasElectricCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasElectricCapacity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/energyasset#hasCapacity> .
+<https://w3id.org/fedecom/energyasset#hasElectricCapacity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasElectricCapacity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#ElectricCapacity> .
+<https://w3id.org/fedecom/energyasset#hasElectricCapacity> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the electrical capacity of an asset, such as a battery or PV system." .
+<https://w3id.org/fedecom/energyasset#hasElectricCapacity> <http://www.w3.org/2000/01/rdf-schema#label> "has electric capacity" .
+<https://w3id.org/fedecom/energyasset#hasElectricCapacity> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasElectricEfficiency
+<https://w3id.org/fedecom/energyasset#hasElectricEfficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasElectricEfficiency> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/energyasset#hasEfficiency> .
+<https://w3id.org/fedecom/energyasset#hasElectricEfficiency> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasElectricEfficiency> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#ElectricEfficiency> .
+<https://w3id.org/fedecom/energyasset#hasElectricEfficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the efficiency of electrical energy conversion for an asset." .
+<https://w3id.org/fedecom/energyasset#hasElectricEfficiency> <http://www.w3.org/2000/01/rdf-schema#label> "has electric efficiency" .
+<https://w3id.org/fedecom/energyasset#hasElectricEfficiency> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasModel
+<https://w3id.org/fedecom/energyasset#hasModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasModel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates an asset with its model identifier or specification." .
+<https://w3id.org/fedecom/energyasset#hasModel> <http://www.w3.org/2000/01/rdf-schema#label> "has model" .
+<https://w3id.org/fedecom/energyasset#hasModel> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasOperatingLimits
+<https://w3id.org/fedecom/energyasset#hasOperatingLimits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasOperatingLimits> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/energyasset#hasCharacteristic> .
+<https://w3id.org/fedecom/energyasset#hasOperatingLimits> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasOperatingLimits> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#OperatingLimits> .
+# 
+# https://w3id.org/fedecom/energyasset#hasPower
+<https://w3id.org/fedecom/energyasset#hasPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasPower> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/energyasset#hasCharacteristic> .
+<https://w3id.org/fedecom/energyasset#hasPower> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasPower> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#Power> .
+<https://w3id.org/fedecom/energyasset#hasPower> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates an asset with its power value (rate of energy transfer)." .
+<https://w3id.org/fedecom/energyasset#hasPower> <http://www.w3.org/2000/01/rdf-schema#label> "has power" .
+<https://w3id.org/fedecom/energyasset#hasPower> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasPowerRating
+<https://w3id.org/fedecom/energyasset#hasPowerRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasPowerRating> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/energyasset#hasCharacteristic> .
+<https://w3id.org/fedecom/energyasset#hasPowerRating> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasPowerRating> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#PowerRating> .
+<https://w3id.org/fedecom/energyasset#hasPowerRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the maximum power rating of an asset." .
+<https://w3id.org/fedecom/energyasset#hasPowerRating> <http://www.w3.org/2000/01/rdf-schema#label> "has power rating" .
+<https://w3id.org/fedecom/energyasset#hasPowerRating> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasResistance
+<https://w3id.org/fedecom/energyasset#hasResistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasResistance> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasResistance> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#Resistance> .
+<https://w3id.org/fedecom/energyasset#hasResistance> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an asset to its electrical resistance value." .
+<https://w3id.org/fedecom/energyasset#hasResistance> <http://www.w3.org/2000/01/rdf-schema#label> "has resistance" .
+<https://w3id.org/fedecom/energyasset#hasResistance> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasStorageCapacity
+<https://w3id.org/fedecom/energyasset#hasStorageCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasStorageCapacity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/energyasset#hasCapacity> .
+<https://w3id.org/fedecom/energyasset#hasStorageCapacity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasStorageCapacity> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates an asset with its ability to store energy or material." .
+<https://w3id.org/fedecom/energyasset#hasStorageCapacity> <http://www.w3.org/2000/01/rdf-schema#label> "has storage capacity" .
+<https://w3id.org/fedecom/energyasset#hasStorageCapacity> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasStorageTankVolume
+<https://w3id.org/fedecom/energyasset#hasStorageTankVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasStorageTankVolume> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/energyasset#hasCharacteristic> .
+<https://w3id.org/fedecom/energyasset#hasStorageTankVolume> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasStorageTankVolume> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#StorageTankVolume> .
+<https://w3id.org/fedecom/energyasset#hasStorageTankVolume> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an asset to the volume of its storage tank." .
+<https://w3id.org/fedecom/energyasset#hasStorageTankVolume> <http://www.w3.org/2000/01/rdf-schema#label> "has storage tank volume" .
+<https://w3id.org/fedecom/energyasset#hasStorageTankVolume> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasTarget
+<https://w3id.org/fedecom/energyasset#hasTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasTarget> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasTarget> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an asset with the space it works for." .
+<https://w3id.org/fedecom/energyasset#hasTarget> <http://www.w3.org/2000/01/rdf-schema#label> "has target" .
+<https://w3id.org/fedecom/energyasset#hasTarget> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasThermalCapacity
+<https://w3id.org/fedecom/energyasset#hasThermalCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasThermalCapacity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/energyasset#hasCapacity> .
+<https://w3id.org/fedecom/energyasset#hasThermalCapacity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasThermalCapacity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#ThermalCapacity> .
+<https://w3id.org/fedecom/energyasset#hasThermalCapacity> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an asset to its thermal capacity, indicating heat storage or transfer capability." .
+<https://w3id.org/fedecom/energyasset#hasThermalCapacity> <http://www.w3.org/2000/01/rdf-schema#label> "has thermal capacity" .
+<https://w3id.org/fedecom/energyasset#hasThermalCapacity> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasThermalEfficiency
+<https://w3id.org/fedecom/energyasset#hasThermalEfficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasThermalEfficiency> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/energyasset#hasEfficiency> .
+<https://w3id.org/fedecom/energyasset#hasThermalEfficiency> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasThermalEfficiency> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#ThermalEfficiency> .
+<https://w3id.org/fedecom/energyasset#hasThermalEfficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the efficiency of thermal energy conversion for an asset." .
+<https://w3id.org/fedecom/energyasset#hasThermalEfficiency> <http://www.w3.org/2000/01/rdf-schema#label> "has thermal efficiency" .
+<https://w3id.org/fedecom/energyasset#hasThermalEfficiency> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasTilt
+<https://w3id.org/fedecom/energyasset#hasTilt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasTilt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/energyasset#hasCharacteristic> .
+<https://w3id.org/fedecom/energyasset#hasTilt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasTilt> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#Tilt> .
+<https://w3id.org/fedecom/energyasset#hasTilt> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the tilt angle of an asset (e.g., solar panel)." .
+<https://w3id.org/fedecom/energyasset#hasTilt> <http://www.w3.org/2000/01/rdf-schema#label> "has tilt" .
+<https://w3id.org/fedecom/energyasset#hasTilt> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasVolume
+<https://w3id.org/fedecom/energyasset#hasVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#hasVolume> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/energyasset#hasCharacteristic> .
+<https://w3id.org/fedecom/energyasset#hasVolume> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#hasVolume> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#Volume> .
+<https://w3id.org/fedecom/energyasset#hasVolume> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates an asset with its physical volume." .
+<https://w3id.org/fedecom/energyasset#hasVolume> <http://www.w3.org/2000/01/rdf-schema#label> "has volume" .
+<https://w3id.org/fedecom/energyasset#hasVolume> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#isSubMeterOf
+<https://w3id.org/fedecom/energyasset#isSubMeterOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/energyasset#isSubMeterOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#SubMeter> .
+<https://w3id.org/fedecom/energyasset#isSubMeterOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/energyasset#Meter> .
+<https://w3id.org/fedecom/energyasset#isSubMeterOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines a hierarchical relationship where a sub-meter asset belongs to a main meter asset." .
+<https://w3id.org/fedecom/energyasset#isSubMeterOf> <http://www.w3.org/2000/01/rdf-schema#label> "is submeter of" .
+<https://w3id.org/fedecom/energyasset#isSubMeterOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/name
+<http://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/fedecom/energyasset#connectionType
+<https://w3id.org/fedecom/energyasset#connectionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/energyasset#connectionType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/energyasset#StorageTank> .
+<https://w3id.org/fedecom/energyasset#connectionType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid1 <http://www.w3.org/2002/07/owl#oneOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "parallel" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "series" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/fedecom/energyasset#connectionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the type of connection configuration for an asset.\nAllowed values:\n\nparallel – Components are connected in parallel, sharing input and output points to maintain equal voltage.\nseries – Components are connected in sequence, so the same current flows through each component." .
+<https://w3id.org/fedecom/energyasset#connectionType> <http://www.w3.org/2000/01/rdf-schema#label> "connection type" .
+<https://w3id.org/fedecom/energyasset#connectionType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasCapacityRange
+<https://w3id.org/fedecom/energyasset#hasCapacityRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/energyasset#hasCapacityRange> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/fedecom/energyasset#hasCapacityRange> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the range of capacity values for an asset (minimum and maximum)." .
+<https://w3id.org/fedecom/energyasset#hasCapacityRange> <http://www.w3.org/2000/01/rdf-schema#label> "capacity range" .
+<https://w3id.org/fedecom/energyasset#hasCapacityRange> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasMaximumPowerRating
+<https://w3id.org/fedecom/energyasset#hasMaximumPowerRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/energyasset#hasMaximumPowerRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the maximum power rating of an asset." .
+<https://w3id.org/fedecom/energyasset#hasMaximumPowerRating> <http://www.w3.org/2000/01/rdf-schema#label> "maximum power rating" .
+<https://w3id.org/fedecom/energyasset#hasMaximumPowerRating> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasOperatingLimits
+<https://w3id.org/fedecom/energyasset#hasOperatingLimits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/fedecom/energyasset#hasSetpoint
+<https://w3id.org/fedecom/energyasset#hasSetpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/energyasset#hasSetpoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the target value or setpoint for controlling an asset (e.g., temperature, pressure)." .
+<https://w3id.org/fedecom/energyasset#hasSetpoint> <http://www.w3.org/2000/01/rdf-schema#label> "setpoint" .
+<https://w3id.org/fedecom/energyasset#hasSetpoint> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#hasState
+<https://w3id.org/fedecom/energyasset#hasState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/energyasset#hasState> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the current operational state of an asset." .
+<https://w3id.org/fedecom/energyasset#hasState> <http://www.w3.org/2000/01/rdf-schema#label> "state" .
+<https://w3id.org/fedecom/energyasset#hasState> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#isGenerationEquipment
+<https://w3id.org/fedecom/energyasset#isGenerationEquipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/energyasset#isGenerationEquipment> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean property indicating whether an asset functions as generation equipment." .
+<https://w3id.org/fedecom/energyasset#isGenerationEquipment> <http://www.w3.org/2000/01/rdf-schema#label> "is generation equipment" .
+<https://w3id.org/fedecom/energyasset#isGenerationEquipment> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#numberOfPanels
+<https://w3id.org/fedecom/energyasset#numberOfPanels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/energyasset#numberOfPanels> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the number of panels associated with a PV system." .
+<https://w3id.org/fedecom/energyasset#numberOfPanels> <http://www.w3.org/2000/01/rdf-schema#label> "number of panels" .
+<https://w3id.org/fedecom/energyasset#numberOfPanels> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/fedecom/battery#Battery
+<http://w3id.org/fedecom/battery#Battery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/fedecom/battery#Battery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+# 
+# https://w3id.org/fedecom/energyasset#AirHandlingUnit
+<https://w3id.org/fedecom/energyasset#AirHandlingUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#AirHandlingUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#HVAC> .
+<https://w3id.org/fedecom/energyasset#AirHandlingUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasCapacity> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#Capacity> .
+<https://w3id.org/fedecom/energyasset#AirHandlingUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasEfficiency> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#Efficiency> .
+<https://w3id.org/fedecom/energyasset#AirHandlingUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that conditions and circulates air as part of an HVAC system, typically including fans, filters, and heat exchangers." .
+<https://w3id.org/fedecom/energyasset#AirHandlingUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Air Handling Unit" .
+<https://w3id.org/fedecom/energyasset#AirHandlingUnit> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#Azimuth
+<https://w3id.org/fedecom/energyasset#Azimuth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#Azimuth> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Characteristic> .
+<https://w3id.org/fedecom/energyasset#Azimuth> <http://www.w3.org/2000/01/rdf-schema#comment> "The angular measurement in the horizontal plane between a reference direction (usually true north) and the direction of a solar panel." .
+<https://w3id.org/fedecom/energyasset#Azimuth> <http://www.w3.org/2000/01/rdf-schema#label> "Azimuth" .
+<https://w3id.org/fedecom/energyasset#Azimuth> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#BiomassBoiler
+<https://w3id.org/fedecom/energyasset#BiomassBoiler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#BiomassBoiler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Boiler> .
+<https://w3id.org/fedecom/energyasset#BiomassBoiler> <http://www.w3.org/2000/01/rdf-schema#comment> "A boiler that uses biomass (organic material) as fuel to produce heat or steam." .
+<https://w3id.org/fedecom/energyasset#BiomassBoiler> <http://www.w3.org/2000/01/rdf-schema#label> "Biomass Boiler" .
+<https://w3id.org/fedecom/energyasset#BiomassBoiler> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#BiomassBurner
+<https://w3id.org/fedecom/energyasset#BiomassBurner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#BiomassBurner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Burner> .
+<https://w3id.org/fedecom/energyasset#BiomassBurner> <http://www.w3.org/2000/01/rdf-schema#comment> "A burner designed to combust biomass fuel for heat generation." .
+<https://w3id.org/fedecom/energyasset#BiomassBurner> <http://www.w3.org/2000/01/rdf-schema#label> "Biomass Burner" .
+<https://w3id.org/fedecom/energyasset#BiomassBurner> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#Boiler
+<https://w3id.org/fedecom/energyasset#Boiler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#Boiler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#HVAC> .
+<https://w3id.org/fedecom/energyasset#Boiler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasCapacity> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#Capacity> .
+<https://w3id.org/fedecom/energyasset#Boiler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasEfficiency> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#Efficiency> .
+<https://w3id.org/fedecom/energyasset#Boiler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasResistance> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#Resistance> .
+<https://w3id.org/fedecom/energyasset#Boiler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#isGenerationEquipment> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/fedecom/energyasset#Boiler> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that heats water or produces steam for heating or power generation." .
+<https://w3id.org/fedecom/energyasset#Boiler> <http://www.w3.org/2000/01/rdf-schema#label> "Boiler" .
+<https://w3id.org/fedecom/energyasset#Boiler> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#Burner
+<https://w3id.org/fedecom/energyasset#Burner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#Burner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#Burner> <http://www.w3.org/2000/01/rdf-schema#comment> "A component that mixes fuel and air and initiates combustion to produce heat." .
+<https://w3id.org/fedecom/energyasset#Burner> <http://www.w3.org/2000/01/rdf-schema#label> "Burner" .
+<https://w3id.org/fedecom/energyasset#Burner> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#BypassDamper
+<https://w3id.org/fedecom/energyasset#BypassDamper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#BypassDamper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Damper> .
+<https://w3id.org/fedecom/energyasset#BypassDamper> <http://www.w3.org/2000/01/rdf-schema#comment> "A damper that redirects airflow to maintain pressure or temperature balance in HVAC systems." .
+<https://w3id.org/fedecom/energyasset#BypassDamper> <http://www.w3.org/2000/01/rdf-schema#label> "Bypass Damper" .
+<https://w3id.org/fedecom/energyasset#BypassDamper> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#COPCooling
+<https://w3id.org/fedecom/energyasset#COPCooling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#COPCooling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#CoefficientOfPerformance> .
+<https://w3id.org/fedecom/energyasset#COPCooling> <http://www.w3.org/2000/01/rdf-schema#comment> "The coefficient of performance for cooling mode." .
+<https://w3id.org/fedecom/energyasset#COPCooling> <http://www.w3.org/2000/01/rdf-schema#label> "COP Cooling" .
+<https://w3id.org/fedecom/energyasset#COPCooling> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#COPHeating
+<https://w3id.org/fedecom/energyasset#COPHeating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#COPHeating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#CoefficientOfPerformance> .
+<https://w3id.org/fedecom/energyasset#COPHeating> <http://www.w3.org/2000/01/rdf-schema#comment> "The coefficient of performance for heating mode." .
+<https://w3id.org/fedecom/energyasset#COPHeating> <http://www.w3.org/2000/01/rdf-schema#label> "COP Heating" .
+<https://w3id.org/fedecom/energyasset#COPHeating> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#Capacity
+<https://w3id.org/fedecom/energyasset#Capacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#Capacity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Characteristic> .
+<https://w3id.org/fedecom/energyasset#Capacity> <http://www.w3.org/2000/01/rdf-schema#comment> "The maximum amount of energy, power, or material that a system or component can store, produce, or handle under specified conditions." .
+<https://w3id.org/fedecom/energyasset#Capacity> <http://www.w3.org/2000/01/rdf-schema#label> "Capacity" .
+<https://w3id.org/fedecom/energyasset#Capacity> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#Characteristic
+<https://w3id.org/fedecom/energyasset#Characteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#Characteristic> <http://www.w3.org/2000/01/rdf-schema#comment> "A property or attribute that describes a specific feature or quality of an entity." .
+<https://w3id.org/fedecom/energyasset#Characteristic> <http://www.w3.org/2000/01/rdf-schema#label> "Characteristic" .
+<https://w3id.org/fedecom/energyasset#Characteristic> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#ChargeFlowRate
+<https://w3id.org/fedecom/energyasset#ChargeFlowRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#ChargeFlowRate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#FlowRate> .
+<https://w3id.org/fedecom/energyasset#ChargeFlowRate> <http://www.w3.org/2000/01/rdf-schema#comment> "The rate at which energy or material is added to a storage system during charging." .
+<https://w3id.org/fedecom/energyasset#ChargeFlowRate> <http://www.w3.org/2000/01/rdf-schema#label> "Charge Flow Rate" .
+<https://w3id.org/fedecom/energyasset#ChargeFlowRate> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#Chiller
+<https://w3id.org/fedecom/energyasset#Chiller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#Chiller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#HVAC> .
+<https://w3id.org/fedecom/energyasset#Chiller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasCapacity> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#Capacity> .
+<https://w3id.org/fedecom/energyasset#Chiller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasConversionEfficiency> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#ConversionEfficiency> .
+<https://w3id.org/fedecom/energyasset#Chiller> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that removes heat from a liquid via vapor-compression or absorption refrigeration." .
+<https://w3id.org/fedecom/energyasset#Chiller> <http://www.w3.org/2000/01/rdf-schema#label> "Chiller" .
+<https://w3id.org/fedecom/energyasset#Chiller> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#CoefficientOfPerformance
+<https://w3id.org/fedecom/energyasset#CoefficientOfPerformance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#CoefficientOfPerformance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Characteristic> .
+<https://w3id.org/fedecom/energyasset#CoefficientOfPerformance> <http://www.w3.org/2000/01/rdf-schema#comment> "A ratio that measures the efficiency of a heating or cooling system." .
+<https://w3id.org/fedecom/energyasset#CoefficientOfPerformance> <http://www.w3.org/2000/01/rdf-schema#label> "Coefficient of Performance" .
+<https://w3id.org/fedecom/energyasset#CoefficientOfPerformance> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#ColdStorageTank
+<https://w3id.org/fedecom/energyasset#ColdStorageTank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#ColdStorageTank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#StorageTank> .
+<https://w3id.org/fedecom/energyasset#ColdStorageTank> <http://www.w3.org/2000/01/rdf-schema#comment> "A tank used to store chilled water or other fluids for cooling applications." .
+<https://w3id.org/fedecom/energyasset#ColdStorageTank> <http://www.w3.org/2000/01/rdf-schema#label> "Cold Storage Tank" .
+<https://w3id.org/fedecom/energyasset#ColdStorageTank> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#Collector
+<https://w3id.org/fedecom/energyasset#Collector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#Collector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#Collector> <http://www.w3.org/2000/01/rdf-schema#comment> "A component that captures and transfers energy, typically solar thermal collectors for heat." .
+<https://w3id.org/fedecom/energyasset#Collector> <http://www.w3.org/2000/01/rdf-schema#label> "Collector" .
+<https://w3id.org/fedecom/energyasset#Collector> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#CombinedHeatPower
+<https://w3id.org/fedecom/energyasset#CombinedHeatPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#CombinedHeatPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#CombinedHeatPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasElectricCapacity> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#ElectricCapacity> .
+<https://w3id.org/fedecom/energyasset#CombinedHeatPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasElectricEfficiency> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#ElectricEfficiency> .
+<https://w3id.org/fedecom/energyasset#CombinedHeatPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasThermalCapacity> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#ThermalCapacity> .
+<https://w3id.org/fedecom/energyasset#CombinedHeatPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasThermalEfficiency> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#ThermalEfficiency> .
+<https://w3id.org/fedecom/energyasset#CombinedHeatPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#isGenerationEquipment> .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/fedecom/energyasset#CombinedHeatPower> <http://www.w3.org/2000/01/rdf-schema#comment> "A system that simultaneously generates electricity and useful heat from a single energy source." .
+<https://w3id.org/fedecom/energyasset#CombinedHeatPower> <http://www.w3.org/2000/01/rdf-schema#label> "Combined Heat Power" .
+<https://w3id.org/fedecom/energyasset#CombinedHeatPower> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#Component
+<https://w3id.org/fedecom/energyasset#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#Component> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual part or element of a system that performs a specific function." .
+<https://w3id.org/fedecom/energyasset#Component> <http://www.w3.org/2000/01/rdf-schema#label> "Component" .
+<https://w3id.org/fedecom/energyasset#Component> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#CondensingGasBoiler
+<https://w3id.org/fedecom/energyasset#CondensingGasBoiler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#CondensingGasBoiler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#NaturalGasBoiler> .
+<https://w3id.org/fedecom/energyasset#CondensingGasBoiler> <http://www.w3.org/2000/01/rdf-schema#comment> "A high-efficiency gas boiler that recovers latent heat from exhaust gases by condensing water vapor." .
+<https://w3id.org/fedecom/energyasset#CondensingGasBoiler> <http://www.w3.org/2000/01/rdf-schema#label> "Condensing Gas Boiler" .
+<https://w3id.org/fedecom/energyasset#CondensingGasBoiler> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#ControlParameter
+<https://w3id.org/fedecom/energyasset#ControlParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#ControlParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "A variable or setting used to regulate or adjust the behavior of a system or process." .
+<https://w3id.org/fedecom/energyasset#ControlParameter> <http://www.w3.org/2000/01/rdf-schema#label> "Control Parameter" .
+<https://w3id.org/fedecom/energyasset#ControlParameter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#ConventionalGasBoiler
+<https://w3id.org/fedecom/energyasset#ConventionalGasBoiler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#ConventionalGasBoiler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#NaturalGasBoiler> .
+<https://w3id.org/fedecom/energyasset#ConventionalGasBoiler> <http://www.w3.org/2000/01/rdf-schema#comment> "A standard gas-fired boiler that heats water without condensing exhaust gases." .
+<https://w3id.org/fedecom/energyasset#ConventionalGasBoiler> <http://www.w3.org/2000/01/rdf-schema#label> "Conventional Gas Boiler" .
+<https://w3id.org/fedecom/energyasset#ConventionalGasBoiler> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#ConversionEfficiency
+<https://w3id.org/fedecom/energyasset#ConversionEfficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#ConversionEfficiency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Efficiency> .
+<https://w3id.org/fedecom/energyasset#ConversionEfficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "The efficiency with which a system converts one form of energy into another (e.g., chemical to electrical)." .
+<https://w3id.org/fedecom/energyasset#ConversionEfficiency> <http://www.w3.org/2000/01/rdf-schema#label> "Conversion Efficiency" .
+<https://w3id.org/fedecom/energyasset#ConversionEfficiency> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#Damper
+<https://w3id.org/fedecom/energyasset#Damper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#Damper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#HVAC> .
+<https://w3id.org/fedecom/energyasset#Damper> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that regulates airflow in ducts or ventilation systems." .
+<https://w3id.org/fedecom/energyasset#Damper> <http://www.w3.org/2000/01/rdf-schema#label> "Damper" .
+<https://w3id.org/fedecom/energyasset#Damper> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#Device
+<https://w3id.org/fedecom/energyasset#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/name> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/fedecom/energyasset#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A physical or virtual entity designed to perform a specific function within a system, typically involving measurement, control, conversion, or communication of energy, signals, or materials." .
+<https://w3id.org/fedecom/energyasset#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device" .
+<https://w3id.org/fedecom/energyasset#Device> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#DischargeFlowRate
+<https://w3id.org/fedecom/energyasset#DischargeFlowRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#DischargeFlowRate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#FlowRate> .
+<https://w3id.org/fedecom/energyasset#DischargeFlowRate> <http://www.w3.org/2000/01/rdf-schema#comment> "The rate at which energy or material is removed from a storage system during discharging." .
+<https://w3id.org/fedecom/energyasset#DischargeFlowRate> <http://www.w3.org/2000/01/rdf-schema#label> "Discharge Flow Rate" .
+<https://w3id.org/fedecom/energyasset#DischargeFlowRate> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#DistrictHeatingPlant
+<https://w3id.org/fedecom/energyasset#DistrictHeatingPlant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#DistrictHeatingPlant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#DistrictHeatingPlant> <http://www.w3.org/2000/01/rdf-schema#comment> "A centralized facility that produces heat and distributes it to multiple buildings through a network." .
+<https://w3id.org/fedecom/energyasset#DistrictHeatingPlant> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Heating Plant" .
+<https://w3id.org/fedecom/energyasset#DistrictHeatingPlant> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#EVCharger
+<https://w3id.org/fedecom/energyasset#EVCharger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#EVCharger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#EVCharger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasCapacity> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#Capacity> .
+<https://w3id.org/fedecom/energyasset#EVCharger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasCoefficientOfPerformance> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#CoefficientOfPerformance> .
+<https://w3id.org/fedecom/energyasset#EVCharger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasOperatingLimits> .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#OperatingLimits> .
+<https://w3id.org/fedecom/energyasset#EVCharger> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that supplies electric energy to recharge electric vehicle batteries." .
+<https://w3id.org/fedecom/energyasset#EVCharger> <http://www.w3.org/2000/01/rdf-schema#label> "EV Charger" .
+<https://w3id.org/fedecom/energyasset#EVCharger> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#EVChargingPoint
+<https://w3id.org/fedecom/energyasset#EVChargingPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#EVChargingPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#EVChargingPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A physical location equipped with an EV charger for vehicle charging." .
+<https://w3id.org/fedecom/energyasset#EVChargingPoint> <http://www.w3.org/2000/01/rdf-schema#label> "EV Charging Point" .
+<https://w3id.org/fedecom/energyasset#EVChargingPoint> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#Efficiency
+<https://w3id.org/fedecom/energyasset#Efficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#Efficiency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Characteristic> .
+<https://w3id.org/fedecom/energyasset#Efficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "The ratio of useful output (energy, power, or work) to the total input." .
+<https://w3id.org/fedecom/energyasset#Efficiency> <http://www.w3.org/2000/01/rdf-schema#label> "Efficiency" .
+<https://w3id.org/fedecom/energyasset#Efficiency> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#ElectricBoiler
+<https://w3id.org/fedecom/energyasset#ElectricBoiler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#ElectricBoiler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Boiler> .
+<https://w3id.org/fedecom/energyasset#ElectricBoiler> <http://www.w3.org/2000/01/rdf-schema#comment> "A boiler that uses electrical energy to heat water or produce steam." .
+<https://w3id.org/fedecom/energyasset#ElectricBoiler> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Boiler" .
+<https://w3id.org/fedecom/energyasset#ElectricBoiler> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#ElectricCapacity
+<https://w3id.org/fedecom/energyasset#ElectricCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#ElectricCapacity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Capacity> .
+# 
+# https://w3id.org/fedecom/energyasset#ElectricEfficiency
+<https://w3id.org/fedecom/energyasset#ElectricEfficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#ElectricEfficiency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Efficiency> .
+<https://w3id.org/fedecom/energyasset#ElectricEfficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "The efficiency of converting electrical energy into useful work or another energy form." .
+<https://w3id.org/fedecom/energyasset#ElectricEfficiency> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Efficiency" .
+<https://w3id.org/fedecom/energyasset#ElectricEfficiency> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#ElectricHeater
+<https://w3id.org/fedecom/energyasset#ElectricHeater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#ElectricHeater> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Heater> .
+<https://w3id.org/fedecom/energyasset#ElectricHeater> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasState> .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/fedecom/energyasset#ElectricHeater> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that converts electrical energy into heat." .
+<https://w3id.org/fedecom/energyasset#ElectricHeater> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Heater" .
+<https://w3id.org/fedecom/energyasset#ElectricHeater> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#ElectricMeter
+<https://w3id.org/fedecom/energyasset#ElectricMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#ElectricMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Meter> .
+<https://w3id.org/fedecom/energyasset#ElectricMeter> <http://www.w3.org/2000/01/rdf-schema#comment> "A meter that measures electrical energy consumption" .
+<https://w3id.org/fedecom/energyasset#ElectricMeter> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Meter" .
+<https://w3id.org/fedecom/energyasset#ElectricMeter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#Electrolizer
+<https://w3id.org/fedecom/energyasset#Electrolizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#Electrolizer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#Electrolizer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasPower> .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#Power> .
+<https://w3id.org/fedecom/energyasset#Electrolizer> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that uses electricity to split water into hydrogen and oxygen through electrolysis." .
+<https://w3id.org/fedecom/energyasset#Electrolizer> <http://www.w3.org/2000/01/rdf-schema#label> "Electrolizer" .
+<https://w3id.org/fedecom/energyasset#Electrolizer> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#EnergyFlowRate
+<https://w3id.org/fedecom/energyasset#EnergyFlowRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#EnergyFlowRate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#FlowRate> .
+<https://w3id.org/fedecom/energyasset#EnergyFlowRate> <http://www.w3.org/2000/01/rdf-schema#comment> "The amount of energy transferred per unit of time through a system or component." .
+<https://w3id.org/fedecom/energyasset#EnergyFlowRate> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Flow Rate" .
+<https://w3id.org/fedecom/energyasset#EnergyFlowRate> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#Extractor
+<https://w3id.org/fedecom/energyasset#Extractor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#Extractor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#Extractor> <http://www.w3.org/2000/01/rdf-schema#comment> "A fan or device that removes air, fumes, or gases from a space." .
+<https://w3id.org/fedecom/energyasset#Extractor> <http://www.w3.org/2000/01/rdf-schema#label> "Extractor" .
+<https://w3id.org/fedecom/energyasset#Extractor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#FanCoil
+<https://w3id.org/fedecom/energyasset#FanCoil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#FanCoil> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#FanCoil> <http://www.w3.org/2000/01/rdf-schema#comment> "A unit consisting of a fan and a heat exchanger coil used for heating or cooling air." .
+<https://w3id.org/fedecom/energyasset#FanCoil> <http://www.w3.org/2000/01/rdf-schema#label> "Fan Coil" .
+<https://w3id.org/fedecom/energyasset#FanCoil> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#FlowRate
+<https://w3id.org/fedecom/energyasset#FlowRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#FlowRate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Characteristic> .
+<https://w3id.org/fedecom/energyasset#FlowRate> <http://www.w3.org/2000/01/rdf-schema#comment> "The volume or mass of a substance (e.g., fluid, gas) passing through a point or system per unit of time." .
+<https://w3id.org/fedecom/energyasset#FlowRate> <http://www.w3.org/2000/01/rdf-schema#label> "Flow Rate" .
+<https://w3id.org/fedecom/energyasset#FlowRate> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#FuelCell
+<https://w3id.org/fedecom/energyasset#FuelCell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#FuelCell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#FuelCell> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that converts chemical energy from hydrogen or other fuels into electricity through electrochemical reactions." .
+<https://w3id.org/fedecom/energyasset#FuelCell> <http://www.w3.org/2000/01/rdf-schema#label> "Fuel Cell" .
+<https://w3id.org/fedecom/energyasset#FuelCell> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#FumeRecuperator
+<https://w3id.org/fedecom/energyasset#FumeRecuperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#FumeRecuperator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#FumeRecuperator> <http://www.w3.org/2000/01/rdf-schema#comment> "A heat recovery device that captures heat from exhaust fumes for reuse." .
+<https://w3id.org/fedecom/energyasset#FumeRecuperator> <http://www.w3.org/2000/01/rdf-schema#label> "Fume Recuperator" .
+<https://w3id.org/fedecom/energyasset#FumeRecuperator> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#GridMeter
+<https://w3id.org/fedecom/energyasset#GridMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#GridMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Meter> .
+<https://w3id.org/fedecom/energyasset#GridMeter> <http://www.w3.org/2000/01/rdf-schema#comment> "A meter that measures energy exchanged between a building and the electrical grid." .
+<https://w3id.org/fedecom/energyasset#GridMeter> <http://www.w3.org/2000/01/rdf-schema#label> "Grid Meter" .
+<https://w3id.org/fedecom/energyasset#GridMeter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#H2StorageTank
+<https://w3id.org/fedecom/energyasset#H2StorageTank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#H2StorageTank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#StorageTank> .
+<https://w3id.org/fedecom/energyasset#H2StorageTank> <http://www.w3.org/2000/01/rdf-schema#comment> "A tank specifically designed to store hydrogen safely under controlled conditions." .
+<https://w3id.org/fedecom/energyasset#H2StorageTank> <http://www.w3.org/2000/01/rdf-schema#label> "Hydrogen Storage Tank" .
+<https://w3id.org/fedecom/energyasset#H2StorageTank> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#HVAC
+<https://w3id.org/fedecom/energyasset#HVAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#HVAC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#HVAC> <http://www.w3.org/2000/01/rdf-schema#comment> "Heating, Ventilation, and Air Conditioning equipment that regulate indoor climate." .
+<https://w3id.org/fedecom/energyasset#HVAC> <http://www.w3.org/2000/01/rdf-schema#label> "Heating Ventilation Air Conditioning Equipment" .
+<https://w3id.org/fedecom/energyasset#HVAC> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#HeatMeter
+<https://w3id.org/fedecom/energyasset#HeatMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#HeatMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Meter> .
+<https://w3id.org/fedecom/energyasset#HeatMeter> <http://www.w3.org/2000/01/rdf-schema#comment> "A meter that measures thermal energy consumption." .
+<https://w3id.org/fedecom/energyasset#HeatMeter> <http://www.w3.org/2000/01/rdf-schema#label> "Heat Meter" .
+<https://w3id.org/fedecom/energyasset#HeatMeter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#HeatStorageTank
+<https://w3id.org/fedecom/energyasset#HeatStorageTank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#HeatStorageTank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#StorageTank> .
+<https://w3id.org/fedecom/energyasset#HeatStorageTank> <http://www.w3.org/2000/01/rdf-schema#comment> "A tank that stores thermal energy, typically in the form of hot water or other heat-retaining materials." .
+<https://w3id.org/fedecom/energyasset#HeatStorageTank> <http://www.w3.org/2000/01/rdf-schema#label> "Heat Storage Tank" .
+<https://w3id.org/fedecom/energyasset#HeatStorageTank> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#Heater
+<https://w3id.org/fedecom/energyasset#Heater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#Heater> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#Heater> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that converts energy (typically electrical, thermal, or chemical) into heat for the purpose of warming air, water, or other substances within a system or space." .
+<https://w3id.org/fedecom/energyasset#Heater> <http://www.w3.org/2000/01/rdf-schema#label> "Heater" .
+<https://w3id.org/fedecom/energyasset#Heater> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#HighTemperatureCircuit
+<https://w3id.org/fedecom/energyasset#HighTemperatureCircuit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#HighTemperatureCircuit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#HighTemperatureCircuit> <http://www.w3.org/2000/01/rdf-schema#comment> "A heating circuit designed to operate at high temperatures, typically for industrial or specialized applications." .
+<https://w3id.org/fedecom/energyasset#HighTemperatureCircuit> <http://www.w3.org/2000/01/rdf-schema#label> "High Temperature Circuit" .
+<https://w3id.org/fedecom/energyasset#HighTemperatureCircuit> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#HumidityTemperatureSensor
+<https://w3id.org/fedecom/energyasset#HumidityTemperatureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#HumidityTemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Sensor> .
+<https://w3id.org/fedecom/energyasset#HumidityTemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that measures both humidity and temperature in an environment." .
+<https://w3id.org/fedecom/energyasset#HumidityTemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Humidity-Temperature Sensor" .
+<https://w3id.org/fedecom/energyasset#HumidityTemperatureSensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#Meter
+<https://w3id.org/fedecom/energyasset#Meter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#Meter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#Meter> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that measures and records the consumption or flow of energy or resources." .
+<https://w3id.org/fedecom/energyasset#Meter> <http://www.w3.org/2000/01/rdf-schema#label> "Meter" .
+<https://w3id.org/fedecom/energyasset#Meter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#Model
+<https://w3id.org/fedecom/energyasset#Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/fedecom/energyasset#NaturalGasBoiler
+<https://w3id.org/fedecom/energyasset#NaturalGasBoiler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#NaturalGasBoiler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Boiler> .
+# 
+# https://w3id.org/fedecom/energyasset#OperatingLimits
+<https://w3id.org/fedecom/energyasset#OperatingLimits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#OperatingLimits> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Characteristic> .
+<https://w3id.org/fedecom/energyasset#OperatingLimits> <http://www.w3.org/2000/01/rdf-schema#comment> "The predefined boundaries or thresholds within which a system or component can operate safely and effectively." .
+<https://w3id.org/fedecom/energyasset#OperatingLimits> <http://www.w3.org/2000/01/rdf-schema#label> "Operating Limits" .
+<https://w3id.org/fedecom/energyasset#OperatingLimits> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#PVSystem
+<https://w3id.org/fedecom/energyasset#PVSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#PVSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#PVSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasAzimuth> .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#Azimuth> .
+<https://w3id.org/fedecom/energyasset#PVSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasTilt> .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#Tilt> .
+<https://w3id.org/fedecom/energyasset#PVSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A photovoltaic system that converts solar energy into electrical energy using solar panels and associated components." .
+<https://w3id.org/fedecom/energyasset#PVSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Photovoltaic System" .
+<https://w3id.org/fedecom/energyasset#PVSystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#Power
+<https://w3id.org/fedecom/energyasset#Power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#Power> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Characteristic> .
+<https://w3id.org/fedecom/energyasset#Power> <http://www.w3.org/2000/01/rdf-schema#comment> "The rate at which energy is transferred, converted, or consumed by a system or component." .
+<https://w3id.org/fedecom/energyasset#Power> <http://www.w3.org/2000/01/rdf-schema#label> "Power" .
+<https://w3id.org/fedecom/energyasset#Power> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#PowerFlowRate
+<https://w3id.org/fedecom/energyasset#PowerFlowRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#PowerFlowRate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#FlowRate> .
+<https://w3id.org/fedecom/energyasset#PowerFlowRate> <http://www.w3.org/2000/01/rdf-schema#comment> "The rate at which power is transmitted or distributed through a system." .
+<https://w3id.org/fedecom/energyasset#PowerFlowRate> <http://www.w3.org/2000/01/rdf-schema#label> "Power Flow Rate" .
+<https://w3id.org/fedecom/energyasset#PowerFlowRate> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#PowerRating
+<https://w3id.org/fedecom/energyasset#PowerRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#PowerRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Characteristic> .
+<https://w3id.org/fedecom/energyasset#PowerRating> <http://www.w3.org/2000/01/rdf-schema#comment> "The maximum continuous power that a device or system can deliver or handle under specified conditions." .
+<https://w3id.org/fedecom/energyasset#PowerRating> <http://www.w3.org/2000/01/rdf-schema#label> "Power Rating" .
+<https://w3id.org/fedecom/energyasset#PowerRating> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#Resistance
+<https://w3id.org/fedecom/energyasset#Resistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#Resistance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Characteristic> .
+<https://w3id.org/fedecom/energyasset#Resistance> <http://www.w3.org/2000/01/rdf-schema#comment> "A measure of the opposition to the flow of electric current." .
+<https://w3id.org/fedecom/energyasset#Resistance> <http://www.w3.org/2000/01/rdf-schema#label> "Resistance" .
+<https://w3id.org/fedecom/energyasset#Resistance> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#STC
+<https://w3id.org/fedecom/energyasset#STC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#STC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#STC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasCapacity> .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#Capacity> .
+# 
+# https://w3id.org/fedecom/energyasset#Sensor
+<https://w3id.org/fedecom/energyasset#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that detects and measures physical properties (e.g., temperature, pressure, light) and converts them into signals for monitoring or control." .
+<https://w3id.org/fedecom/energyasset#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor" .
+<https://w3id.org/fedecom/energyasset#Sensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#SmartMeter
+<https://w3id.org/fedecom/energyasset#SmartMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#SmartMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Meter> .
+<https://w3id.org/fedecom/energyasset#SmartMeter> <http://www.w3.org/2000/01/rdf-schema#comment> "An advanced meter that records consumption and communicates data digitally for monitoring and control." .
+<https://w3id.org/fedecom/energyasset#SmartMeter> <http://www.w3.org/2000/01/rdf-schema#label> "Smart Meter" .
+<https://w3id.org/fedecom/energyasset#SmartMeter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#StorageTank
+<https://w3id.org/fedecom/energyasset#StorageTank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#StorageTank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Tank> .
+<https://w3id.org/fedecom/energyasset#StorageTank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasChargeFlowRate> .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#ChargeFlowRate> .
+<https://w3id.org/fedecom/energyasset#StorageTank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasDischargeFlowRate> .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#DischargeFlowRate> .
+<https://w3id.org/fedecom/energyasset#StorageTank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasVolume> .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#Volume> .
+<https://w3id.org/fedecom/energyasset#StorageTank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#connectionType> .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/fedecom/energyasset#StorageTank> <http://www.w3.org/2000/01/rdf-schema#comment> "A container designed to store liquids or gases for later use." .
+<https://w3id.org/fedecom/energyasset#StorageTank> <http://www.w3.org/2000/01/rdf-schema#label> "Storage Tank" .
+<https://w3id.org/fedecom/energyasset#StorageTank> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#StorageTankVolume
+<https://w3id.org/fedecom/energyasset#StorageTankVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#StorageTankVolume> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Volume> .
+<https://w3id.org/fedecom/energyasset#StorageTankVolume> <http://www.w3.org/2000/01/rdf-schema#comment> "The total internal volume of a tank designed to store fluids or gases." .
+<https://w3id.org/fedecom/energyasset#StorageTankVolume> <http://www.w3.org/2000/01/rdf-schema#label> "Storage Tank Volume" .
+<https://w3id.org/fedecom/energyasset#StorageTankVolume> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#SubMeter
+<https://w3id.org/fedecom/energyasset#SubMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#SubMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Meter> .
+<https://w3id.org/fedecom/energyasset#SubMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#isSubMeterOf> .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#Meter> .
+<https://w3id.org/fedecom/energyasset#SubMeter> <http://www.w3.org/2000/01/rdf-schema#comment> "A meter installed downstream of a main meter to measure consumption for a specific area or device." .
+<https://w3id.org/fedecom/energyasset#SubMeter> <http://www.w3.org/2000/01/rdf-schema#label> "Submeter" .
+<https://w3id.org/fedecom/energyasset#SubMeter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#Tank
+<https://w3id.org/fedecom/energyasset#Tank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#Tank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+# 
+# https://w3id.org/fedecom/energyasset#ThermalCapacity
+<https://w3id.org/fedecom/energyasset#ThermalCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#ThermalCapacity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Capacity> .
+# 
+# https://w3id.org/fedecom/energyasset#ThermalEfficiency
+<https://w3id.org/fedecom/energyasset#ThermalEfficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#ThermalEfficiency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Efficiency> .
+<https://w3id.org/fedecom/energyasset#ThermalEfficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "The efficiency of converting thermal energy into useful work or another energy form." .
+<https://w3id.org/fedecom/energyasset#ThermalEfficiency> <http://www.w3.org/2000/01/rdf-schema#label> "Thermal Efficiency" .
+<https://w3id.org/fedecom/energyasset#ThermalEfficiency> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#ThermalStorageTank
+<https://w3id.org/fedecom/energyasset#ThermalStorageTank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#ThermalStorageTank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#StorageTank> .
+<https://w3id.org/fedecom/energyasset#ThermalStorageTank> <http://www.w3.org/2000/01/rdf-schema#comment> "A tank that stores thermal energy for heating or cooling purposes, often using phase-change materials or water." .
+<https://w3id.org/fedecom/energyasset#ThermalStorageTank> <http://www.w3.org/2000/01/rdf-schema#label> "Thermal Storage Tank" .
+<https://w3id.org/fedecom/energyasset#ThermalStorageTank> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#Tilt
+<https://w3id.org/fedecom/energyasset#Tilt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#Tilt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Characteristic> .
+<https://w3id.org/fedecom/energyasset#Tilt> <http://www.w3.org/2000/01/rdf-schema#comment> "The angle between a surface (e.g., solar panel) and the horizontal plane." .
+<https://w3id.org/fedecom/energyasset#Tilt> <http://www.w3.org/2000/01/rdf-schema#label> "Tilt" .
+<https://w3id.org/fedecom/energyasset#Tilt> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#VoltageTransformer
+<https://w3id.org/fedecom/energyasset#VoltageTransformer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#VoltageTransformer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#VoltageTransformer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasPowerRating> .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#PowerRating> .
+<https://w3id.org/fedecom/energyasset#VoltageTransformer> <http://www.w3.org/2000/01/rdf-schema#comment> "An electrical device that changes the voltage level of alternating current (AC) in a power system." .
+<https://w3id.org/fedecom/energyasset#VoltageTransformer> <http://www.w3.org/2000/01/rdf-schema#label> "Voltage Transformer" .
+<https://w3id.org/fedecom/energyasset#VoltageTransformer> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#Volume
+<https://w3id.org/fedecom/energyasset#Volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#Volume> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Characteristic> .
+<https://w3id.org/fedecom/energyasset#Volume> <http://www.w3.org/2000/01/rdf-schema#comment> "The amount of three-dimensional space occupied by an object or substance." .
+<https://w3id.org/fedecom/energyasset#Volume> <http://www.w3.org/2000/01/rdf-schema#label> "Volume" .
+<https://w3id.org/fedecom/energyasset#Volume> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/energyasset#3WayValve
+<https://w3id.org/fedecom/energyasset#3WayValve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/energyasset#3WayValve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/fedecom/energyasset#3WayValve> <http://www.w3.org/2000/01/rdf-schema#comment> "A valve with three ports used to control the flow and mixing of fluids in heating or cooling circuits." .
+<https://w3id.org/fedecom/energyasset#3WayValve> <http://www.w3.org/2000/01/rdf-schema#label> "3-Way Valve" .
+<https://w3id.org/fedecom/energyasset#3WayValve> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/hpont#CoolingHeatPump
+<https://w3id.org/hpont#CoolingHeatPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/hpont#CoolingHeatPump> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hpont#HeatPumpSystem> .
+# 
+# https://w3id.org/hpont#HeatPumpSystem
+<https://w3id.org/hpont#HeatPumpSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/energyasset#Device> .
+<https://w3id.org/hpont#HeatPumpSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasCapacity> .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#Capacity> .
+<https://w3id.org/hpont#HeatPumpSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasCoefficientOfPerformance> .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#CoefficientOfPerformance> .
+<https://w3id.org/hpont#HeatPumpSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#hasStorageTankVolume> .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/energyasset#StorageTankVolume> .
+<https://w3id.org/hpont#HeatPumpSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/energyasset#isGenerationEquipment> .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://w3id.org/hpont#HeatingHeatPump
+<https://w3id.org/hpont#HeatingHeatPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/hpont#HeatingHeatPump> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hpont#HeatPumpSystem> .
+# 
+# https://w3id.org/hpont#ReversibleHeatPump
+<https://w3id.org/hpont#ReversibleHeatPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/hpont#ReversibleHeatPump> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/hpont#HeatPumpSystem> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fedecom/energyasset#LIC_PV2
+<https://w3id.org/fedecom/energyasset#LIC_PV2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://w3id.org/fedecom/energyasset#hasOperatingLimits> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an asset to its operational boundaries or thresholds." .
+<https://w3id.org/fedecom/energyasset#hasOperatingLimits> <http://www.w3.org/2000/01/rdf-schema#label> "has operating limits" .
+<https://w3id.org/fedecom/energyasset#hasOperatingLimits> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

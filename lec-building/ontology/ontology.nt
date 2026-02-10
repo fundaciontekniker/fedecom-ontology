@@ -1,0 +1,424 @@
+<https://w3id.org/fedecom/lec-building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/fedecom/lec-building> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/fedecom/units> .
+<https://w3id.org/fedecom/lec-building> <http://creativecommons.org/ns#license> "http://purl.org/NET/rdflicense/cc-by4.0" .
+<https://w3id.org/fedecom/lec-building> <http://purl.org/dc/terms/contributor> "Ignacio Lázaro (Tekniker) <ignacio.lazaro@tekniker.es>\nAndoni Osorio (Tekniker) <andoni.osorio@tekniker.es>\nMarko Jelić (Institut Mihajlo Pupin) <marko.jelic@pupin.rs>\nSpyros Tzavikas (Grid Singularity) <spyros@gridsingularity.com>" .
+<https://w3id.org/fedecom/lec-building> <http://purl.org/dc/terms/created> "" .
+<https://w3id.org/fedecom/lec-building> <http://purl.org/dc/terms/creator> "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>" .
+<https://w3id.org/fedecom/lec-building> <http://purl.org/dc/terms/description> "This ontology module includes the necessary classes and properties to characterize energy communities in terms of the buildings included in them." .
+<https://w3id.org/fedecom/lec-building> <http://purl.org/dc/terms/title> "LEC-Building: Energy Communities and Buildings Characterization module for the FEDECOM Ontology" .
+<https://w3id.org/fedecom/lec-building> <http://purl.org/vocab/vann/preferredNamespacePrefix> "lec-building" .
+<https://w3id.org/fedecom/lec-building> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/fedecom/lec-building#" .
+<https://w3id.org/fedecom/lec-building> <http://www.w3.org/2002/07/owl#versionInfo> "" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fedecom/lec-building#hasArea
+<https://w3id.org/fedecom/lec-building#hasArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/lec-building#hasArea> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/lec-building#BuildingArea> .
+<https://w3id.org/fedecom/lec-building#hasArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an entity to its corresponding Area value." .
+<https://w3id.org/fedecom/lec-building#hasArea> <http://www.w3.org/2000/01/rdf-schema#label> "has area" .
+<https://w3id.org/fedecom/lec-building#hasArea> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#hasBuildingTypology
+<https://w3id.org/fedecom/lec-building#hasBuildingTypology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/lec-building#hasBuildingTypology> <http://www.w3.org/2000/01/rdf-schema#label> "has building typology" .
+<https://w3id.org/fedecom/lec-building#hasBuildingTypology> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "in study" .
+# 
+# https://w3id.org/fedecom/lec-building#hasCircuit
+<https://w3id.org/fedecom/lec-building#hasCircuit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/lec-building#hasCircuit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/lec-building#Building> .
+<https://w3id.org/fedecom/lec-building#hasCircuit> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/lec-building#Circuit> .
+<https://w3id.org/fedecom/lec-building#hasCircuit> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a Building entity to an electrical circuit that supplies or distributes power within the building." .
+<https://w3id.org/fedecom/lec-building#hasCircuit> <http://www.w3.org/2000/01/rdf-schema#label> "has circuit" .
+<https://w3id.org/fedecom/lec-building#hasCircuit> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#hasConsumption
+<https://w3id.org/fedecom/lec-building#hasConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/lec-building#hasConsumption> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/lec-building#Building> .
+<https://w3id.org/fedecom/lec-building#hasConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "has consumption" .
+<https://w3id.org/fedecom/lec-building#hasConsumption> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "in study" .
+# 
+# https://w3id.org/fedecom/lec-building#hasElement
+<https://w3id.org/fedecom/lec-building#hasElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/lec-building#hasElement> <http://www.w3.org/2000/01/rdf-schema#label> "has element" .
+<https://w3id.org/fedecom/lec-building#hasElement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#hasEnergyAsset
+<https://w3id.org/fedecom/lec-building#hasEnergyAsset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/lec-building#hasEnergyAsset> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/lec-building#hasElement> .
+<https://w3id.org/fedecom/lec-building#hasEnergyAsset> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an entity (usually Building) to an asset that generates, stores, or manages energy (e.g., solar panel, battery)." .
+<https://w3id.org/fedecom/lec-building#hasEnergyAsset> <http://www.w3.org/2000/01/rdf-schema#label> "has energy asset" .
+<https://w3id.org/fedecom/lec-building#hasEnergyAsset> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#hasEquipment
+<https://w3id.org/fedecom/lec-building#hasEquipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/lec-building#hasEquipment> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/lec-building#hasElement> .
+<https://w3id.org/fedecom/lec-building#hasEquipment> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects an entity (usually Building) to devices or machinery used for specific operations or processes." .
+<https://w3id.org/fedecom/lec-building#hasEquipment> <http://www.w3.org/2000/01/rdf-schema#label> "has equipment" .
+<https://w3id.org/fedecom/lec-building#hasEquipment> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#hasFloor
+<https://w3id.org/fedecom/lec-building#hasFloor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/lec-building#hasFloor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/lec-building#Building> .
+<https://w3id.org/fedecom/lec-building#hasFloor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/lec-building#Floor> .
+<https://w3id.org/fedecom/lec-building#hasFloor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Building with the Floors that it is composed of." .
+<https://w3id.org/fedecom/lec-building#hasFloor> <http://www.w3.org/2000/01/rdf-schema#label> "has floor" .
+<https://w3id.org/fedecom/lec-building#hasFloor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#hasLocation
+<https://w3id.org/fedecom/lec-building#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/lec-building#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/lec-building#Building> .
+<https://w3id.org/fedecom/lec-building#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/lec-building#LEC> .
+<https://w3id.org/fedecom/lec-building#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/lec-building#Location> .
+<https://w3id.org/fedecom/lec-building#hasLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates an entity with a geographic or spatial position." .
+<https://w3id.org/fedecom/lec-building#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has location" .
+<https://w3id.org/fedecom/lec-building#hasLocation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#hasParticipant
+<https://w3id.org/fedecom/lec-building#hasParticipant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/lec-building#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/lec-building#Site> .
+<https://w3id.org/fedecom/lec-building#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/lec-building#Building> .
+<https://w3id.org/fedecom/lec-building#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Site with the Buildings it is composed of." .
+<https://w3id.org/fedecom/lec-building#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#label> "has participant" .
+<https://w3id.org/fedecom/lec-building#hasParticipant> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#hasRoom
+<https://w3id.org/fedecom/lec-building#hasRoom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/lec-building#hasRoom> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/lec-building#Floor> .
+<https://w3id.org/fedecom/lec-building#hasRoom> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/lec-building#Room> .
+<https://w3id.org/fedecom/lec-building#hasRoom> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Floor with the Rooms included in it." .
+<https://w3id.org/fedecom/lec-building#hasRoom> <http://www.w3.org/2000/01/rdf-schema#label> "has room" .
+<https://w3id.org/fedecom/lec-building#hasRoom> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#hasSite
+<https://w3id.org/fedecom/lec-building#hasSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/lec-building#hasSite> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/lec-building#LEC> .
+<https://w3id.org/fedecom/lec-building#hasSite> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/lec-building#Site> .
+<https://w3id.org/fedecom/lec-building#hasSite> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a LEC with the Sites it includes." .
+<https://w3id.org/fedecom/lec-building#hasSite> <http://www.w3.org/2000/01/rdf-schema#label> "has site" .
+<https://w3id.org/fedecom/lec-building#hasSite> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/name
+<http://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#comment> "Name or identifier for an entity." .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+<http://schema.org/name> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#lat
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#long
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/fedecom/lec-building#UUID
+<https://w3id.org/fedecom/lec-building#UUID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/lec-building#UUID> <http://www.w3.org/2000/01/rdf-schema#comment> "UUID of an entity." .
+<https://w3id.org/fedecom/lec-building#UUID> <http://www.w3.org/2000/01/rdf-schema#label> "UUID" .
+<https://w3id.org/fedecom/lec-building#UUID> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#children
+<https://w3id.org/fedecom/lec-building#children> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/lec-building#children> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/lec-building#occupation> .
+<https://w3id.org/fedecom/lec-building#children> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of children occupying a building." .
+<https://w3id.org/fedecom/lec-building#children> <http://www.w3.org/2000/01/rdf-schema#label> "children" .
+<https://w3id.org/fedecom/lec-building#children> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#floorNumber
+<https://w3id.org/fedecom/lec-building#floorNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/lec-building#floorNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of floors of a building." .
+<https://w3id.org/fedecom/lec-building#floorNumber> <http://www.w3.org/2000/01/rdf-schema#label> "floor number" .
+<https://w3id.org/fedecom/lec-building#floorNumber> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#notes
+<https://w3id.org/fedecom/lec-building#notes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/lec-building#notes> <http://www.w3.org/2000/01/rdf-schema#comment> "Additional notes to a specific entity." .
+<https://w3id.org/fedecom/lec-building#notes> <http://www.w3.org/2000/01/rdf-schema#label> "notes" .
+<https://w3id.org/fedecom/lec-building#notes> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#occupation
+<https://w3id.org/fedecom/lec-building#occupation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/lec-building#occupation> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of people occupying a building." .
+<https://w3id.org/fedecom/lec-building#occupation> <http://www.w3.org/2000/01/rdf-schema#label> "occupation" .
+<https://w3id.org/fedecom/lec-building#occupation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#yearOfConstruction
+<https://w3id.org/fedecom/lec-building#yearOfConstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/lec-building#yearOfConstruction> <http://www.w3.org/2000/01/rdf-schema#comment> "The year a building was built." .
+<https://w3id.org/fedecom/lec-building#yearOfConstruction> <http://www.w3.org/2000/01/rdf-schema#label> "year of construction" .
+<https://w3id.org/fedecom/lec-building#yearOfConstruction> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fedecom/lec-building#AssemblyBuilding
+<https://w3id.org/fedecom/lec-building#AssemblyBuilding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/lec-building#AssemblyBuilding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/lec-building#Building> .
+<https://w3id.org/fedecom/lec-building#AssemblyBuilding> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Assembly Group A occupancy includes, among othersm the use of a building or structure, or a portion thereof, for the gathering of persons for purposes such as civic, social or religious functions; recreation, food or drink consumption or awaiting transportation\" (2024 IBC)" .
+<https://w3id.org/fedecom/lec-building#AssemblyBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "2024 International Building Code (Ver. Aug 2025)" .
+<https://w3id.org/fedecom/lec-building#AssemblyBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use" .
+<https://w3id.org/fedecom/lec-building#AssemblyBuilding> <http://www.w3.org/2000/01/rdf-schema#label> "Assembly Building" .
+<https://w3id.org/fedecom/lec-building#AssemblyBuilding> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/fedecom/lec-building#AssemblyBuilding> <http://www.w3.org/2004/02/skos/core#example> "Motion picture theaters, Symphony and concert halls; Banquet halls, Restaurants, cafeterias and similar dining facilities (including associated commercial kitchens); Amusement arcades, Art galleries; Swimming pools, Tennis courts; Amusement park structures, Stadiums" .
+# 
+# https://w3id.org/fedecom/lec-building#Building
+<https://w3id.org/fedecom/lec-building#Building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/lec-building#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/lec-building#hasArea> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/lec-building#BuildingArea> .
+<https://w3id.org/fedecom/lec-building#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/lec-building#hasBuildingTypology> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/lec-building#BuildingTypology> .
+<https://w3id.org/fedecom/lec-building#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/lec-building#hasCircuit> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/lec-building#Circuit> .
+<https://w3id.org/fedecom/lec-building#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/lec-building#hasFloor> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/lec-building#Floor> .
+<https://w3id.org/fedecom/lec-building#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/lec-building#hasLocation> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/lec-building#Location> .
+<https://w3id.org/fedecom/lec-building#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/lec-building#hasRoom> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/lec-building#Room> .
+<https://w3id.org/fedecom/lec-building#Building> <http://www.w3.org/2000/01/rdf-schema#label> "Building" .
+<https://w3id.org/fedecom/lec-building#Building> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#BuildingArea
+<https://w3id.org/fedecom/lec-building#BuildingArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/lec-building#BuildingArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Total floor space of a building measured at all levels, including walls and structural elements, typically expressed in square units (e.g., square meters or square feet)." .
+<https://w3id.org/fedecom/lec-building#BuildingArea> <http://www.w3.org/2000/01/rdf-schema#label> "Building Area" .
+<https://w3id.org/fedecom/lec-building#BuildingArea> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#BuildingTypology
+<https://w3id.org/fedecom/lec-building#BuildingTypology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/fedecom/lec-building#BusinessBuilding
+<https://w3id.org/fedecom/lec-building#BusinessBuilding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/lec-building#BusinessBuilding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/lec-building#Building> .
+<https://w3id.org/fedecom/lec-building#BusinessBuilding> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Business Group B occupancy, includes, among others, the use of a building or structure, or a portion thereof, for office, professional or service-type transactions, including storage of records and accounts.\" (2024 IDC)" .
+<https://w3id.org/fedecom/lec-building#BusinessBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "2024 International Building Code (Ver. Aug 2025)" .
+<https://w3id.org/fedecom/lec-building#BusinessBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use" .
+<https://w3id.org/fedecom/lec-building#BusinessBuilding> <http://www.w3.org/2000/01/rdf-schema#label> "Business Building" .
+<https://w3id.org/fedecom/lec-building#BusinessBuilding> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/fedecom/lec-building#BusinessBuilding> <http://www.w3.org/2004/02/skos/core#example> "Airport traffic control towers, Ambulatory care facilities, Animal hospitals, kennels and pounds, Banks" .
+# 
+# https://w3id.org/fedecom/lec-building#Circuit
+<https://w3id.org/fedecom/lec-building#Circuit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/lec-building#Circuit> <http://www.w3.org/2000/01/rdf-schema#comment> "Electrical distribution system within a building." .
+<https://w3id.org/fedecom/lec-building#Circuit> <http://www.w3.org/2000/01/rdf-schema#label> "Circuit" .
+<https://w3id.org/fedecom/lec-building#Circuit> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#EducationalBuilding
+<https://w3id.org/fedecom/lec-building#EducationalBuilding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/lec-building#EducationalBuilding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/lec-building#Building> .
+<https://w3id.org/fedecom/lec-building#EducationalBuilding> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Educational Group E occupancy, includes, among others, the use of a building or structure, or a portion thereof, by six or more persons at any one time for educational purposes through the 12th grade.\" (2024 IDC)" .
+<https://w3id.org/fedecom/lec-building#EducationalBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "2024 International Building Code (Ver. Aug 2025)" .
+<https://w3id.org/fedecom/lec-building#EducationalBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use" .
+<https://w3id.org/fedecom/lec-building#EducationalBuilding> <http://www.w3.org/2000/01/rdf-schema#label> "Educational Building" .
+<https://w3id.org/fedecom/lec-building#EducationalBuilding> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/fedecom/lec-building#EducationalBuilding> <http://www.w3.org/2004/02/skos/core#example> "Schools" .
+# 
+# https://w3id.org/fedecom/lec-building#FactoryIndustrialBuilding
+<https://w3id.org/fedecom/lec-building#FactoryIndustrialBuilding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/lec-building#FactoryIndustrialBuilding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/lec-building#Building> .
+<https://w3id.org/fedecom/lec-building#FactoryIndustrialBuilding> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Factory Group F occupancy, includes, among others, the use of a building or structure, or a portion thereof, for assembling, , disassembling, fabricating, finishing, manufacturing, packaging, repair or processing operations that are not as a Group H hazardous or Group S storage occupancy.\" (2024 IDC)" .
+<https://w3id.org/fedecom/lec-building#FactoryIndustrialBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "2024 International Building Code (Ver. Aug 2025)" .
+<https://w3id.org/fedecom/lec-building#FactoryIndustrialBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use" .
+<https://w3id.org/fedecom/lec-building#FactoryIndustrialBuilding> <http://www.w3.org/2000/01/rdf-schema#label> "Factory Industrial Building" .
+<https://w3id.org/fedecom/lec-building#FactoryIndustrialBuilding> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/fedecom/lec-building#FactoryIndustrialBuilding> <http://www.w3.org/2004/02/skos/core#example> "Appliances, Athletic equipment, Automobiles and other motor vehicles, Bakeries; Beverages: up to and including 20 percent alcohol content, Brick and masonry, Ceramic products, Foundries" .
+# 
+# https://w3id.org/fedecom/lec-building#Floor
+<https://w3id.org/fedecom/lec-building#Floor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/lec-building#Floor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/lec-building#hasRoom> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/lec-building#Room> .
+<https://w3id.org/fedecom/lec-building#Floor> <http://www.w3.org/2000/01/rdf-schema#comment> "A horizontal level within a building, typically used for occupancy or functional spaces." .
+<https://w3id.org/fedecom/lec-building#Floor> <http://www.w3.org/2000/01/rdf-schema#label> "Floor" .
+<https://w3id.org/fedecom/lec-building#Floor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#HighHazardBuilding
+<https://w3id.org/fedecom/lec-building#HighHazardBuilding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/lec-building#HighHazardBuilding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/lec-building#Building> .
+<https://w3id.org/fedecom/lec-building#HighHazardBuilding> <http://www.w3.org/2000/01/rdf-schema#comment> "\"High-Hazard Group H occupancy, includes, among others, the use of a building or structure, or a portion thereof, that involves the manufacturing, processing, generation or storage of materials that constitute a physical or health hazard in quantities in excess of those allowed in control aread complying with Section 414 [of 2024 IDC]\" (2024 IDC)" .
+<https://w3id.org/fedecom/lec-building#HighHazardBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "2024 International Building Code (Ver. Aug 2025)" .
+<https://w3id.org/fedecom/lec-building#HighHazardBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use" .
+<https://w3id.org/fedecom/lec-building#HighHazardBuilding> <http://www.w3.org/2000/01/rdf-schema#label> "High Hazard Building" .
+<https://w3id.org/fedecom/lec-building#HighHazardBuilding> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/fedecom/lec-building#HighHazardBuilding> <http://www.w3.org/2004/02/skos/core#example> "Buildings containing hazardous materials such as: Consumer fireworks, Detonable pyrophoric materials, Oxidizers" .
+# 
+# https://w3id.org/fedecom/lec-building#InstitutionalBuilding
+<https://w3id.org/fedecom/lec-building#InstitutionalBuilding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/lec-building#InstitutionalBuilding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/lec-building#Building> .
+<https://w3id.org/fedecom/lec-building#InstitutionalBuilding> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Institutional Group I occupancy, includes, among others, the use of a building or structure, or a portion thereof, in which care or supervision is provided to persons who are or are incapable of self-preservation without physical assistance or in which persons are detained for penal or correctional purposed or in which the liberty of the occupants is restricted.\" (2024 IDC)" .
+<https://w3id.org/fedecom/lec-building#InstitutionalBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "2024 International Building Code (Ver. Aug 2025)" .
+<https://w3id.org/fedecom/lec-building#InstitutionalBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use" .
+<https://w3id.org/fedecom/lec-building#InstitutionalBuilding> <http://www.w3.org/2000/01/rdf-schema#label> "Institutional Building" .
+<https://w3id.org/fedecom/lec-building#InstitutionalBuilding> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/fedecom/lec-building#InstitutionalBuilding> <http://www.w3.org/2004/02/skos/core#example> "Alcohol and drug centers, Assisted living facilities; Hospitals, Nursing homes, Psychiatric hospitals; Correctional centers, Detention centers, Jails; Adult day care, Child day care" .
+# 
+# https://w3id.org/fedecom/lec-building#LEC
+<https://w3id.org/fedecom/lec-building#LEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/lec-building#LEC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/lec-building#hasSite> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/lec-building#Site> .
+<https://w3id.org/fedecom/lec-building#LEC> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of local actors (citizens, businesses, or organizations) collaborating to produce, share, and manage energy—often renewable—within a defined area." .
+<https://w3id.org/fedecom/lec-building#LEC> <http://www.w3.org/2000/01/rdf-schema#label> "LEC" .
+<https://w3id.org/fedecom/lec-building#LEC> <http://www.w3.org/2000/01/rdf-schema#label> "Local Energy Community" .
+<https://w3id.org/fedecom/lec-building#LEC> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#Location
+<https://w3id.org/fedecom/lec-building#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/lec-building#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific point or area identified by coordinates or address, representing where an object or activity is situated." .
+<https://w3id.org/fedecom/lec-building#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location" .
+<https://w3id.org/fedecom/lec-building#Location> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#MercantileBuilding
+<https://w3id.org/fedecom/lec-building#MercantileBuilding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/lec-building#MercantileBuilding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/lec-building#Building> .
+<https://w3id.org/fedecom/lec-building#MercantileBuilding> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Mercantile Group M occupancy, includes, among others, the use of a building or structure, or a portion thereof, for the display and sale of merchandise, and involves stocks of goods, wares or merchandise incidental to such purposes and where the public has access.\" (2024 IDC)" .
+<https://w3id.org/fedecom/lec-building#MercantileBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "2024 International Building Code (Ver. Aug 2025)" .
+<https://w3id.org/fedecom/lec-building#MercantileBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use" .
+<https://w3id.org/fedecom/lec-building#MercantileBuilding> <http://www.w3.org/2000/01/rdf-schema#label> "Mercantile Building" .
+<https://w3id.org/fedecom/lec-building#MercantileBuilding> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/fedecom/lec-building#MercantileBuilding> <http://www.w3.org/2004/02/skos/core#example> "Department stores, Drug stores, Greenhouses for display and sale of plants that provide public access, Markets" .
+# 
+# https://w3id.org/fedecom/lec-building#PrimaryCircuit
+<https://w3id.org/fedecom/lec-building#PrimaryCircuit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/lec-building#PrimaryCircuit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/lec-building#Circuit> .
+<https://w3id.org/fedecom/lec-building#PrimaryCircuit> <http://www.w3.org/2000/01/rdf-schema#comment> "Main feed from the transformer or utility source to the building’s main distribution board or primary distribution box—usually at medium voltage (e.g., 0.4 kV)." .
+<https://w3id.org/fedecom/lec-building#PrimaryCircuit> <http://www.w3.org/2000/01/rdf-schema#label> "Primary Circuit" .
+<https://w3id.org/fedecom/lec-building#PrimaryCircuit> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#ResidentialBuilding
+<https://w3id.org/fedecom/lec-building#ResidentialBuilding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/lec-building#ResidentialBuilding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/lec-building#Building> .
+<https://w3id.org/fedecom/lec-building#ResidentialBuilding> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Residential Group R occupancy, includes, among others, the use of a building or structure, or a portion thereof, for sleeping purposes when not classified when not classified as an Institutional Group I or when not regulated by the International Residential Code.\" (2024 IBC)" .
+<https://w3id.org/fedecom/lec-building#ResidentialBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "2024 International Building Code (Ver. Aug 2025)" .
+<https://w3id.org/fedecom/lec-building#ResidentialBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use" .
+<https://w3id.org/fedecom/lec-building#ResidentialBuilding> <http://www.w3.org/2000/01/rdf-schema#label> "Residential Building" .
+<https://w3id.org/fedecom/lec-building#ResidentialBuilding> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/fedecom/lec-building#ResidentialBuilding> <http://www.w3.org/2004/02/skos/core#example> "Hotels (transient), Motels (transient); Congregate living facilities (nontransient) with more than 16 occupants (Boarding houses (nontransient), Convents, Dormitories, Emergency services living quarters,Fraternities and sororities, Monasteries)" .
+# 
+# https://w3id.org/fedecom/lec-building#Room
+<https://w3id.org/fedecom/lec-building#Room> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/lec-building#Room> <http://www.w3.org/2000/01/rdf-schema#comment> "An enclosed space within a building, separated by walls, intended for a specific use or function." .
+<https://w3id.org/fedecom/lec-building#Room> <http://www.w3.org/2000/01/rdf-schema#label> "Room" .
+<https://w3id.org/fedecom/lec-building#Room> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#SecondaryCircuit
+<https://w3id.org/fedecom/lec-building#SecondaryCircuit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/lec-building#SecondaryCircuit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/lec-building#Circuit> .
+<https://w3id.org/fedecom/lec-building#SecondaryCircuit> <http://www.w3.org/2000/01/rdf-schema#comment> "Sub-distribution level that delivers power from the main board to floor or building-specific panels, often three-phase and protected by larger breakers." .
+<https://w3id.org/fedecom/lec-building#SecondaryCircuit> <http://www.w3.org/2000/01/rdf-schema#label> "Secondary Circuit" .
+<https://w3id.org/fedecom/lec-building#SecondaryCircuit> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#Site
+<https://w3id.org/fedecom/lec-building#Site> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/lec-building#Site> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/lec-building#hasParticipant> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/lec-building#Building> .
+<https://w3id.org/fedecom/lec-building#Site> <http://www.w3.org/2000/01/rdf-schema#comment> "A distinct physical location where a Local Energy Community has infrastructure or assets (such as generation units, storage, or consumption points). A single LEC can operate across multiple sites within its network." .
+<https://w3id.org/fedecom/lec-building#Site> <http://www.w3.org/2000/01/rdf-schema#label> "Site" .
+<https://w3id.org/fedecom/lec-building#Site> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#StorageBuilding
+<https://w3id.org/fedecom/lec-building#StorageBuilding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/lec-building#StorageBuilding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/lec-building#Building> .
+<https://w3id.org/fedecom/lec-building#StorageBuilding> <http://www.w3.org/2000/01/rdf-schema#comment> "Storage Group S occupancy includes, among others, the use of a building or structure, or a portion thereof, for storage that is not classified as a hazardous occupancy" .
+<https://w3id.org/fedecom/lec-building#StorageBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "2024 International Building Code (Ver. Aug 2025)" .
+<https://w3id.org/fedecom/lec-building#StorageBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use" .
+<https://w3id.org/fedecom/lec-building#StorageBuilding> <http://www.w3.org/2000/01/rdf-schema#label> "Storage Building" .
+<https://w3id.org/fedecom/lec-building#StorageBuilding> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/fedecom/lec-building#StorageBuilding> <http://www.w3.org/2004/02/skos/core#example> "Storage facilities, Garages" .
+# 
+# https://w3id.org/fedecom/lec-building#TertiaryCircuit
+<https://w3id.org/fedecom/lec-building#TertiaryCircuit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/lec-building#TertiaryCircuit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/lec-building#Circuit> .
+<https://w3id.org/fedecom/lec-building#TertiaryCircuit> <http://www.w3.org/2000/01/rdf-schema#comment> "Final distribution stage, supplying end-use devices; typically single-phase 220 V circuits, each protected by its own breaker or RCD." .
+<https://w3id.org/fedecom/lec-building#TertiaryCircuit> <http://www.w3.org/2000/01/rdf-schema#label> "Tertiary Circuit" .
+<https://w3id.org/fedecom/lec-building#TertiaryCircuit> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/lec-building#UtilityMiscellaneousBuilding
+<https://w3id.org/fedecom/lec-building#UtilityMiscellaneousBuilding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/lec-building#UtilityMiscellaneousBuilding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/lec-building#Building> .
+<https://w3id.org/fedecom/lec-building#UtilityMiscellaneousBuilding> <http://www.w3.org/2000/01/rdf-schema#comment> "Buildings and structures of an accessory character and miscellaneous structures not classified in any specific occupancy. Shall be constructed, equipped and maintained to conform to the requirements of this code commensurate with the fire and life hazard incidental to their occupancy" .
+<https://w3id.org/fedecom/lec-building#UtilityMiscellaneousBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "2024 International Building Code (Ver. Aug 2025)" .
+<https://w3id.org/fedecom/lec-building#UtilityMiscellaneousBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use" .
+<https://w3id.org/fedecom/lec-building#UtilityMiscellaneousBuilding> <http://www.w3.org/2000/01/rdf-schema#label> "Utility Miscellaneous Building" .
+<https://w3id.org/fedecom/lec-building#UtilityMiscellaneousBuilding> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/fedecom/lec-building#UtilityMiscellaneousBuilding> <http://www.w3.org/2004/02/skos/core#example> "Agricultural buildings, Aircraft hangars, accessory to a one- or two-family residence (see Section 412.4), Barns, Carports" .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

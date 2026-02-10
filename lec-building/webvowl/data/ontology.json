@@ -1,0 +1,1673 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "https://w3id.org/fedecom/lec-building", "http://schema.org", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2003/01/geo/wgs84_pos", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "undefined" : "LEC-Building: Energy Communities and Buildings Characterization module for the FEDECOM Ontology"
+    },
+    "iri" : "https://w3id.org/fedecom/lec-building",
+    "author" : [ "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>" ],
+    "description" : {
+      "undefined" : "This ontology module includes the necessary classes and properties to characterize energy communities in terms of the buildings included in them."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/rdflicense/cc-by4.0",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Ignacio Lázaro (Tekniker) <ignacio.lazaro@tekniker.es>\nAndoni Osorio (Tekniker) <andoni.osorio@tekniker.es>\nMarko Jelić (Institut Mihajlo Pupin) <marko.jelic@pupin.rs>\nSpyros Tzavikas (Grid Singularity) <spyros@gridsingularity.com>",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "lec-building",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/fedecom/lec-building#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "LEC-Building: Energy Communities and Buildings Characterization module for the FEDECOM Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "16",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/fedecom/lec-building#BuildingArea",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BuildingArea",
+      "undefined" : "Building Area"
+    },
+    "comment" : {
+      "undefined" : "Total floor space of a building measured at all levels, including walls and structural elements, typically expressed in square units (e.g., square meters or square feet)."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#Site",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Site",
+      "undefined" : "Site"
+    },
+    "comment" : {
+      "undefined" : "A distinct physical location where a Local Energy Community has infrastructure or assets (such as generation units, storage, or consumption points). A single LEC can operate across multiple sites within its network."
+    },
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#SecondaryCircuit",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SecondaryCircuit",
+      "undefined" : "Secondary Circuit"
+    },
+    "comment" : {
+      "undefined" : "Sub-distribution level that delivers power from the main board to floor or building-specific panels, often three-phase and protected by larger breakers."
+    },
+    "id" : "13",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#StorageBuilding",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "2024 International Building Code (Ver. Aug 2025)",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "Storage facilities, Garages",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "StorageBuilding",
+      "undefined" : "Storage Building"
+    },
+    "comment" : {
+      "undefined" : "Storage Group S occupancy includes, among others, the use of a building or structure, or a portion thereof, for storage that is not classified as a hazardous occupancy"
+    },
+    "id" : "17",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#Floor",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Floor",
+      "undefined" : "Floor"
+    },
+    "comment" : {
+      "undefined" : "A horizontal level within a building, typically used for occupancy or functional spaces."
+    },
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#BuildingTypology",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BuildingTypology"
+    },
+    "id" : "29"
+  }, {
+    "instances" : 0,
+    "union" : [ "34", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#Location",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Location",
+      "undefined" : "Location"
+    },
+    "comment" : {
+      "undefined" : "A specific point or area identified by coordinates or address, representing where an object or activity is situated."
+    },
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#LEC",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LEC",
+      "undefined" : "LEC"
+    },
+    "comment" : {
+      "undefined" : "A group of local actors (citizens, businesses, or organizations) collaborating to produce, share, and manage energy—often renewable—within a defined area."
+    },
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#EducationalBuilding",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "2024 International Building Code (Ver. Aug 2025)",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "Schools",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EducationalBuilding",
+      "undefined" : "Educational Building"
+    },
+    "comment" : {
+      "undefined" : "\"Educational Group E occupancy, includes, among others, the use of a building or structure, or a portion thereof, by six or more persons at any one time for educational purposes through the 12th grade.\" (2024 IDC)"
+    },
+    "id" : "22",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#Building",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Building",
+      "undefined" : "Building"
+    },
+    "subClasses" : [ "17", "37", "28", "24", "33", "31", "22", "19", "4", "46" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "16",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#TertiaryCircuit",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TertiaryCircuit",
+      "undefined" : "Tertiary Circuit"
+    },
+    "comment" : {
+      "undefined" : "Final distribution stage, supplying end-use devices; typically single-phase 220 V circuits, each protected by its own breaker or RCD."
+    },
+    "id" : "48",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#FactoryIndustrialBuilding",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "2024 International Building Code (Ver. Aug 2025)",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "Appliances, Athletic equipment, Automobiles and other motor vehicles, Bakeries; Beverages: up to and including 20 percent alcohol content, Brick and masonry, Ceramic products, Foundries",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FactoryIndustrialBuilding",
+      "undefined" : "Factory Industrial Building"
+    },
+    "comment" : {
+      "undefined" : "\"Factory Group F occupancy, includes, among others, the use of a building or structure, or a portion thereof, for assembling, , disassembling, fabricating, finishing, manufacturing, packaging, repair or processing operations that are not as a Group H hazardous or Group S storage occupancy.\" (2024 IDC)"
+    },
+    "id" : "24",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#AssemblyBuilding",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "2024 International Building Code (Ver. Aug 2025)",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "Motion picture theaters, Symphony and concert halls; Banquet halls, Restaurants, cafeterias and similar dining facilities (including associated commercial kitchens); Amusement arcades, Art galleries; Swimming pools, Tennis courts; Amusement park structures, Stadiums",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AssemblyBuilding",
+      "undefined" : "Assembly Building"
+    },
+    "comment" : {
+      "undefined" : "\"Assembly Group A occupancy includes, among othersm the use of a building or structure, or a portion thereof, for the gathering of persons for purposes such as civic, social or religious functions; recreation, food or drink consumption or awaiting transportation\" (2024 IBC)"
+    },
+    "id" : "19",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "10",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#BusinessBuilding",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "2024 International Building Code (Ver. Aug 2025)",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "Airport traffic control towers, Ambulatory care facilities, Animal hospitals, kennels and pounds, Banks",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BusinessBuilding",
+      "undefined" : "Business Building"
+    },
+    "comment" : {
+      "undefined" : "\"Business Group B occupancy, includes, among others, the use of a building or structure, or a portion thereof, for office, professional or service-type transactions, including storage of records and accounts.\" (2024 IDC)"
+    },
+    "id" : "28",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#UtilityMiscellaneousBuilding",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "2024 International Building Code (Ver. Aug 2025)",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "Agricultural buildings, Aircraft hangars, accessory to a one- or two-family residence (see Section 412.4), Barns, Carports",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UtilityMiscellaneousBuilding",
+      "undefined" : "Utility Miscellaneous Building"
+    },
+    "comment" : {
+      "undefined" : "Buildings and structures of an accessory character and miscellaneous structures not classified in any specific occupancy. Shall be constructed, equipped and maintained to conform to the requirements of this code commensurate with the fire and life hazard incidental to their occupancy"
+    },
+    "id" : "31",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#MercantileBuilding",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "2024 International Building Code (Ver. Aug 2025)",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "Department stores, Drug stores, Greenhouses for display and sale of plants that provide public access, Markets",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MercantileBuilding",
+      "undefined" : "Mercantile Building"
+    },
+    "comment" : {
+      "undefined" : "\"Mercantile Group M occupancy, includes, among others, the use of a building or structure, or a portion thereof, for the display and sale of merchandise, and involves stocks of goods, wares or merchandise incidental to such purposes and where the public has access.\" (2024 IDC)"
+    },
+    "id" : "46",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#InstitutionalBuilding",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "2024 International Building Code (Ver. Aug 2025)",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "Alcohol and drug centers, Assisted living facilities; Hospitals, Nursing homes, Psychiatric hospitals; Correctional centers, Detention centers, Jails; Adult day care, Child day care",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "InstitutionalBuilding",
+      "undefined" : "Institutional Building"
+    },
+    "comment" : {
+      "undefined" : "\"Institutional Group I occupancy, includes, among others, the use of a building or structure, or a portion thereof, in which care or supervision is provided to persons who are or are incapable of self-preservation without physical assistance or in which persons are detained for penal or correctional purposed or in which the liberty of the occupants is restricted.\" (2024 IDC)"
+    },
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#HighHazardBuilding",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "2024 International Building Code (Ver. Aug 2025)",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "Buildings containing hazardous materials such as: Consumer fireworks, Detonable pyrophoric materials, Oxidizers",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HighHazardBuilding",
+      "undefined" : "High Hazard Building"
+    },
+    "comment" : {
+      "undefined" : "\"High-Hazard Group H occupancy, includes, among others, the use of a building or structure, or a portion thereof, that involves the manufacturing, processing, generation or storage of materials that constitute a physical or health hazard in quantities in excess of those allowed in control aread complying with Section 414 [of 2024 IDC]\" (2024 IDC)"
+    },
+    "id" : "37",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#PrimaryCircuit",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PrimaryCircuit",
+      "undefined" : "Primary Circuit"
+    },
+    "comment" : {
+      "undefined" : "Main feed from the transformer or utility source to the building’s main distribution board or primary distribution box—usually at medium voltage (e.g., 0.4 kV)."
+    },
+    "id" : "71",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#ResidentialBuilding",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "2024 International Building Code (Ver. Aug 2025)",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "Hotels (transient), Motels (transient); Congregate living facilities (nontransient) with more than 16 occupants (Boarding houses (nontransient), Convents, Dormitories, Emergency services living quarters,Fraternities and sororities, Monasteries)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ResidentialBuilding",
+      "undefined" : "Residential Building"
+    },
+    "comment" : {
+      "undefined" : "\"Residential Group R occupancy, includes, among others, the use of a building or structure, or a portion thereof, for sleeping purposes when not classified when not classified as an Institutional Group I or when not regulated by the International Residential Code.\" (2024 IBC)"
+    },
+    "id" : "33",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#Circuit",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Circuit",
+      "undefined" : "Circuit"
+    },
+    "subClasses" : [ "48", "71", "13" ],
+    "comment" : {
+      "undefined" : "Electrical distribution system within a building."
+    },
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#Room",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Room",
+      "undefined" : "Room"
+    },
+    "comment" : {
+      "undefined" : "An enclosed space within a building, separated by walls, intended for a specific use or function."
+    },
+    "id" : "55"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "54",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "56",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "61",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "64",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "67",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/fedecom/lec-building#floorNumber",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "2",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "floorNumber",
+      "undefined" : "floor number"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Number of floors of a building."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#hasLocation",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "8",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLocation",
+      "undefined" : "has location"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Associates an entity with a geographic or spatial position."
+    },
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#hasArea",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "11",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasArea",
+      "undefined" : "has area"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "Links an entity to its corresponding Area value."
+    },
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#hasConsumption",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "16",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "in study",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasConsumption",
+      "undefined" : "has consumption"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "range" : "5",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "range" : "5",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "5",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#hasEnergyAsset",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "1",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasEnergyAsset",
+      "undefined" : "has energy asset"
+    },
+    "superproperty" : [ "26" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Links an entity (usually Building) to an asset that generates, stores, or manages energy (e.g., solar panel, battery)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "range" : "5",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "range" : "5",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "range" : "5",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "range" : "5",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "5",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#hasEquipment",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "1",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasEquipment",
+      "undefined" : "has equipment"
+    },
+    "superproperty" : [ "26" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Connects an entity (usually Building) to devices or machinery used for specific operations or processes."
+    },
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#yearOfConstruction",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "41",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "yearOfConstruction",
+      "undefined" : "year of construction"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The year a building was built."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://schema.org/name",
+    "baseIri" : "http://schema.org",
+    "range" : "43",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "name",
+      "undefined" : "name"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Name or identifier for an entity."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#children",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "45",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "children",
+      "undefined" : "children"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Number of children occupying a building."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#UUID",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "35",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UUID",
+      "undefined" : "UUID"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "UUID of an entity."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#hasBuildingTypology",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "29",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "in study",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasBuildingTypology",
+      "undefined" : "has building typology"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#hasRoom",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "55",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRoom",
+      "undefined" : "has room"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Links a Floor with the Rooms included in it."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "long"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#hasCircuit",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "14",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCircuit",
+      "undefined" : "has circuit"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Connects a Building entity to an electrical circuit that supplies or distributes power within the building."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#hasFloor",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "20",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFloor",
+      "undefined" : "has floor"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Relates a Building with the Floors that it is composed of."
+    },
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#occupation",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "47",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "occupation",
+      "undefined" : "occupation"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Number of people occupying a building."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#hasFloor",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "20",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFloor",
+      "undefined" : "has floor"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Relates a Building with the Floors that it is composed of."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#hasRoom",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "55",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRoom",
+      "undefined" : "has room"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Links a Floor with the Rooms included in it."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#hasParticipant",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "5",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasParticipant",
+      "undefined" : "has participant"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Links a Site with the Buildings it is composed of."
+    },
+    "attributes" : [ "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#hasSite",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "12",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSite",
+      "undefined" : "has site"
+    },
+    "domain" : "34",
+    "comment" : {
+      "undefined" : "Connects a LEC with the Sites it includes."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#hasParticipant",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "5",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasParticipant",
+      "undefined" : "has participant"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Links a Site with the Buildings it is composed of."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#hasElement",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "1",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasElement",
+      "undefined" : "has element"
+    },
+    "domain" : "1",
+    "subproperty" : [ "39", "25" ],
+    "attributes" : [ "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#hasSite",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "12",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSite",
+      "undefined" : "has site"
+    },
+    "domain" : "34",
+    "comment" : {
+      "undefined" : "Connects a LEC with the Sites it includes."
+    },
+    "attributes" : [ "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#hasLocation",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "8",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLocation",
+      "undefined" : "has location"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Associates an entity with a geographic or spatial position."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#hasArea",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "11",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasArea",
+      "undefined" : "has area"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Links an entity to its corresponding Area value."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#hasCircuit",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "14",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCircuit",
+      "undefined" : "has circuit"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Connects a Building entity to an electrical circuit that supplies or distributes power within the building."
+    },
+    "attributes" : [ "object" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#notes",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "51",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "notes",
+      "undefined" : "notes"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Additional notes to a specific entity."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "lat"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "70"
+  }, {
+    "range" : "14",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "5",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://w3id.org/fedecom/lec-building#hasRoom",
+    "baseIri" : "https://w3id.org/fedecom/lec-building",
+    "range" : "55",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRoom",
+      "undefined" : "has room"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Links a Floor with the Rooms included in it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "74"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "14",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  } ]
+}

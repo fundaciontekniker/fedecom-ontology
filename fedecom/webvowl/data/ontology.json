@@ -1,0 +1,66 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "undefined" : "FEDECOM Ontology"
+    },
+    "iri" : "https://w3id.org/fedecom",
+    "author" : [ "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>" ],
+    "description" : {
+      "undefined" : "The FEDECOM ontology is a modular ontology designed to formally model energy communities in terms of the characterization of their buildings, energy assets, and other relevant resources, together with the observations and measurements associated with them."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/rdflicense/cc-by4.0",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Ignacio Lázaro (Tekniker) <ignacio.lazaro@tekniker.es>\nAndoni Osorio (Tekniker) <andoni.osorio@tekniker.es>\nMarko Jelić (Institut Mihajlo Pupin) <marko.jelic@pupin.rs>\nSpyros Tzavikas (Grid Singularity) <spyros@gridsingularity.com>\nDaniel Werner (Fraunhofer ISE) <daniel.werner@ise.fraunhofer.de>",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "fedecom",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/fedecom#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "FEDECOM Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ]
+}

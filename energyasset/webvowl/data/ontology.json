@@ -1,0 +1,4894 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://w3id.org/fedecom/battery", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "http://schema.org", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/fedecom/energyasset", "https://w3id.org/hpont" ],
+    "title" : {
+      "undefined" : "Energy Asset: Energy Asset module for the FEDECOM Ontology"
+    },
+    "iri" : "https://w3id.org/fedecom/energyasset",
+    "author" : [ "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>" ],
+    "description" : {
+      "undefined" : "This ontology module includes the necessary classes and properties to model energy assets."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/rdflicense/cc-by4.0",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Ignacio Lázaro (Tekniker) <ignacio.lazaro@tekniker.es>\nAndoni Osorio (Tekniker) <andoni.osorio@tekniker.es>\nMarko Jelić (Institut Mihajlo Pupin) <marko.jelic@pupin.rs>\nSpyros Tzavikas (Grid Singularity) <spyros@gridsingularity.com>",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "energyasset",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/fedecom/energyasset#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Energy Asset: Energy Asset module for the FEDECOM Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "135",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "159",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "185",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "25",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "194",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "207",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "122",
+    "type" : "owl:Class"
+  }, {
+    "id" : "130",
+    "type" : "owl:Class"
+  }, {
+    "id" : "125",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "141",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "198",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "183",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "94",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "132",
+    "type" : "owl:Class"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "234",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "128",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "177",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/fedecom/energyasset#EnergyFlowRate",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EnergyFlowRate",
+      "undefined" : "Energy Flow Rate"
+    },
+    "comment" : {
+      "undefined" : "The amount of energy transferred per unit of time through a system or component."
+    },
+    "id" : "14",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#BiomassBoiler",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BiomassBoiler",
+      "undefined" : "Biomass Boiler"
+    },
+    "comment" : {
+      "undefined" : "A boiler that uses biomass (organic material) as fuel to produce heat or steam."
+    },
+    "id" : "26",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#COPCooling",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "COPCooling",
+      "undefined" : "COP Cooling"
+    },
+    "comment" : {
+      "undefined" : "The coefficient of performance for cooling mode."
+    },
+    "id" : "28",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#FuelCell",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FuelCell",
+      "undefined" : "Fuel Cell"
+    },
+    "comment" : {
+      "undefined" : "A device that converts chemical energy from hydrogen or other fuels into electricity through electrochemical reactions."
+    },
+    "id" : "39",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#SmartMeter",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SmartMeter",
+      "undefined" : "Smart Meter"
+    },
+    "comment" : {
+      "undefined" : "An advanced meter that records consumption and communicates data digitally for monitoring and control."
+    },
+    "id" : "52",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://purl.org/vocommons/voaf#Vocabulary",
+    "baseIri" : "http://purl.org/vocommons/voaf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vocabulary"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/hpont#",
+      "baseIri" : "https://w3id.org/hpont",
+      "labels" : { }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Meter",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Meter",
+      "undefined" : "Meter"
+    },
+    "subClasses" : [ "67", "52", "68", "69", "70" ],
+    "comment" : {
+      "undefined" : "A device that measures and records the consumption or flow of energy or resources."
+    },
+    "id" : "11",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#HVAC",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HVAC",
+      "undefined" : "Heating Ventilation Air Conditioning Equipment"
+    },
+    "subClasses" : [ "27", "71", "72", "73" ],
+    "comment" : {
+      "undefined" : "Heating, Ventilation, and Air Conditioning equipment that regulate indoor climate."
+    },
+    "id" : "21",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#EVCharger",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EVCharger",
+      "undefined" : "EV Charger"
+    },
+    "comment" : {
+      "undefined" : "A device that supplies electric energy to recharge electric vehicle batteries."
+    },
+    "id" : "74",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Capacity",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Capacity",
+      "undefined" : "Capacity"
+    },
+    "subClasses" : [ "77", "78" ],
+    "comment" : {
+      "undefined" : "The maximum amount of energy, power, or material that a system or component can store, produce, or handle under specified conditions."
+    },
+    "id" : "75",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "https://w3id.org/hpont#HeatingHeatPump",
+    "baseIri" : "https://w3id.org/hpont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HeatingHeatPump"
+    },
+    "attributes" : [ "external" ],
+    "id" : "79",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#PowerFlowRate",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PowerFlowRate",
+      "undefined" : "Power Flow Rate"
+    },
+    "comment" : {
+      "undefined" : "The rate at which power is transmitted or distributed through a system."
+    },
+    "id" : "41",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#StorageTankVolume",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "StorageTankVolume",
+      "undefined" : "Storage Tank Volume"
+    },
+    "comment" : {
+      "undefined" : "The total internal volume of a tank designed to store fluids or gases."
+    },
+    "id" : "80",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Characteristic",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Characteristic",
+      "undefined" : "Characteristic"
+    },
+    "subClasses" : [ "83", "75", "29", "84", "85", "81", "15", "86", "87", "88", "89" ],
+    "comment" : {
+      "undefined" : "A property or attribute that describes a specific feature or quality of an entity."
+    },
+    "id" : "76"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#BypassDamper",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BypassDamper",
+      "undefined" : "Bypass Damper"
+    },
+    "comment" : {
+      "undefined" : "A damper that redirects airflow to maintain pressure or temperature balance in HVAC systems."
+    },
+    "id" : "90",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "https://w3id.org/hpont#CoolingHeatPump",
+    "baseIri" : "https://w3id.org/hpont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CoolingHeatPump"
+    },
+    "attributes" : [ "external" ],
+    "id" : "91",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#FanCoil",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FanCoil",
+      "undefined" : "Fan Coil"
+    },
+    "comment" : {
+      "undefined" : "A unit consisting of a fan and a heat exchanger coil used for heating or cooling air."
+    },
+    "id" : "92",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#EVChargingPoint",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EVChargingPoint",
+      "undefined" : "EV Charging Point"
+    },
+    "comment" : {
+      "undefined" : "A physical location equipped with an EV charger for vehicle charging."
+    },
+    "id" : "17",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://w3id.org/fedecom/battery#Battery",
+    "baseIri" : "http://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Battery"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#ElectricBoiler",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ElectricBoiler",
+      "undefined" : "Electric Boiler"
+    },
+    "comment" : {
+      "undefined" : "A boiler that uses electrical energy to heat water or produce steam."
+    },
+    "id" : "101",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "https://w3id.org/hpont#ReversibleHeatPump",
+    "baseIri" : "https://w3id.org/hpont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReversibleHeatPump"
+    },
+    "attributes" : [ "external" ],
+    "id" : "103",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Component",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Component",
+      "undefined" : "Component"
+    },
+    "comment" : {
+      "undefined" : "An individual part or element of a system that performs a specific function."
+    },
+    "id" : "104"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#CondensingGasBoiler",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CondensingGasBoiler",
+      "undefined" : "Condensing Gas Boiler"
+    },
+    "comment" : {
+      "undefined" : "A high-efficiency gas boiler that recovers latent heat from exhaust gases by condensing water vapor."
+    },
+    "id" : "107",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#DischargeFlowRate",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DischargeFlowRate",
+      "undefined" : "Discharge Flow Rate"
+    },
+    "comment" : {
+      "undefined" : "The rate at which energy or material is removed from a storage system during discharging."
+    },
+    "id" : "44",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Model",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Model"
+    },
+    "id" : "110"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#HumidityTemperatureSensor",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HumidityTemperatureSensor",
+      "undefined" : "Humidity-Temperature Sensor"
+    },
+    "comment" : {
+      "undefined" : "A sensor that measures both humidity and temperature in an environment."
+    },
+    "id" : "111",
+    "superClasses" : [ "112" ]
+  }, {
+    "iri" : "https://w3id.org/hpont#HeatPumpTechnology",
+    "baseIri" : "https://w3id.org/hpont",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/hpont#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HeatPumpTechnology",
+      "en" : "Heat Pump Technology"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/hpont#atw",
+      "baseIri" : "https://w3id.org/hpont",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/hpont#",
+          "type" : "iri"
+        } ],
+        "status" : [ {
+          "identifier" : "status",
+          "language" : "undefined",
+          "value" : "testing",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Air-to-water Heat Pump technology"
+      },
+      "labels" : {
+        "IRI-based" : "atw",
+        "en" : "air-to-water"
+      }
+    }, {
+      "iri" : "https://w3id.org/hpont#ata",
+      "baseIri" : "https://w3id.org/hpont",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/hpont#",
+          "type" : "iri"
+        } ],
+        "status" : [ {
+          "identifier" : "status",
+          "language" : "undefined",
+          "value" : "testing",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Air-to-air Heat Pump technology."
+      },
+      "labels" : {
+        "IRI-based" : "ata",
+        "en" : "air-to-air"
+      }
+    } ],
+    "comment" : {
+      "en" : "The base technology of a given Heat Pump system"
+    },
+    "attributes" : [ "external" ],
+    "id" : "113"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Tilt",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Tilt",
+      "undefined" : "Tilt"
+    },
+    "comment" : {
+      "undefined" : "The angle between a surface (e.g., solar panel) and the horizontal plane."
+    },
+    "id" : "89",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#HighTemperatureCircuit",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HighTemperatureCircuit",
+      "undefined" : "High Temperature Circuit"
+    },
+    "comment" : {
+      "undefined" : "A heating circuit designed to operate at high temperatures, typically for industrial or specialized applications."
+    },
+    "id" : "13",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Tank",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tank"
+    },
+    "subClasses" : [ "36" ],
+    "id" : "50",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Heater",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Heater",
+      "undefined" : "Heater"
+    },
+    "subClasses" : [ "125" ],
+    "comment" : {
+      "undefined" : "A device that converts energy (typically electrical, thermal, or chemical) into heat for the purpose of warming air, water, or other substances within a system or space."
+    },
+    "id" : "31",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#CombinedHeatPower",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CombinedHeatPower",
+      "undefined" : "Combined Heat Power"
+    },
+    "comment" : {
+      "undefined" : "A system that simultaneously generates electricity and useful heat from a single energy source."
+    },
+    "id" : "9",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#AirHandlingUnit",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AirHandlingUnit",
+      "undefined" : "Air Handling Unit"
+    },
+    "comment" : {
+      "undefined" : "A device that conditions and circulates air as part of an HVAC system, typically including fans, filters, and heat exchangers."
+    },
+    "id" : "72",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Sensor",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Sensor",
+      "undefined" : "Sensor"
+    },
+    "subClasses" : [ "111" ],
+    "comment" : {
+      "undefined" : "A device that detects and measures physical properties (e.g., temperature, pressure, light) and converts them into signals for monitoring or control."
+    },
+    "id" : "112",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#ThermalStorageTank",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ThermalStorageTank",
+      "undefined" : "Thermal Storage Tank"
+    },
+    "comment" : {
+      "undefined" : "A tank that stores thermal energy for heating or cooling purposes, often using phase-change materials or water."
+    },
+    "id" : "62",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#COPHeating",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "COPHeating",
+      "undefined" : "COP Heating"
+    },
+    "comment" : {
+      "undefined" : "The coefficient of performance for heating mode."
+    },
+    "id" : "135",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#ThermalEfficiency",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ThermalEfficiency",
+      "undefined" : "Thermal Efficiency"
+    },
+    "comment" : {
+      "undefined" : "The efficiency of converting thermal energy into useful work or another energy form."
+    },
+    "id" : "97",
+    "superClasses" : [ "84" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Damper",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Damper",
+      "undefined" : "Damper"
+    },
+    "subClasses" : [ "90" ],
+    "comment" : {
+      "undefined" : "A device that regulates airflow in ducts or ventilation systems."
+    },
+    "id" : "71",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://w3id.org/hpont#HeatPumpOperatingMode",
+    "baseIri" : "https://w3id.org/hpont",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/hpont#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HeatPumpOperatingMode",
+      "en" : "Heat Pump Operating Mode"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/hpont#dhwHeatingMode",
+      "baseIri" : "https://w3id.org/hpont",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/hpont#",
+          "type" : "iri"
+        } ],
+        "status" : [ {
+          "identifier" : "status",
+          "language" : "undefined",
+          "value" : "testing",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "DHW heating operation mode of the Heat Pump"
+      },
+      "labels" : {
+        "IRI-based" : "dhwHeatingMode",
+        "en" : "DHW heating mode"
+      }
+    }, {
+      "iri" : "https://w3id.org/hpont#spaceCoolingMode",
+      "baseIri" : "https://w3id.org/hpont",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/hpont#",
+          "type" : "iri"
+        } ],
+        "status" : [ {
+          "identifier" : "status",
+          "language" : "undefined",
+          "value" : "testing",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Space cooling operation mode of the Heat Pump"
+      },
+      "labels" : {
+        "IRI-based" : "spaceCoolingMode",
+        "en" : "Space cooling mode"
+      }
+    }, {
+      "iri" : "https://w3id.org/hpont#spaceHeatingMode",
+      "baseIri" : "https://w3id.org/hpont",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/hpont#",
+          "type" : "iri"
+        } ],
+        "status" : [ {
+          "identifier" : "status",
+          "language" : "undefined",
+          "value" : "testing",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Space heating operation mode of the Heat Pump"
+      },
+      "labels" : {
+        "IRI-based" : "spaceHeatingMode",
+        "en" : "Space heating mode"
+      }
+    } ],
+    "comment" : {
+      "en" : "The operating mode of a given Heat Pump system"
+    },
+    "attributes" : [ "external" ],
+    "id" : "120"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#VoltageTransformer",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "VoltageTransformer",
+      "undefined" : "Voltage Transformer"
+    },
+    "comment" : {
+      "undefined" : "An electrical device that changes the voltage level of alternating current (AC) in a power system."
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#DistrictHeatingPlant",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DistrictHeatingPlant",
+      "undefined" : "Electric Heating Plant"
+    },
+    "comment" : {
+      "undefined" : "A centralized facility that produces heat and distributes it to multiple buildings through a network."
+    },
+    "id" : "4",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#ChargeFlowRate",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ChargeFlowRate",
+      "undefined" : "Charge Flow Rate"
+    },
+    "comment" : {
+      "undefined" : "The rate at which energy or material is added to a storage system during charging."
+    },
+    "id" : "38",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "147",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#ElectricCapacity",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElectricCapacity"
+    },
+    "id" : "78",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "154",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "168",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Power",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Power",
+      "undefined" : "Power"
+    },
+    "comment" : {
+      "undefined" : "The rate at which energy is transferred, converted, or consumed by a system or component."
+    },
+    "id" : "86",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "170",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "178",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#ColdStorageTank",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ColdStorageTank",
+      "undefined" : "Cold Storage Tank"
+    },
+    "comment" : {
+      "undefined" : "A tank used to store chilled water or other fluids for cooling applications."
+    },
+    "id" : "64",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#CoefficientOfPerformance",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CoefficientOfPerformance",
+      "undefined" : "Coefficient of Performance"
+    },
+    "subClasses" : [ "135", "28" ],
+    "comment" : {
+      "undefined" : "A ratio that measures the efficiency of a heating or cooling system."
+    },
+    "id" : "29",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Boiler",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Boiler",
+      "undefined" : "Boiler"
+    },
+    "subClasses" : [ "101", "60", "26" ],
+    "comment" : {
+      "undefined" : "A device that heats water or produces steam for heating or power generation."
+    },
+    "id" : "27",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "159",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Efficiency",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Efficiency",
+      "undefined" : "Efficiency"
+    },
+    "subClasses" : [ "177", "97", "183" ],
+    "comment" : {
+      "undefined" : "The ratio of useful output (energy, power, or work) to the total input."
+    },
+    "id" : "84",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "109",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "162",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "160",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "185",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "25",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "186",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "187",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "106",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#PowerRating",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PowerRating",
+      "undefined" : "Power Rating"
+    },
+    "comment" : {
+      "undefined" : "The maximum continuous power that a device or system can deliver or handle under specified conditions."
+    },
+    "id" : "85",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "194",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "https://w3id.org/hpont#HeatPumpSystem",
+    "baseIri" : "https://w3id.org/hpont",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/hpont#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HeatPumpSystem",
+      "en" : "Heat Pump System"
+    },
+    "subClasses" : [ "79", "91", "103" ],
+    "comment" : {
+      "en" : "A system composed of one or many devices that transfer heat from a colder area to a hotter area by using mechanical energy"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#ControlParameter",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ControlParameter",
+      "undefined" : "Control Parameter"
+    },
+    "comment" : {
+      "undefined" : "A variable or setting used to regulate or adjust the behavior of a system or process."
+    },
+    "id" : "207"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#NaturalGasBoiler",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NaturalGasBoiler"
+    },
+    "subClasses" : [ "107", "59" ],
+    "id" : "60",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Azimuth",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Azimuth",
+      "undefined" : "Azimuth"
+    },
+    "comment" : {
+      "undefined" : "The angular measurement in the horizontal plane between a reference direction (usually true north) and the direction of a solar panel."
+    },
+    "id" : "83",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#ConventionalGasBoiler",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ConventionalGasBoiler",
+      "undefined" : "Conventional Gas Boiler"
+    },
+    "comment" : {
+      "undefined" : "A standard gas-fired boiler that heats water without condensing exhaust gases."
+    },
+    "id" : "59",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Collector",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Collector",
+      "undefined" : "Collector"
+    },
+    "comment" : {
+      "undefined" : "A component that captures and transfers energy, typically solar thermal collectors for heat."
+    },
+    "id" : "122",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Extractor",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Extractor",
+      "undefined" : "Extractor"
+    },
+    "comment" : {
+      "undefined" : "A fan or device that removes air, fumes, or gases from a space."
+    },
+    "id" : "130",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#ElectricHeater",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ElectricHeater",
+      "undefined" : "Electric Heater"
+    },
+    "comment" : {
+      "undefined" : "A device that converts electrical energy into heat."
+    },
+    "id" : "125",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#HeatMeter",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HeatMeter",
+      "undefined" : "Heat Meter"
+    },
+    "comment" : {
+      "undefined" : "A meter that measures thermal energy consumption."
+    },
+    "id" : "67",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#PVSystem",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PVSystem",
+      "undefined" : "Photovoltaic System"
+    },
+    "comment" : {
+      "undefined" : "A photovoltaic system that converts solar energy into electrical energy using solar panels and associated components."
+    },
+    "id" : "33",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#BiomassBurner",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BiomassBurner",
+      "undefined" : "Biomass Burner"
+    },
+    "comment" : {
+      "undefined" : "A burner designed to combust biomass fuel for heat generation."
+    },
+    "id" : "46",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Electrolizer",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Electrolizer",
+      "undefined" : "Electrolizer"
+    },
+    "comment" : {
+      "undefined" : "A device that uses electricity to split water into hydrogen and oxygen through electrolysis."
+    },
+    "id" : "141",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#StorageTank",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "StorageTank",
+      "undefined" : "Storage Tank"
+    },
+    "subClasses" : [ "56", "62", "64", "35" ],
+    "comment" : {
+      "undefined" : "A container designed to store liquids or gases for later use."
+    },
+    "id" : "36",
+    "superClasses" : [ "50" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "198",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "137",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#ConversionEfficiency",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ConversionEfficiency",
+      "undefined" : "Conversion Efficiency"
+    },
+    "comment" : {
+      "undefined" : "The efficiency with which a system converts one form of energy into another (e.g., chemical to electrical)."
+    },
+    "id" : "183",
+    "superClasses" : [ "84" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#FumeRecuperator",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FumeRecuperator",
+      "undefined" : "Fume Recuperator"
+    },
+    "comment" : {
+      "undefined" : "A heat recovery device that captures heat from exhaust fumes for reuse."
+    },
+    "id" : "124",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "180",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "94",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "95",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#GridMeter",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GridMeter",
+      "undefined" : "Grid Meter"
+    },
+    "comment" : {
+      "undefined" : "A meter that measures energy exchanged between a building and the electrical grid."
+    },
+    "id" : "70",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#STC",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "STC"
+    },
+    "id" : "132",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "115",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#ThermalCapacity",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ThermalCapacity"
+    },
+    "id" : "77",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#OperatingLimits",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OperatingLimits",
+      "undefined" : "Operating Limits"
+    },
+    "comment" : {
+      "undefined" : "The predefined boundaries or thresholds within which a system or component can operate safely and effectively."
+    },
+    "id" : "87",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "234",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#H2StorageTank",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "H2StorageTank",
+      "undefined" : "Hydrogen Storage Tank"
+    },
+    "comment" : {
+      "undefined" : "A tank specifically designed to store hydrogen safely under controlled conditions."
+    },
+    "id" : "35",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#FlowRate",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FlowRate",
+      "undefined" : "Flow Rate"
+    },
+    "subClasses" : [ "38", "41", "14", "44" ],
+    "comment" : {
+      "undefined" : "The volume or mass of a substance (e.g., fluid, gas) passing through a point or system per unit of time."
+    },
+    "id" : "15",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#3WayValve",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "3WayValve",
+      "undefined" : "3-Way Valve"
+    },
+    "comment" : {
+      "undefined" : "A valve with three ports used to control the flow and mixing of fluids in heating or cooling circuits."
+    },
+    "id" : "128",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Chiller",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Chiller",
+      "undefined" : "Chiller"
+    },
+    "comment" : {
+      "undefined" : "A device that removes heat from a liquid via vapor-compression or absorption refrigeration."
+    },
+    "id" : "73",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Burner",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Burner",
+      "undefined" : "Burner"
+    },
+    "subClasses" : [ "46" ],
+    "comment" : {
+      "undefined" : "A component that mixes fuel and air and initiates combustion to produce heat."
+    },
+    "id" : "47",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#HeatStorageTank",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HeatStorageTank",
+      "undefined" : "Heat Storage Tank"
+    },
+    "comment" : {
+      "undefined" : "A tank that stores thermal energy, typically in the form of hot water or other heat-retaining materials."
+    },
+    "id" : "56",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Device",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Device",
+      "undefined" : "Device"
+    },
+    "subClasses" : [ "6", "50", "39", "31", "33", "1", "4", "9", "11", "13", "17", "19", "21", "141", "112", "74", "92", "122", "124", "47", "128", "130", "132" ],
+    "comment" : {
+      "undefined" : "A physical or virtual entity designed to perform a specific function within a system, typically involving measurement, control, conversion, or communication of energy, signals, or materials."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#ElectricEfficiency",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ElectricEfficiency",
+      "undefined" : "Electric Efficiency"
+    },
+    "comment" : {
+      "undefined" : "The efficiency of converting electrical energy into useful work or another energy form."
+    },
+    "id" : "177",
+    "superClasses" : [ "84" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#SubMeter",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SubMeter",
+      "undefined" : "Submeter"
+    },
+    "comment" : {
+      "undefined" : "A meter installed downstream of a main meter to measure consumption for a specific area or device."
+    },
+    "id" : "68",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Volume",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Volume",
+      "undefined" : "Volume"
+    },
+    "subClasses" : [ "80" ],
+    "comment" : {
+      "undefined" : "The amount of three-dimensional space occupied by an object or substance."
+    },
+    "id" : "81",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#Resistance",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Resistance",
+      "undefined" : "Resistance"
+    },
+    "comment" : {
+      "undefined" : "A measure of the opposition to the flow of electric current."
+    },
+    "id" : "88",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#ElectricMeter",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ElectricMeter",
+      "undefined" : "Electric Meter"
+    },
+    "comment" : {
+      "undefined" : "A meter that measures electrical energy consumption"
+    },
+    "id" : "69",
+    "superClasses" : [ "11" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "119",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "144",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "145",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "146",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "148",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "151",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "152",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "153",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "155",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "156",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "157",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "158",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "161",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "163",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "164",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "167",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "169",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "171",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "174",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "175",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "176",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "179",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "181",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "166",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "184",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "173",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "165",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "193",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "139",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "195",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "196",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "197",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "199",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "200",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "201",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "202",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "204",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "208",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "192",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "210",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "211",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "212",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "213",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "214",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "215",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "216",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "217",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "218",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "219",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "220",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "221",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "190",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "191",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "222",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "223",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "225",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "226",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "227",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "228",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "229",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "189",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "230",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "231",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "232",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "233",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "235",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "236",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "237",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "238",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "239",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "182",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "149",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "240",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "241",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "242",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "243",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "244",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "245",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "246",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "247",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "248",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "249",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "172",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "250",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "251",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "252",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "253",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "254",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/hpont#hasNominalPowerConsumptionInCoolingMode",
+    "baseIri" : "https://w3id.org/hpont",
+    "range" : "7",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/hpont#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasNominalPowerConsumptionInCoolingMode",
+      "en" : "has Nominal Power Consumption In Cooling Mode"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Nominal power consumption of the Heat Pump when it is in cooling mode"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "5"
+  }, {
+    "range" : "2",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "8"
+  }, {
+    "range" : "2",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
+  }, {
+    "range" : "2",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "range" : "2",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  }, {
+    "range" : "2",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "range" : "2",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/hpont#hasNumberOfIndoorUnits",
+    "baseIri" : "https://w3id.org/hpont",
+    "range" : "23",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/hpont#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasNumberOfIndoorUnits",
+      "en" : "has Number Of Indoor Units"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Number of indoor units that the Heat Pump has"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasModel",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "25",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasModel",
+      "undefined" : "has model"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Associates an asset with its model identifier or specification."
+    },
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "range" : "2",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "range" : "2",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "range" : "36",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "15",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "15",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "15",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "47",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "range" : "2",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "range" : "2",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "2",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/hpont#hasBufferStorageVolume",
+    "baseIri" : "https://w3id.org/hpont",
+    "range" : "54",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/hpont#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasBufferStorageVolume",
+      "en" : "has Buffer Storage Volume"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Buffer storage volume of the Heat Pump. Buffer storage is thermal energy storage using a tank for the circulating heat transfer fluid of the Heat Pump"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "53"
+  }, {
+    "range" : "36",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "range" : "60",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "36",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "range" : "36",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#connectionType",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "66",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "connectionType",
+      "undefined" : "connection type"
+    },
+    "domain" : "36",
+    "comment" : {
+      "undefined" : "Specifies the type of connection configuration for an asset.\nAllowed values:\n\nparallel – Components are connected in parallel, sharing input and output points to maintain equal voltage.\nseries – Components are connected in sequence, so the same current flows through each component."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#isSubMeterOf",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "11",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isSubMeterOf",
+      "undefined" : "is submeter of"
+    },
+    "domain" : "68",
+    "comment" : {
+      "undefined" : "Defines a hierarchical relationship where a sub-meter asset belongs to a main meter asset."
+    },
+    "attributes" : [ "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "94",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasThermalEfficiency",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "97",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasThermalEfficiency",
+      "undefined" : "has thermal efficiency"
+    },
+    "superproperty" : [ "98" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Indicates the efficiency of thermal energy conversion for an asset."
+    },
+    "attributes" : [ "object" ],
+    "id" : "96"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasVolume",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "81",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVolume",
+      "undefined" : "has volume"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Associates an asset with its physical volume."
+    },
+    "attributes" : [ "object" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasStorageTankVolume",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "80",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasStorageTankVolume",
+      "undefined" : "has storage tank volume"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Links an asset to the volume of its storage tank."
+    },
+    "attributes" : [ "object" ],
+    "id" : "102"
+  }, {
+    "iri" : "https://w3id.org/hpont#hasNumberOfOutdoorUnits",
+    "baseIri" : "https://w3id.org/hpont",
+    "range" : "106",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/hpont#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasNumberOfOutdoorUnits",
+      "en" : "has Number Of Outdoor Units"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Number of outdoor units that the Heat Pump has"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "105"
+  }, {
+    "iri" : "https://w3id.org/hpont#hasNominalPowerConsumptionInHeatingMode",
+    "baseIri" : "https://w3id.org/hpont",
+    "range" : "109",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/hpont#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasNominalPowerConsumptionInHeatingMode",
+      "en" : "has Nominal Power Consumption In Heating Mode"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Nominal power consumption of the Heat Pump when it is in heating mode"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "108"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#numberOfPanels",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "115",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "numberOfPanels",
+      "undefined" : "number of panels"
+    },
+    "domain" : "94",
+    "comment" : {
+      "undefined" : "Specifies the number of panels associated with a PV system."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "114"
+  }, {
+    "iri" : "https://w3id.org/hpont#hasTechnology",
+    "baseIri" : "https://w3id.org/hpont",
+    "range" : "113",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/hpont#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTechnology",
+      "en" : "has Technology"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Base technology of a given Heat Pump"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "116"
+  }, {
+    "range" : "81",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "2",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "iri" : "https://w3id.org/hpont#hasOperatingModeAvailable",
+    "baseIri" : "https://w3id.org/hpont",
+    "range" : "120",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/hpont#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOperatingModeAvailable",
+      "en" : "has Operating Mode Available"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Operating modes available for the Heat Pump"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "119"
+  }, {
+    "range" : "2",
+    "domain" : "122",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
+  }, {
+    "range" : "2",
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "2",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126"
+  }, {
+    "range" : "2",
+    "domain" : "128",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "range" : "2",
+    "domain" : "130",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "range" : "2",
+    "domain" : "132",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasChargingPoint",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "17",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasChargingPoint",
+      "undefined" : "has charging point"
+    },
+    "domain" : "74",
+    "comment" : {
+      "undefined" : "Links an asset to a charging point for electric vehicles or devices."
+    },
+    "attributes" : [ "object" ],
+    "id" : "133"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasTarget",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "25",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTarget",
+      "undefined" : "has target"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Relates an asset with the space it works for."
+    },
+    "attributes" : [ "object" ],
+    "id" : "134"
+  }, {
+    "iri" : "https://w3id.org/hpont#hasDHWStorageVolume",
+    "baseIri" : "https://w3id.org/hpont",
+    "range" : "137",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/hpont#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDHWStorageVolume",
+      "en" : "has DHW Storage Volume"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "DHW (Domestic Hot Water) storage volume of the Heat Pump. DHW storage is a tank that contains clean potable water for household hot water consumption"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "136"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasElectricCapacity",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "78",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasElectricCapacity",
+      "undefined" : "has electric capacity"
+    },
+    "superproperty" : [ "139" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Specifies the electrical capacity of an asset, such as a battery or PV system."
+    },
+    "attributes" : [ "object" ],
+    "id" : "138"
+  }, {
+    "range" : "2",
+    "domain" : "141",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
+  }, {
+    "range" : "2",
+    "domain" : "112",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "142"
+  }, {
+    "range" : "2",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "143"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasResistance",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "88",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasResistance",
+      "undefined" : "has resistance"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Links an asset to its electrical resistance value."
+    },
+    "attributes" : [ "object" ],
+    "id" : "144"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasDischargeFlowRate",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "44",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDischargeFlowRate",
+      "undefined" : "has discharge flow rate"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "36",
+    "comment" : {
+      "undefined" : "Links an asset to the rate at which it discharges energy or material."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "145"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasVolume",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "81",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVolume",
+      "undefined" : "has volume"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "36",
+    "comment" : {
+      "undefined" : "Associates an asset with its physical volume."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "146"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasCapacity",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "75",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCapacity",
+      "undefined" : "has capacity"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "132",
+    "subproperty" : [ "138", "149", "150" ],
+    "comment" : {
+      "undefined" : "Links an asset to its overall capacity (energy, power, or material)."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "148"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasTilt",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "89",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTilt",
+      "undefined" : "has tilt"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "33",
+    "comment" : {
+      "undefined" : "Indicates the tilt angle of an asset (e.g., solar panel)."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "151"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#connectionType",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "147",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "connectionType",
+      "undefined" : "connection type"
+    },
+    "domain" : "36",
+    "comment" : {
+      "undefined" : "Specifies the type of connection configuration for an asset.\nAllowed values:\n\nparallel – Components are connected in parallel, sharing input and output points to maintain equal voltage.\nseries – Components are connected in sequence, so the same current flows through each component."
+    },
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "152"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasChargeFlowRate",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "38",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasChargeFlowRate",
+      "undefined" : "has charge flow rate"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "36",
+    "comment" : {
+      "undefined" : "Links an asset to the rate at which it charges energy or material"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "153"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasState",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "154",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasState",
+      "undefined" : "state"
+    },
+    "domain" : "125",
+    "comment" : {
+      "undefined" : "Represents the current operational state of an asset."
+    },
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "155"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasAzimuth",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "83",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasAzimuth",
+      "undefined" : "has azimuth"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "33",
+    "comment" : {
+      "undefined" : "Indicates the azimuth angle associated with an asset, typically for orientation purposes."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "156"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasPower",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "86",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPower",
+      "undefined" : "has power"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "141",
+    "comment" : {
+      "undefined" : "Associates an asset with its power value (rate of energy transfer)."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "157"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasMaximumPowerRating",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "160",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMaximumPowerRating",
+      "undefined" : "maximum power rating"
+    },
+    "domain" : "159",
+    "comment" : {
+      "undefined" : "Specifies the maximum power rating of an asset."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "158"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasCapacityRange",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "162",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCapacityRange",
+      "undefined" : "capacity range"
+    },
+    "domain" : "159",
+    "comment" : {
+      "undefined" : "Defines the range of capacity values for an asset (minimum and maximum)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "161"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasCapacity",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "75",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCapacity",
+      "undefined" : "has capacity"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "74",
+    "subproperty" : [ "138", "149", "150" ],
+    "comment" : {
+      "undefined" : "Links an asset to its overall capacity (energy, power, or material)."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "163"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasCoefficientOfPerformance",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "29",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCoefficientOfPerformance",
+      "undefined" : "has coefficient of performance"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "74",
+    "subproperty" : [ "165", "166" ],
+    "comment" : {
+      "undefined" : "Associates an asset with its COP value, representing efficiency in heating or cooling."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "164"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasOperatingLimits",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "87",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOperatingLimits",
+      "undefined" : "has operating limits"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "74",
+    "comment" : {
+      "undefined" : "Links an asset to its operational boundaries or thresholds."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "167"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#isGenerationEquipment",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "168",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isGenerationEquipment",
+      "undefined" : "is generation equipment"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Boolean property indicating whether an asset functions as generation equipment."
+    },
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "169"
+  }, {
+    "iri" : "http://schema.org/name",
+    "baseIri" : "http://schema.org",
+    "range" : "170",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "2",
+    "attributes" : [ "someValues", "external", "datatype" ],
+    "id" : "171"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasEfficiency",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "84",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasEfficiency",
+      "undefined" : "has efficiency"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "2",
+    "subproperty" : [ "172", "173", "96" ],
+    "comment" : {
+      "undefined" : "Relates an asset to its overall efficiency."
+    },
+    "attributes" : [ "object" ],
+    "id" : "98"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasThermalCapacity",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "77",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasThermalCapacity",
+      "undefined" : "has thermal capacity"
+    },
+    "superproperty" : [ "139" ],
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Relates an asset to its thermal capacity, indicating heat storage or transfer capability."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "174"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasThermalEfficiency",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "97",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasThermalEfficiency",
+      "undefined" : "has thermal efficiency"
+    },
+    "superproperty" : [ "98" ],
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Indicates the efficiency of thermal energy conversion for an asset."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "175"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasElectricEfficiency",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "177",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasElectricEfficiency",
+      "undefined" : "has electric efficiency"
+    },
+    "superproperty" : [ "98" ],
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Indicates the efficiency of electrical energy conversion for an asset."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "176"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasSetpoint",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "180",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSetpoint",
+      "undefined" : "setpoint"
+    },
+    "domain" : "94",
+    "comment" : {
+      "undefined" : "Indicates the target value or setpoint for controlling an asset (e.g., temperature, pressure)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "179"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasPowerRating",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "85",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPowerRating",
+      "undefined" : "has power rating"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Specifies the maximum power rating of an asset."
+    },
+    "attributes" : [ "object" ],
+    "id" : "181"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasCOPcooling",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "28",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCOPcooling",
+      "undefined" : "has COP cooling"
+    },
+    "superproperty" : [ "182" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Specifies the COP for cooling mode of an asset."
+    },
+    "attributes" : [ "object" ],
+    "id" : "166"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasChargeFlowRate",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "38",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasChargeFlowRate",
+      "undefined" : "has charge flow rate"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Links an asset to the rate at which it charges energy or material"
+    },
+    "attributes" : [ "object" ],
+    "id" : "184"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasConversionEfficiency",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "183",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasConversionEfficiency",
+      "undefined" : "has conversion efficiency"
+    },
+    "superproperty" : [ "98" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Specifies the efficiency of an asset in converting one energy form to another."
+    },
+    "attributes" : [ "object" ],
+    "id" : "173"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasCharacteristic",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "76",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCharacteristic",
+      "undefined" : "has characteristic"
+    },
+    "domain" : "2",
+    "subproperty" : [ "188", "102", "181", "189", "139", "182", "190", "184", "191", "99", "192", "98" ],
+    "comment" : {
+      "undefined" : "Relates an asset to a specific characteristic or attribute that describes its properties."
+    },
+    "attributes" : [ "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasCOPHeating",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "135",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCOPHeating",
+      "undefined" : "has COP heating"
+    },
+    "superproperty" : [ "182" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Specifies the COP for heating mode of an asset."
+    },
+    "attributes" : [ "object" ],
+    "id" : "165"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#isGenerationEquipment",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "194",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isGenerationEquipment",
+      "undefined" : "is generation equipment"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Boolean property indicating whether an asset functions as generation equipment."
+    },
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "193"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasCapacity",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "75",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCapacity",
+      "undefined" : "has capacity"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "2",
+    "subproperty" : [ "138", "149", "150" ],
+    "comment" : {
+      "undefined" : "Links an asset to its overall capacity (energy, power, or material)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "139"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasCapacity",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "75",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCapacity",
+      "undefined" : "has capacity"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "6",
+    "subproperty" : [ "138", "149", "150" ],
+    "comment" : {
+      "undefined" : "Links an asset to its overall capacity (energy, power, or material)."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "195"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasCoefficientOfPerformance",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "29",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCoefficientOfPerformance",
+      "undefined" : "has coefficient of performance"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "6",
+    "subproperty" : [ "165", "166" ],
+    "comment" : {
+      "undefined" : "Associates an asset with its COP value, representing efficiency in heating or cooling."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "196"
+  }, {
+    "iri" : "https://w3id.org/hpont#hasPowerSupplyType",
+    "baseIri" : "https://w3id.org/hpont",
+    "range" : "198",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/hpont#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPowerSupplyType",
+      "en" : "has Power Supply Type"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Electric power supply type of the Heat Pump System"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "197"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasPowerRating",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "85",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPowerRating",
+      "undefined" : "has power rating"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Specifies the maximum power rating of an asset."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "199"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#isSubMeterOf",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "11",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isSubMeterOf",
+      "undefined" : "is submeter of"
+    },
+    "domain" : "68",
+    "comment" : {
+      "undefined" : "Defines a hierarchical relationship where a sub-meter asset belongs to a main meter asset."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "200"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasStorageTankVolume",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "80",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasStorageTankVolume",
+      "undefined" : "has storage tank volume"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Links an asset to the volume of its storage tank."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "201"
+  }, {
+    "iri" : "https://w3id.org/hpont#hasOperatingModeAvailable",
+    "baseIri" : "https://w3id.org/hpont",
+    "range" : "120",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/hpont#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOperatingModeAvailable",
+      "en" : "has Operating Mode Available"
+    },
+    "domain" : "120",
+    "comment" : {
+      "en" : "Operating modes available for the Heat Pump"
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "202"
+  }, {
+    "range" : "76",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "203"
+  }, {
+    "range" : "76",
+    "domain" : "75",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "204"
+  }, {
+    "range" : "76",
+    "domain" : "85",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "205"
+  }, {
+    "range" : "76",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "206"
+  }, {
+    "iri" : "https://w3id.org/hpont#hasNominalHeatingCapacity",
+    "baseIri" : "https://w3id.org/hpont",
+    "range" : "185",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/hpont#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasNominalHeatingCapacity",
+      "en" : "has Nominal Heating Capacity"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Nominal heating capacity of the Heat Pump"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "208"
+  }, {
+    "range" : "76",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "209"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasDischargeFlowRate",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "44",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDischargeFlowRate",
+      "undefined" : "has discharge flow rate"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Links an asset to the rate at which it discharges energy or material."
+    },
+    "attributes" : [ "object" ],
+    "id" : "192"
+  }, {
+    "iri" : "https://w3id.org/hpont#hasNominalCoolingCapacity",
+    "baseIri" : "https://w3id.org/hpont",
+    "range" : "186",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/hpont#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasNominalCoolingCapacity",
+      "en" : "has Nominal Cooling Capacity"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Nominal cooling capacity of the Heat Pump"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "210"
+  }, {
+    "iri" : "https://w3id.org/hpont#hasOutdoorModelUnitName",
+    "baseIri" : "https://w3id.org/hpont",
+    "range" : "187",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/hpont#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOutdoorModelUnitName",
+      "en" : "has Outdoor Model Unit Name"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Name of the oudoor model unit"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "211"
+  }, {
+    "range" : "75",
+    "domain" : "78",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "212"
+  }, {
+    "range" : "75",
+    "domain" : "77",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "213"
+  }, {
+    "range" : "21",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "214"
+  }, {
+    "range" : "21",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "215"
+  }, {
+    "range" : "21",
+    "domain" : "73",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "216"
+  }, {
+    "range" : "21",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "217"
+  }, {
+    "range" : "11",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "218"
+  }, {
+    "range" : "11",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "219"
+  }, {
+    "range" : "11",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "220"
+  }, {
+    "range" : "11",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "221"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasAzimuth",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "83",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasAzimuth",
+      "undefined" : "has azimuth"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Indicates the azimuth angle associated with an asset, typically for orientation purposes."
+    },
+    "attributes" : [ "object" ],
+    "id" : "188"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasStorageCapacity",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "25",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasStorageCapacity",
+      "undefined" : "has storage capacity"
+    },
+    "superproperty" : [ "139" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Associates an asset with its ability to store energy or material."
+    },
+    "attributes" : [ "object" ],
+    "id" : "150"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasTilt",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "89",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTilt",
+      "undefined" : "has tilt"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Indicates the tilt angle of an asset (e.g., solar panel)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "190"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasOperatingLimits",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "87",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOperatingLimits",
+      "undefined" : "has operating limits"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Links an asset to its operational boundaries or thresholds."
+    },
+    "attributes" : [ "object" ],
+    "id" : "191"
+  }, {
+    "range" : "11",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "222"
+  }, {
+    "range" : "6",
+    "domain" : "91",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "223"
+  }, {
+    "range" : "6",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "224"
+  }, {
+    "range" : "60",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "225"
+  }, {
+    "range" : "6",
+    "domain" : "103",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "226"
+  }, {
+    "range" : "84",
+    "domain" : "177",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "227"
+  }, {
+    "range" : "84",
+    "domain" : "183",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "228"
+  }, {
+    "range" : "84",
+    "domain" : "97",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "229"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasPower",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "86",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPower",
+      "undefined" : "has power"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Associates an asset with its power value (rate of energy transfer)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "189"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasCapacity",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "75",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCapacity",
+      "undefined" : "has capacity"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "27",
+    "subproperty" : [ "138", "149", "150" ],
+    "comment" : {
+      "undefined" : "Links an asset to its overall capacity (energy, power, or material)."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "230"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasResistance",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "88",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasResistance",
+      "undefined" : "has resistance"
+    },
+    "domain" : "27",
+    "comment" : {
+      "undefined" : "Links an asset to its electrical resistance value."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "231"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasEfficiency",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "84",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasEfficiency",
+      "undefined" : "has efficiency"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "27",
+    "subproperty" : [ "172", "173", "96" ],
+    "comment" : {
+      "undefined" : "Relates an asset to its overall efficiency."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "232"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#isGenerationEquipment",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "234",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isGenerationEquipment",
+      "undefined" : "is generation equipment"
+    },
+    "domain" : "27",
+    "comment" : {
+      "undefined" : "Boolean property indicating whether an asset functions as generation equipment."
+    },
+    "attributes" : [ "someValues", "datatype" ],
+    "id" : "233"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasCapacity",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "75",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCapacity",
+      "undefined" : "has capacity"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "73",
+    "subproperty" : [ "138", "149", "150" ],
+    "comment" : {
+      "undefined" : "Links an asset to its overall capacity (energy, power, or material)."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "235"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasConversionEfficiency",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "183",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasConversionEfficiency",
+      "undefined" : "has conversion efficiency"
+    },
+    "superproperty" : [ "98" ],
+    "domain" : "73",
+    "comment" : {
+      "undefined" : "Specifies the efficiency of an asset in converting one energy form to another."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "236"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasElectricCapacity",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "78",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasElectricCapacity",
+      "undefined" : "has electric capacity"
+    },
+    "superproperty" : [ "139" ],
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Specifies the electrical capacity of an asset, such as a battery or PV system."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "237"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasEfficiency",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "84",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasEfficiency",
+      "undefined" : "has efficiency"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "72",
+    "subproperty" : [ "172", "173", "96" ],
+    "comment" : {
+      "undefined" : "Relates an asset to its overall efficiency."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "238"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasCapacity",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "75",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCapacity",
+      "undefined" : "has capacity"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "72",
+    "subproperty" : [ "138", "149", "150" ],
+    "comment" : {
+      "undefined" : "Links an asset to its overall capacity (energy, power, or material)."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "239"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasCoefficientOfPerformance",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "29",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCoefficientOfPerformance",
+      "undefined" : "has coefficient of performance"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "2",
+    "subproperty" : [ "165", "166" ],
+    "comment" : {
+      "undefined" : "Associates an asset with its COP value, representing efficiency in heating or cooling."
+    },
+    "attributes" : [ "object" ],
+    "id" : "182"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasThermalCapacity",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "77",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasThermalCapacity",
+      "undefined" : "has thermal capacity"
+    },
+    "superproperty" : [ "139" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Relates an asset to its thermal capacity, indicating heat storage or transfer capability."
+    },
+    "attributes" : [ "object" ],
+    "id" : "149"
+  }, {
+    "range" : "27",
+    "domain" : "101",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "240"
+  }, {
+    "range" : "29",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "241"
+  }, {
+    "range" : "27",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "242"
+  }, {
+    "range" : "27",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "243"
+  }, {
+    "range" : "112",
+    "domain" : "111",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "244"
+  }, {
+    "range" : "31",
+    "domain" : "125",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "245"
+  }, {
+    "range" : "29",
+    "domain" : "135",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "246"
+  }, {
+    "range" : "71",
+    "domain" : "90",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "247"
+  }, {
+    "range" : "50",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "248"
+  }, {
+    "range" : "76",
+    "domain" : "89",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "249"
+  }, {
+    "iri" : "https://w3id.org/fedecom/energyasset#hasElectricEfficiency",
+    "baseIri" : "https://w3id.org/fedecom/energyasset",
+    "range" : "177",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasElectricEfficiency",
+      "undefined" : "has electric efficiency"
+    },
+    "superproperty" : [ "98" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Indicates the efficiency of electrical energy conversion for an asset."
+    },
+    "attributes" : [ "object" ],
+    "id" : "172"
+  }, {
+    "range" : "76",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "250"
+  }, {
+    "range" : "76",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "251"
+  }, {
+    "range" : "76",
+    "domain" : "81",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "252"
+  }, {
+    "range" : "76",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "253"
+  }, {
+    "range" : "76",
+    "domain" : "86",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "254"
+  } ]
+}

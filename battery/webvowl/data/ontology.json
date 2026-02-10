@@ -1,0 +1,1670 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://schema.org", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/fedecom/battery", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "undefined" : "Battery: Battery Characterization module for the FEDECOM Ontology"
+    },
+    "iri" : "https://w3id.org/fedecom/battery",
+    "author" : [ "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>" ],
+    "description" : {
+      "undefined" : "This ontology module includes the necessary classes and properties to model and characterize batteries."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/rdflicense/cc-by4.0",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Ignacio Lázaro (Tekniker) <ignacio.lazaro@tekniker.es>\nAndoni Osorio (Tekniker) <andoni.osorio@tekniker.es>\nMarko Jelić (Institut Mihajlo Pupin) <marko.jelic@pupin.rs>\nSpyros Tzavikas (Grid Singularity) <spyros@gridsingularity.com>",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "battery",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/fedecom/battery#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Battery: Battery Characterization module for the FEDECOM Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/fedecom/battery#Power",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Power",
+      "undefined" : "Power"
+    },
+    "subClasses" : [ "13", "14" ],
+    "comment" : {
+      "undefined" : "How quickly the battery can deliver or absorb energy during discharge or charge"
+    },
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#BatteryChemistryType",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "Lithium-ion, Lead-acid, Nickel-metal hydride",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BatteryChemistryType",
+      "undefined" : "Battery chemistry type"
+    },
+    "comment" : {
+      "undefined" : "The specific chemical composition and technology used in a battery."
+    },
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#StorageLevel",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "StorageLevel",
+      "undefined" : "Storage level"
+    },
+    "comment" : {
+      "undefined" : "Indicates how much energy is stored in the battery at a given time."
+    },
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#PowerDelivery",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PowerDelivery",
+      "undefined" : "Power delivery"
+    },
+    "comment" : {
+      "undefined" : "The ability of the battery to supply power to a load."
+    },
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#Voltage",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Voltage",
+      "undefined" : "Voltage"
+    },
+    "subClasses" : [ "20" ],
+    "comment" : {
+      "undefined" : "The force that drives electric current through a circuit. It varies with the battery’s state of charge and load conditions."
+    },
+    "id" : "22"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#LossRate",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LossRate",
+      "undefined" : "Loss rate"
+    },
+    "comment" : {
+      "undefined" : "The rate at which a battery loses stored energy over time, often due to self-discharge or inefficiencies."
+    },
+    "id" : "39"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#ChargeCapacity",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ChargeCapacity",
+      "undefined" : "Charge capacity"
+    },
+    "comment" : {
+      "undefined" : "The maximum amount of charge that can be stored during charging, usually equal to the battery’s rated capacity."
+    },
+    "id" : "28",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#Model",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Model",
+      "undefined" : "Model"
+    },
+    "comment" : {
+      "undefined" : "The specific product designation or name given by the manufacturer."
+    },
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#Energy",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Energy",
+      "undefined" : "Energy"
+    },
+    "comment" : {
+      "undefined" : "The total amount of work a battery can perform."
+    },
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#ChargeCurrent",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ChargeCurrent",
+      "undefined" : "Charge current"
+    },
+    "comment" : {
+      "undefined" : "The rate at which current flows into the battery during charging."
+    },
+    "id" : "31",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#DischargePower",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DischargePower",
+      "undefined" : "Discharge power"
+    },
+    "comment" : {
+      "undefined" : "The rate at which energy is delivered from the battery during discharge."
+    },
+    "id" : "13",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#ChargePower",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ChargePower",
+      "undefined" : "Charge power"
+    },
+    "comment" : {
+      "undefined" : "The rate at which energy is supplied to the battery during charging."
+    },
+    "id" : "14",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#Manufacturer",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Manufacturer",
+      "undefined" : "Manufacturer"
+    },
+    "comment" : {
+      "undefined" : "The company that produces the battery."
+    },
+    "id" : "42"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#OpenCircuitVoltageOverDOD",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OpenCircuitVoltageOverDOD",
+      "undefined" : "Open circuit voltage over Depth of Discharge"
+    },
+    "comment" : {
+      "undefined" : "The relationship between Open Circuit Voltage and the percentage of energy discharged from the battery."
+    },
+    "id" : "19",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#Current",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Current",
+      "undefined" : "Current"
+    },
+    "subClasses" : [ "24", "31" ],
+    "comment" : {
+      "undefined" : "The flow of electric charge through a circuit."
+    },
+    "id" : "25"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#Battery",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Battery",
+      "undefined" : "Battery"
+    },
+    "comment" : {
+      "undefined" : "A device that stores chemical energy and converts it into electrical energy through electrochemical reactions."
+    },
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#BatteryLifetime",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BatteryLifetime",
+      "undefined" : "Battery lifetime"
+    },
+    "comment" : {
+      "undefined" : "The total period a battery can function effectively before its capacity drops below a usable threshold, often measured in cycles or years."
+    },
+    "id" : "48"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#Capacity",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Capacity",
+      "undefined" : "Capacity"
+    },
+    "subClasses" : [ "28" ],
+    "comment" : {
+      "undefined" : "The amount of electric charge a battery can store."
+    },
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#DischargeCurrent",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DischargeCurrent",
+      "undefined" : "Discharge current"
+    },
+    "comment" : {
+      "undefined" : "The rate at which current flows out of the battery during discharge."
+    },
+    "id" : "24",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#SOC",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SOC",
+      "undefined" : "State of charge"
+    },
+    "comment" : {
+      "undefined" : "The current level of charge in the battery compared to its full capacity."
+    },
+    "id" : "53"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#OpenCircuitVoltage",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OpenCircuitVoltage",
+      "undefined" : "Open circuit voltage"
+    },
+    "subClasses" : [ "10", "19" ],
+    "comment" : {
+      "undefined" : "The voltage of a battery when it is not connected to any load or circuit (no current flowing)."
+    },
+    "id" : "20",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#OpenCircuitVoltageOverSOC",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OpenCircuitVoltageOverSOC",
+      "undefined" : "Open circuit voltage over State of Charge"
+    },
+    "comment" : {
+      "undefined" : "The relationship between Open Circuit Voltage and the percentage of energy remaining in the battery."
+    },
+    "id" : "10",
+    "superClasses" : [ "20" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "55",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "56",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "57",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "58",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "59",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "60",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "61",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "64",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "65",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/fedecom/battery#conversionFactor",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "2",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "conversionFactor",
+      "undefined" : "conversion factor"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasStorageLevel",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "5",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasStorageLevel",
+      "undefined" : "has storage level"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to the amount of energy stored at a given time."
+    },
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#maximum",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "8",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "maximum",
+      "undefined" : "maximum"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Maximum value for a given characteristic."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverSOC",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "10",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOpenCircuitVoltageOverSOC",
+      "undefined" : "has open circuit voltage over State of Charge"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to the functional relationship between open circuit voltage and state of charge."
+    },
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasDischargePower",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "13",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDischargePower",
+      "undefined" : "has discharge power"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to the amount of power output during discharge."
+    },
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "range" : "20",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "range" : "20",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "25",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "22",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "29",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "range" : "25",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasOpenCircuitVoltage",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "1",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOpenCircuitVoltage",
+      "undefined" : "has open circuit voltage"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "1",
+    "subproperty" : [ "9", "34" ],
+    "comment" : {
+      "undefined" : "Relates a battery to its voltage when not connected to any load or charging source."
+    },
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "range" : "12",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "range" : "12",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#conversionFactor_in",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "38",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "conversionFactor_in",
+      "undefined" : "conversion factor in"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#minimum",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "33",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "minimum",
+      "undefined" : "minimum"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Minimum value for a given characteristic."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasManufacturer",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "42",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasManufacturer",
+      "undefined" : "has manufacturer"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Links a battery to the entity (company or organization) that produced it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://schema.org/name",
+    "baseIri" : "http://schema.org",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasLifetime",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "48",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLifetime",
+      "undefined" : "has lifetime"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to its expected operational duration."
+    },
+    "attributes" : [ "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasModel",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "43",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasModel",
+      "undefined" : "has model"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Links a battery to its specific product designation or identifier."
+    },
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasModel",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "43",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasModel",
+      "undefined" : "has model"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Links a battery to its specific product designation or identifier."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasSOC",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "53",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSOC",
+      "undefined" : "has state of charge"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to its current level of charge."
+    },
+    "attributes" : [ "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasPowerDelivery",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "17",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPowerDelivery",
+      "undefined" : "has power delivery"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to its ability to supply power to a load."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverDOD",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "19",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOpenCircuitVoltageOverDOD",
+      "undefined" : "has open circuit voltage over Depth of Discharge"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to the functional relationship between open circuit voltage and depth of discharge."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasSOC",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "53",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSOC",
+      "undefined" : "has state of charge"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to its current level of charge."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasDischargeCurrent",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "24",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDischargeCurrent",
+      "undefined" : "has discharge current"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to the value of electric current drawn during discharge."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasLossRate",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "39",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLossRate",
+      "undefined" : "has loss rate"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to the rate at which it loses energy or capacity over time."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverSOC",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "10",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOpenCircuitVoltageOverSOC",
+      "undefined" : "has open circuit voltage over State of Charge"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to the functional relationship between open circuit voltage and state of charge."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasManufacturer",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "42",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasManufacturer",
+      "undefined" : "has manufacturer"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Links a battery to the entity (company or organization) that produced it."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasVoltage",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "22",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVoltage",
+      "undefined" : "has voltage"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to its operating electrical potential difference."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasLossRate",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "39",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLossRate",
+      "undefined" : "has loss rate"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to the rate at which it loses energy or capacity over time."
+    },
+    "attributes" : [ "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasLifetime",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "48",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLifetime",
+      "undefined" : "has lifetime"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to its expected operational duration."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasChargeCurrent",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "31",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasChargeCurrent",
+      "undefined" : "has charge current"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to the value of electric current supplied during charging."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasDischargePower",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "13",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDischargePower",
+      "undefined" : "has discharge power"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to the amount of power output during discharge."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasDischargeCurrent",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "24",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDischargeCurrent",
+      "undefined" : "has discharge current"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to the value of electric current drawn during discharge."
+    },
+    "attributes" : [ "object" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#conversionFactor_out",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "49",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "conversionFactor_out",
+      "undefined" : "conversion factor out"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasVoltage",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "22",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVoltage",
+      "undefined" : "has voltage"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to its operating electrical potential difference."
+    },
+    "attributes" : [ "object" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasStorageLevel",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "5",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasStorageLevel",
+      "undefined" : "has storage level"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to the amount of energy stored at a given time."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverDOD",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "19",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOpenCircuitVoltageOverDOD",
+      "undefined" : "has open circuit voltage over Depth of Discharge"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to the functional relationship between open circuit voltage and depth of discharge."
+    },
+    "attributes" : [ "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasChargePower",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "14",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasChargePower",
+      "undefined" : "has charge power"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to the amount of power delivered during charging."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasCharacteristic",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "1",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCharacteristic",
+      "undefined" : "has characteristic"
+    },
+    "domain" : "1",
+    "subproperty" : [ "3", "71", "66", "47", "68", "52", "72", "15", "62", "73", "11" ],
+    "comment" : {
+      "undefined" : "Links a battery to a general feature or property that describes its nature, such as chemistry type, capacity, or performance attributes."
+    },
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#maximumCycles",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "46",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "maximumCycles",
+      "undefined" : "maximum cycles"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Maximum number of cycles."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasChargePower",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "14",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasChargePower",
+      "undefined" : "has charge power"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to the amount of power delivered during charging."
+    },
+    "attributes" : [ "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasChargeCurrent",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "31",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasChargeCurrent",
+      "undefined" : "has charge current"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to the value of electric current supplied during charging."
+    },
+    "attributes" : [ "object" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://w3id.org/fedecom/battery#hasPowerDelivery",
+    "baseIri" : "https://w3id.org/fedecom/battery",
+    "range" : "17",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPowerDelivery",
+      "undefined" : "has power delivery"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a battery to its ability to supply power to a load."
+    },
+    "attributes" : [ "object" ],
+    "id" : "73"
+  } ]
+}

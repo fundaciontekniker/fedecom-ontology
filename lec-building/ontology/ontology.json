@@ -1,0 +1,821 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#hasArea"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#BuildingArea"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#hasBuildingTypology"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#BuildingTypology"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#hasCircuit"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Circuit"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#hasFloor"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Floor"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#hasLocation"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Location"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#hasRoom"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Room"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#hasRoom"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Room"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#hasSite"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Site"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#hasParticipant"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Building"
+  } ]
+}, {
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Name or identifier for an entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "name"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#example",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@value" : "http://purl.org/NET/rdflicense/cc-by4.0"
+  } ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Ignacio Lázaro (Tekniker) <ignacio.lazaro@tekniker.es>\nAndoni Osorio (Tekniker) <andoni.osorio@tekniker.es>\nMarko Jelić (Institut Mihajlo Pupin) <marko.jelic@pupin.rs>\nSpyros Tzavikas (Grid Singularity) <spyros@gridsingularity.com>"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : ""
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "This ontology module includes the necessary classes and properties to characterize energy communities in terms of the buildings included in them."
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "LEC-Building: Energy Communities and Buildings Characterization module for the FEDECOM Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "lec-building"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/fedecom/lec-building#"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/fedecom/units"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#AssemblyBuilding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\"Assembly Group A occupancy includes, among othersm the use of a building or structure, or a portion thereof, for the gathering of persons for purposes such as civic, social or religious functions; recreation, food or drink consumption or awaiting transportation\" (2024 IBC)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "2024 International Building Code (Ver. Aug 2025)"
+  }, {
+    "@value" : "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Assembly Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Building"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Motion picture theaters, Symphony and concert halls; Banquet halls, Restaurants, cafeterias and similar dining facilities (including associated commercial kitchens); Amusement arcades, Art galleries; Swimming pools, Tennis courts; Amusement park structures, Stadiums"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#Building",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#BuildingArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Total floor space of a building measured at all levels, including walls and structural elements, typically expressed in square units (e.g., square meters or square feet)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Building Area"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#BuildingTypology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#BusinessBuilding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\"Business Group B occupancy, includes, among others, the use of a building or structure, or a portion thereof, for office, professional or service-type transactions, including storage of records and accounts.\" (2024 IDC)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "2024 International Building Code (Ver. Aug 2025)"
+  }, {
+    "@value" : "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Business Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Building"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Airport traffic control towers, Ambulatory care facilities, Animal hospitals, kennels and pounds, Banks"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#Circuit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Electrical distribution system within a building."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Circuit"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#EducationalBuilding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\"Educational Group E occupancy, includes, among others, the use of a building or structure, or a portion thereof, by six or more persons at any one time for educational purposes through the 12th grade.\" (2024 IDC)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "2024 International Building Code (Ver. Aug 2025)"
+  }, {
+    "@value" : "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Educational Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Building"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Schools"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#FactoryIndustrialBuilding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\"Factory Group F occupancy, includes, among others, the use of a building or structure, or a portion thereof, for assembling, , disassembling, fabricating, finishing, manufacturing, packaging, repair or processing operations that are not as a Group H hazardous or Group S storage occupancy.\" (2024 IDC)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "2024 International Building Code (Ver. Aug 2025)"
+  }, {
+    "@value" : "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Factory Industrial Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Building"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Appliances, Athletic equipment, Automobiles and other motor vehicles, Bakeries; Beverages: up to and including 20 percent alcohol content, Brick and masonry, Ceramic products, Foundries"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#Floor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A horizontal level within a building, typically used for occupancy or functional spaces."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Floor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#HighHazardBuilding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\"High-Hazard Group H occupancy, includes, among others, the use of a building or structure, or a portion thereof, that involves the manufacturing, processing, generation or storage of materials that constitute a physical or health hazard in quantities in excess of those allowed in control aread complying with Section 414 [of 2024 IDC]\" (2024 IDC)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "2024 International Building Code (Ver. Aug 2025)"
+  }, {
+    "@value" : "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "High Hazard Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Building"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Buildings containing hazardous materials such as: Consumer fireworks, Detonable pyrophoric materials, Oxidizers"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#InstitutionalBuilding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\"Institutional Group I occupancy, includes, among others, the use of a building or structure, or a portion thereof, in which care or supervision is provided to persons who are or are incapable of self-preservation without physical assistance or in which persons are detained for penal or correctional purposed or in which the liberty of the occupants is restricted.\" (2024 IDC)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "2024 International Building Code (Ver. Aug 2025)"
+  }, {
+    "@value" : "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Institutional Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Building"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Alcohol and drug centers, Assisted living facilities; Hospitals, Nursing homes, Psychiatric hospitals; Correctional centers, Detention centers, Jails; Adult day care, Child day care"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#LEC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A group of local actors (citizens, businesses, or organizations) collaborating to produce, share, and manage energy—often renewable—within a defined area."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LEC"
+  }, {
+    "@value" : "Local Energy Community"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid8"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A specific point or area identified by coordinates or address, representing where an object or activity is situated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Location"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#MercantileBuilding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\"Mercantile Group M occupancy, includes, among others, the use of a building or structure, or a portion thereof, for the display and sale of merchandise, and involves stocks of goods, wares or merchandise incidental to such purposes and where the public has access.\" (2024 IDC)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "2024 International Building Code (Ver. Aug 2025)"
+  }, {
+    "@value" : "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mercantile Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Building"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Department stores, Drug stores, Greenhouses for display and sale of plants that provide public access, Markets"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#PrimaryCircuit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Main feed from the transformer or utility source to the building’s main distribution board or primary distribution box—usually at medium voltage (e.g., 0.4 kV)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Primary Circuit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Circuit"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#ResidentialBuilding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\"Residential Group R occupancy, includes, among others, the use of a building or structure, or a portion thereof, for sleeping purposes when not classified when not classified as an Institutional Group I or when not regulated by the International Residential Code.\" (2024 IBC)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "2024 International Building Code (Ver. Aug 2025)"
+  }, {
+    "@value" : "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Residential Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Building"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Hotels (transient), Motels (transient); Congregate living facilities (nontransient) with more than 16 occupants (Boarding houses (nontransient), Convents, Dormitories, Emergency services living quarters,Fraternities and sororities, Monasteries)"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#Room",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An enclosed space within a building, separated by walls, intended for a specific use or function."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Room"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#SecondaryCircuit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sub-distribution level that delivers power from the main board to floor or building-specific panels, often three-phase and protected by larger breakers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Secondary Circuit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Circuit"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#Site",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A distinct physical location where a Local Energy Community has infrastructure or assets (such as generation units, storage, or consumption points). A single LEC can operate across multiple sites within its network."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Site"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid9"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#StorageBuilding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Storage Group S occupancy includes, among others, the use of a building or structure, or a portion thereof, for storage that is not classified as a hazardous occupancy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "2024 International Building Code (Ver. Aug 2025)"
+  }, {
+    "@value" : "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Storage Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Building"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Storage facilities, Garages"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#TertiaryCircuit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Final distribution stage, supplying end-use devices; typically single-phase 220 V circuits, each protected by its own breaker or RCD."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tertiary Circuit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Circuit"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#UUID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "UUID of an entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "UUID"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#UtilityMiscellaneousBuilding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Buildings and structures of an accessory character and miscellaneous structures not classified in any specific occupancy. Shall be constructed, equipped and maintained to conform to the requirements of this code commensurate with the fire and life hazard incidental to their occupancy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "2024 International Building Code (Ver. Aug 2025)"
+  }, {
+    "@value" : "https://codes.iccsafe.org/content/IBC2024V2.0/chapter-3-occupancy-classification-and-use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Utility Miscellaneous Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Building"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Agricultural buildings, Aircraft hangars, accessory to a one- or two-family residence (see Section 412.4), Barns, Carports"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#children",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Number of children occupying a building."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "children"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#occupation"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#floorNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Number of floors of a building."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "floor number"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#hasArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links an entity to its corresponding Area value."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#BuildingArea"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#hasBuildingTypology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has building typology"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "in study"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#hasCircuit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Connects a Building entity to an electrical circuit that supplies or distributes power within the building."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has circuit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Circuit"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#hasConsumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has consumption"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "in study"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#hasElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has element"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#hasEnergyAsset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links an entity (usually Building) to an asset that generates, stores, or manages energy (e.g., solar panel, battery)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has energy asset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#hasElement"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#hasEquipment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Connects an entity (usually Building) to devices or machinery used for specific operations or processes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has equipment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#hasElement"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#hasFloor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a Building with the Floors that it is composed of."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has floor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Floor"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Associates an entity with a geographic or spatial position."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Building"
+  }, {
+    "@id" : "https://w3id.org/fedecom/lec-building#LEC"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Location"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#hasParticipant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a Site with the Buildings it is composed of."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Site"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has participant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Building"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#hasRoom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a Floor with the Rooms included in it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Floor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has room"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Room"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#hasSite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Connects a LEC with the Sites it includes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#LEC"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has site"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/fedecom/lec-building#Site"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#notes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Additional notes to a specific entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "notes"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#occupation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Number of people occupying a building."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "occupation"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/lec-building#yearOfConstruction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The year a building was built."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "year of construction"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+} ]

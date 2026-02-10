@@ -1,0 +1,453 @@
+<https://w3id.org/fedecom/battery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/fedecom/battery> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/fedecom/units> .
+<https://w3id.org/fedecom/battery> <http://creativecommons.org/ns#license> "http://purl.org/NET/rdflicense/cc-by4.0" .
+<https://w3id.org/fedecom/battery> <http://purl.org/dc/terms/contributor> "Ignacio Lázaro (Tekniker) <ignacio.lazaro@tekniker.es>\nAndoni Osorio (Tekniker) <andoni.osorio@tekniker.es>\nMarko Jelić (Institut Mihajlo Pupin) <marko.jelic@pupin.rs>\nSpyros Tzavikas (Grid Singularity) <spyros@gridsingularity.com>" .
+<https://w3id.org/fedecom/battery> <http://purl.org/dc/terms/created> "" .
+<https://w3id.org/fedecom/battery> <http://purl.org/dc/terms/creator> "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>" .
+<https://w3id.org/fedecom/battery> <http://purl.org/dc/terms/description> "This ontology module includes the necessary classes and properties to model and characterize batteries." .
+<https://w3id.org/fedecom/battery> <http://purl.org/dc/terms/title> "Battery: Battery Characterization module for the FEDECOM Ontology" .
+<https://w3id.org/fedecom/battery> <http://purl.org/vocab/vann/preferredNamespacePrefix> "battery" .
+<https://w3id.org/fedecom/battery> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/fedecom/battery#" .
+<https://w3id.org/fedecom/battery> <http://www.w3.org/2002/07/owl#versionInfo> "" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fedecom/battery#hasCharacteristic
+<https://w3id.org/fedecom/battery#hasCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/battery#hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a battery to a general feature or property that describes its nature, such as chemistry type, capacity, or performance attributes." .
+<https://w3id.org/fedecom/battery#hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#label> "has characteristic" .
+<https://w3id.org/fedecom/battery#hasCharacteristic> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#hasChargeCurrent
+<https://w3id.org/fedecom/battery#hasChargeCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/battery#hasChargeCurrent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/battery#hasCharacteristic> .
+<https://w3id.org/fedecom/battery#hasChargeCurrent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/battery#Battery> .
+<https://w3id.org/fedecom/battery#hasChargeCurrent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/battery#ChargeCurrent> .
+<https://w3id.org/fedecom/battery#hasChargeCurrent> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a battery to the value of electric current supplied during charging." .
+<https://w3id.org/fedecom/battery#hasChargeCurrent> <http://www.w3.org/2000/01/rdf-schema#label> "has charge current" .
+<https://w3id.org/fedecom/battery#hasChargeCurrent> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#hasChargePower
+<https://w3id.org/fedecom/battery#hasChargePower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/battery#hasChargePower> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/battery#hasCharacteristic> .
+<https://w3id.org/fedecom/battery#hasChargePower> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/battery#Battery> .
+<https://w3id.org/fedecom/battery#hasChargePower> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/battery#ChargePower> .
+<https://w3id.org/fedecom/battery#hasChargePower> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a battery to the amount of power delivered during charging." .
+<https://w3id.org/fedecom/battery#hasChargePower> <http://www.w3.org/2000/01/rdf-schema#label> "has charge power" .
+<https://w3id.org/fedecom/battery#hasChargePower> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#hasDischargeCurrent
+<https://w3id.org/fedecom/battery#hasDischargeCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/battery#hasDischargeCurrent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/battery#hasCharacteristic> .
+<https://w3id.org/fedecom/battery#hasDischargeCurrent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/battery#Battery> .
+<https://w3id.org/fedecom/battery#hasDischargeCurrent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/battery#DischargeCurrent> .
+<https://w3id.org/fedecom/battery#hasDischargeCurrent> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a battery to the value of electric current drawn during discharge." .
+<https://w3id.org/fedecom/battery#hasDischargeCurrent> <http://www.w3.org/2000/01/rdf-schema#label> "has discharge current" .
+<https://w3id.org/fedecom/battery#hasDischargeCurrent> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#hasDischargePower
+<https://w3id.org/fedecom/battery#hasDischargePower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/battery#hasDischargePower> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/battery#hasCharacteristic> .
+<https://w3id.org/fedecom/battery#hasDischargePower> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/battery#Battery> .
+<https://w3id.org/fedecom/battery#hasDischargePower> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/battery#DischargePower> .
+<https://w3id.org/fedecom/battery#hasDischargePower> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a battery to the amount of power output during discharge." .
+<https://w3id.org/fedecom/battery#hasDischargePower> <http://www.w3.org/2000/01/rdf-schema#label> "has discharge power" .
+<https://w3id.org/fedecom/battery#hasDischargePower> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#hasLifetime
+<https://w3id.org/fedecom/battery#hasLifetime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/battery#hasLifetime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/battery#hasCharacteristic> .
+<https://w3id.org/fedecom/battery#hasLifetime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/battery#Battery> .
+<https://w3id.org/fedecom/battery#hasLifetime> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/battery#BatteryLifetime> .
+<https://w3id.org/fedecom/battery#hasLifetime> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a battery to its expected operational duration." .
+<https://w3id.org/fedecom/battery#hasLifetime> <http://www.w3.org/2000/01/rdf-schema#label> "has lifetime" .
+<https://w3id.org/fedecom/battery#hasLifetime> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#hasLossRate
+<https://w3id.org/fedecom/battery#hasLossRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/battery#hasLossRate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/battery#hasCharacteristic> .
+<https://w3id.org/fedecom/battery#hasLossRate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/battery#Battery> .
+<https://w3id.org/fedecom/battery#hasLossRate> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/battery#LossRate> .
+<https://w3id.org/fedecom/battery#hasLossRate> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a battery to the rate at which it loses energy or capacity over time." .
+<https://w3id.org/fedecom/battery#hasLossRate> <http://www.w3.org/2000/01/rdf-schema#label> "has loss rate" .
+<https://w3id.org/fedecom/battery#hasLossRate> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#hasManufacturer
+<https://w3id.org/fedecom/battery#hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/battery#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/battery#Battery> .
+<https://w3id.org/fedecom/battery#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/battery#Manufacturer> .
+<https://w3id.org/fedecom/battery#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a battery to the entity (company or organization) that produced it." .
+<https://w3id.org/fedecom/battery#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "has manufacturer" .
+<https://w3id.org/fedecom/battery#hasManufacturer> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#hasModel
+<https://w3id.org/fedecom/battery#hasModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/battery#hasModel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/battery#Battery> .
+<https://w3id.org/fedecom/battery#hasModel> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/battery#Model> .
+<https://w3id.org/fedecom/battery#hasModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a battery to its specific product designation or identifier." .
+<https://w3id.org/fedecom/battery#hasModel> <http://www.w3.org/2000/01/rdf-schema#label> "has model" .
+<https://w3id.org/fedecom/battery#hasModel> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#hasOpenCircuitVoltage
+<https://w3id.org/fedecom/battery#hasOpenCircuitVoltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/battery#hasOpenCircuitVoltage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/battery#hasCharacteristic> .
+<https://w3id.org/fedecom/battery#hasOpenCircuitVoltage> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a battery to its voltage when not connected to any load or charging source." .
+<https://w3id.org/fedecom/battery#hasOpenCircuitVoltage> <http://www.w3.org/2000/01/rdf-schema#label> "has open circuit voltage" .
+<https://w3id.org/fedecom/battery#hasOpenCircuitVoltage> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverDOD
+<https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverDOD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverDOD> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/battery#hasOpenCircuitVoltage> .
+<https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverDOD> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/battery#Battery> .
+<https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverDOD> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/battery#OpenCircuitVoltageOverDOD> .
+<https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverDOD> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a battery to the functional relationship between open circuit voltage and depth of discharge." .
+<https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverDOD> <http://www.w3.org/2000/01/rdf-schema#label> "has open circuit voltage over Depth of Discharge" .
+<https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverDOD> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverSOC
+<https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverSOC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverSOC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/battery#hasOpenCircuitVoltage> .
+<https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverSOC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/battery#Battery> .
+<https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverSOC> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/battery#OpenCircuitVoltageOverSOC> .
+<https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverSOC> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a battery to the functional relationship between open circuit voltage and state of charge." .
+<https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverSOC> <http://www.w3.org/2000/01/rdf-schema#label> "has open circuit voltage over State of Charge" .
+<https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverSOC> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#hasPowerDelivery
+<https://w3id.org/fedecom/battery#hasPowerDelivery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/battery#hasPowerDelivery> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/battery#hasCharacteristic> .
+<https://w3id.org/fedecom/battery#hasPowerDelivery> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/battery#Battery> .
+<https://w3id.org/fedecom/battery#hasPowerDelivery> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/battery#PowerDelivery> .
+<https://w3id.org/fedecom/battery#hasPowerDelivery> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a battery to its ability to supply power to a load." .
+<https://w3id.org/fedecom/battery#hasPowerDelivery> <http://www.w3.org/2000/01/rdf-schema#label> "has power delivery" .
+<https://w3id.org/fedecom/battery#hasPowerDelivery> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#hasSOC
+<https://w3id.org/fedecom/battery#hasSOC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/battery#hasSOC> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/battery#hasCharacteristic> .
+<https://w3id.org/fedecom/battery#hasSOC> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/battery#Battery> .
+<https://w3id.org/fedecom/battery#hasSOC> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/battery#SOC> .
+<https://w3id.org/fedecom/battery#hasSOC> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a battery to its current level of charge." .
+<https://w3id.org/fedecom/battery#hasSOC> <http://www.w3.org/2000/01/rdf-schema#label> "has state of charge" .
+<https://w3id.org/fedecom/battery#hasSOC> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#hasStorageLevel
+<https://w3id.org/fedecom/battery#hasStorageLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/battery#hasStorageLevel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/battery#hasCharacteristic> .
+<https://w3id.org/fedecom/battery#hasStorageLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/battery#Battery> .
+<https://w3id.org/fedecom/battery#hasStorageLevel> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/battery#StorageLevel> .
+<https://w3id.org/fedecom/battery#hasStorageLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a battery to the amount of energy stored at a given time." .
+<https://w3id.org/fedecom/battery#hasStorageLevel> <http://www.w3.org/2000/01/rdf-schema#label> "has storage level" .
+<https://w3id.org/fedecom/battery#hasStorageLevel> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#hasVoltage
+<https://w3id.org/fedecom/battery#hasVoltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/battery#hasVoltage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/battery#hasCharacteristic> .
+<https://w3id.org/fedecom/battery#hasVoltage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/battery#Battery> .
+<https://w3id.org/fedecom/battery#hasVoltage> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/battery#Voltage> .
+<https://w3id.org/fedecom/battery#hasVoltage> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a battery to its operating electrical potential difference." .
+<https://w3id.org/fedecom/battery#hasVoltage> <http://www.w3.org/2000/01/rdf-schema#label> "has voltage" .
+<https://w3id.org/fedecom/battery#hasVoltage> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/name
+<http://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/fedecom/battery#conversionFactor
+<https://w3id.org/fedecom/battery#conversionFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/battery#conversionFactor> <http://www.w3.org/2000/01/rdf-schema#label> "conversion factor" .
+<https://w3id.org/fedecom/battery#conversionFactor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/fedecom/battery#conversionFactor_in
+<https://w3id.org/fedecom/battery#conversionFactor_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/battery#conversionFactor_in> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/battery#conversionFactor> .
+<https://w3id.org/fedecom/battery#conversionFactor_in> <http://www.w3.org/2000/01/rdf-schema#label> "conversion factor in" .
+<https://w3id.org/fedecom/battery#conversionFactor_in> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/fedecom/battery#conversionFactor_out
+<https://w3id.org/fedecom/battery#conversionFactor_out> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/battery#conversionFactor_out> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/fedecom/battery#conversionFactor> .
+<https://w3id.org/fedecom/battery#conversionFactor_out> <http://www.w3.org/2000/01/rdf-schema#label> "conversion factor out" .
+<https://w3id.org/fedecom/battery#conversionFactor_out> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/fedecom/battery#maximum
+<https://w3id.org/fedecom/battery#maximum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/battery#maximum> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum value for a given characteristic." .
+<https://w3id.org/fedecom/battery#maximum> <http://www.w3.org/2000/01/rdf-schema#label> "maximum" .
+<https://w3id.org/fedecom/battery#maximum> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#maximumCycles
+<https://w3id.org/fedecom/battery#maximumCycles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/battery#maximumCycles> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum number of cycles." .
+<https://w3id.org/fedecom/battery#maximumCycles> <http://www.w3.org/2000/01/rdf-schema#label> "maximum cycles" .
+<https://w3id.org/fedecom/battery#maximumCycles> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#minimum
+<https://w3id.org/fedecom/battery#minimum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/battery#minimum> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum value for a given characteristic." .
+<https://w3id.org/fedecom/battery#minimum> <http://www.w3.org/2000/01/rdf-schema#label> "minimum" .
+<https://w3id.org/fedecom/battery#minimum> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fedecom/battery#Battery
+<https://w3id.org/fedecom/battery#Battery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#Battery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/battery#hasChargeCurrent> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/battery#ChargeCurrent> .
+<https://w3id.org/fedecom/battery#Battery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/battery#hasChargePower> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/battery#ChargePower> .
+<https://w3id.org/fedecom/battery#Battery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/battery#hasDischargeCurrent> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/battery#DischargeCurrent> .
+<https://w3id.org/fedecom/battery#Battery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/battery#hasDischargePower> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/battery#DischargePower> .
+<https://w3id.org/fedecom/battery#Battery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/battery#hasLifetime> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/battery#BatteryLifetime> .
+<https://w3id.org/fedecom/battery#Battery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/battery#hasLossRate> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/battery#LossRate> .
+<https://w3id.org/fedecom/battery#Battery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/battery#hasManufacturer> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/battery#Manufacturer> .
+<https://w3id.org/fedecom/battery#Battery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/battery#hasModel> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/battery#Model> .
+<https://w3id.org/fedecom/battery#Battery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverDOD> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/battery#OpenCircuitVoltageOverDOD> .
+<https://w3id.org/fedecom/battery#Battery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverSOC> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/battery#OpenCircuitVoltageOverSOC> .
+<https://w3id.org/fedecom/battery#Battery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/battery#hasPowerDelivery> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/battery#PowerDelivery> .
+<https://w3id.org/fedecom/battery#Battery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/battery#hasSOC> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/battery#SOC> .
+<https://w3id.org/fedecom/battery#Battery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/battery#hasStorageLevel> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/battery#StorageLevel> .
+<https://w3id.org/fedecom/battery#Battery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/battery#hasVoltage> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/battery#Voltage> .
+<https://w3id.org/fedecom/battery#Battery> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that stores chemical energy and converts it into electrical energy through electrochemical reactions." .
+<https://w3id.org/fedecom/battery#Battery> <http://www.w3.org/2000/01/rdf-schema#label> "Battery" .
+<https://w3id.org/fedecom/battery#Battery> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#BatteryChemistryType
+<https://w3id.org/fedecom/battery#BatteryChemistryType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#BatteryChemistryType> <http://www.w3.org/2000/01/rdf-schema#comment> "The specific chemical composition and technology used in a battery." .
+<https://w3id.org/fedecom/battery#BatteryChemistryType> <http://www.w3.org/2000/01/rdf-schema#label> "Battery chemistry type" .
+<https://w3id.org/fedecom/battery#BatteryChemistryType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/fedecom/battery#BatteryChemistryType> <http://www.w3.org/2004/02/skos/core#example> "Lithium-ion, Lead-acid, Nickel-metal hydride" .
+# 
+# https://w3id.org/fedecom/battery#BatteryLifetime
+<https://w3id.org/fedecom/battery#BatteryLifetime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#BatteryLifetime> <http://www.w3.org/2000/01/rdf-schema#comment> "The total period a battery can function effectively before its capacity drops below a usable threshold, often measured in cycles or years." .
+<https://w3id.org/fedecom/battery#BatteryLifetime> <http://www.w3.org/2000/01/rdf-schema#label> "Battery lifetime" .
+<https://w3id.org/fedecom/battery#BatteryLifetime> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#Capacity
+<https://w3id.org/fedecom/battery#Capacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#Capacity> <http://www.w3.org/2000/01/rdf-schema#comment> "The amount of electric charge a battery can store." .
+<https://w3id.org/fedecom/battery#Capacity> <http://www.w3.org/2000/01/rdf-schema#label> "Capacity" .
+<https://w3id.org/fedecom/battery#Capacity> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#ChargeCapacity
+<https://w3id.org/fedecom/battery#ChargeCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#ChargeCapacity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/battery#Capacity> .
+<https://w3id.org/fedecom/battery#ChargeCapacity> <http://www.w3.org/2000/01/rdf-schema#comment> "The maximum amount of charge that can be stored during charging, usually equal to the battery’s rated capacity." .
+<https://w3id.org/fedecom/battery#ChargeCapacity> <http://www.w3.org/2000/01/rdf-schema#label> "Charge capacity" .
+<https://w3id.org/fedecom/battery#ChargeCapacity> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#ChargeCurrent
+<https://w3id.org/fedecom/battery#ChargeCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#ChargeCurrent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/battery#Current> .
+<https://w3id.org/fedecom/battery#ChargeCurrent> <http://www.w3.org/2000/01/rdf-schema#comment> "The rate at which current flows into the battery during charging." .
+<https://w3id.org/fedecom/battery#ChargeCurrent> <http://www.w3.org/2000/01/rdf-schema#label> "Charge current" .
+<https://w3id.org/fedecom/battery#ChargeCurrent> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#ChargePower
+<https://w3id.org/fedecom/battery#ChargePower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#ChargePower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/battery#Power> .
+<https://w3id.org/fedecom/battery#ChargePower> <http://www.w3.org/2000/01/rdf-schema#comment> "The rate at which energy is supplied to the battery during charging." .
+<https://w3id.org/fedecom/battery#ChargePower> <http://www.w3.org/2000/01/rdf-schema#label> "Charge power" .
+<https://w3id.org/fedecom/battery#ChargePower> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#Current
+<https://w3id.org/fedecom/battery#Current> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#Current> <http://www.w3.org/2000/01/rdf-schema#comment> "The flow of electric charge through a circuit." .
+<https://w3id.org/fedecom/battery#Current> <http://www.w3.org/2000/01/rdf-schema#label> "Current" .
+<https://w3id.org/fedecom/battery#Current> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#DischargeCurrent
+<https://w3id.org/fedecom/battery#DischargeCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#DischargeCurrent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/battery#Current> .
+<https://w3id.org/fedecom/battery#DischargeCurrent> <http://www.w3.org/2000/01/rdf-schema#comment> "The rate at which current flows out of the battery during discharge." .
+<https://w3id.org/fedecom/battery#DischargeCurrent> <http://www.w3.org/2000/01/rdf-schema#label> "Discharge current" .
+<https://w3id.org/fedecom/battery#DischargeCurrent> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#DischargePower
+<https://w3id.org/fedecom/battery#DischargePower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#DischargePower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/battery#Power> .
+<https://w3id.org/fedecom/battery#DischargePower> <http://www.w3.org/2000/01/rdf-schema#comment> "The rate at which energy is delivered from the battery during discharge." .
+<https://w3id.org/fedecom/battery#DischargePower> <http://www.w3.org/2000/01/rdf-schema#label> "Discharge power" .
+<https://w3id.org/fedecom/battery#DischargePower> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#Energy
+<https://w3id.org/fedecom/battery#Energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#Energy> <http://www.w3.org/2000/01/rdf-schema#comment> "The total amount of work a battery can perform." .
+<https://w3id.org/fedecom/battery#Energy> <http://www.w3.org/2000/01/rdf-schema#label> "Energy" .
+<https://w3id.org/fedecom/battery#Energy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#LossRate
+<https://w3id.org/fedecom/battery#LossRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#LossRate> <http://www.w3.org/2000/01/rdf-schema#comment> "The rate at which a battery loses stored energy over time, often due to self-discharge or inefficiencies." .
+<https://w3id.org/fedecom/battery#LossRate> <http://www.w3.org/2000/01/rdf-schema#label> "Loss rate" .
+<https://w3id.org/fedecom/battery#LossRate> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#Manufacturer
+<https://w3id.org/fedecom/battery#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "The company that produces the battery." .
+<https://w3id.org/fedecom/battery#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturer" .
+<https://w3id.org/fedecom/battery#Manufacturer> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#Model
+<https://w3id.org/fedecom/battery#Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#Model> <http://www.w3.org/2000/01/rdf-schema#comment> "The specific product designation or name given by the manufacturer." .
+<https://w3id.org/fedecom/battery#Model> <http://www.w3.org/2000/01/rdf-schema#label> "Model" .
+<https://w3id.org/fedecom/battery#Model> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#OpenCircuitVoltage
+<https://w3id.org/fedecom/battery#OpenCircuitVoltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#OpenCircuitVoltage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/battery#Voltage> .
+<https://w3id.org/fedecom/battery#OpenCircuitVoltage> <http://www.w3.org/2000/01/rdf-schema#comment> "The voltage of a battery when it is not connected to any load or circuit (no current flowing)." .
+<https://w3id.org/fedecom/battery#OpenCircuitVoltage> <http://www.w3.org/2000/01/rdf-schema#label> "Open circuit voltage" .
+<https://w3id.org/fedecom/battery#OpenCircuitVoltage> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#OpenCircuitVoltageOverDOD
+<https://w3id.org/fedecom/battery#OpenCircuitVoltageOverDOD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#OpenCircuitVoltageOverDOD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/battery#OpenCircuitVoltage> .
+<https://w3id.org/fedecom/battery#OpenCircuitVoltageOverDOD> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between Open Circuit Voltage and the percentage of energy discharged from the battery." .
+<https://w3id.org/fedecom/battery#OpenCircuitVoltageOverDOD> <http://www.w3.org/2000/01/rdf-schema#label> "Open circuit voltage over Depth of Discharge" .
+<https://w3id.org/fedecom/battery#OpenCircuitVoltageOverDOD> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#OpenCircuitVoltageOverSOC
+<https://w3id.org/fedecom/battery#OpenCircuitVoltageOverSOC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#OpenCircuitVoltageOverSOC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fedecom/battery#OpenCircuitVoltage> .
+<https://w3id.org/fedecom/battery#OpenCircuitVoltageOverSOC> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between Open Circuit Voltage and the percentage of energy remaining in the battery." .
+<https://w3id.org/fedecom/battery#OpenCircuitVoltageOverSOC> <http://www.w3.org/2000/01/rdf-schema#label> "Open circuit voltage over State of Charge" .
+<https://w3id.org/fedecom/battery#OpenCircuitVoltageOverSOC> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#Power
+<https://w3id.org/fedecom/battery#Power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#Power> <http://www.w3.org/2000/01/rdf-schema#comment> "How quickly the battery can deliver or absorb energy during discharge or charge" .
+<https://w3id.org/fedecom/battery#Power> <http://www.w3.org/2000/01/rdf-schema#label> "Power" .
+<https://w3id.org/fedecom/battery#Power> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#PowerDelivery
+<https://w3id.org/fedecom/battery#PowerDelivery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#PowerDelivery> <http://www.w3.org/2000/01/rdf-schema#comment> "The ability of the battery to supply power to a load." .
+<https://w3id.org/fedecom/battery#PowerDelivery> <http://www.w3.org/2000/01/rdf-schema#label> "Power delivery" .
+<https://w3id.org/fedecom/battery#PowerDelivery> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#SOC
+<https://w3id.org/fedecom/battery#SOC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#SOC> <http://www.w3.org/2000/01/rdf-schema#comment> "The current level of charge in the battery compared to its full capacity." .
+<https://w3id.org/fedecom/battery#SOC> <http://www.w3.org/2000/01/rdf-schema#label> "State of charge" .
+<https://w3id.org/fedecom/battery#SOC> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#StorageLevel
+<https://w3id.org/fedecom/battery#StorageLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#StorageLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates how much energy is stored in the battery at a given time." .
+<https://w3id.org/fedecom/battery#StorageLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Storage level" .
+<https://w3id.org/fedecom/battery#StorageLevel> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/battery#Voltage
+<https://w3id.org/fedecom/battery#Voltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/battery#Voltage> <http://www.w3.org/2000/01/rdf-schema#comment> "The force that drives electric current through a circuit. It varies with the battery’s state of charge and load conditions." .
+<https://w3id.org/fedecom/battery#Voltage> <http://www.w3.org/2000/01/rdf-schema#label> "Voltage" .
+<https://w3id.org/fedecom/battery#Voltage> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

@@ -1,0 +1,847 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/fedecom/measurement" ],
+    "title" : {
+      "undefined" : "Measurement: Measurement Characterization module for the FEDECOM Ontology"
+    },
+    "iri" : "https://w3id.org/fedecom/measurement",
+    "author" : [ "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>" ],
+    "description" : {
+      "undefined" : "This ontology module includes the necessary classes and properties to model and characterize mesurements."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/rdflicense/cc-by4.0",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Ignacio Lázaro (Tekniker) <ignacio.lazaro@tekniker.es>\nAndoni Osorio (Tekniker) <andoni.osorio@tekniker.es>\nDaniel Werner (Fraunhofer ISE) <daniel.werner@ise.fraunhofer.de>",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "measurement",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/fedecom/measurement#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Measurement: Measurement Characterization module for the FEDECOM Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "2",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/fedecom/measurement#MeasurementDirection",
+    "baseIri" : "https://w3id.org/fedecom/measurement",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "import, export, signed",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasurementDirection",
+      "undefined" : "Measurement direction"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/fedecom/measurement#Export",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "Export"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#Import",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "Import"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#Signed",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "Signed"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "It determines how the measured quantity flows or is interpreted in terms of directionality."
+    },
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/fedecom/measurement#APIProvider",
+    "baseIri" : "https://w3id.org/fedecom/measurement",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "AEM, FLEXO",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "APIProvider",
+      "undefined" : "API provider"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/fedecom/measurement#FLEXO",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "FLEXO"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#AUGE",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "AUGE"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#VEO",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "VEO"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#AEM",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "AEM"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "The provider of the API that exposes the measurements for a Pilot."
+    },
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/fedecom/measurement#Property",
+    "baseIri" : "https://w3id.org/fedecom/measurement",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "active energy, humidity, current",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Property",
+      "undefined" : "Property"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/fedecom/measurement#reactive_energy",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "reactive_energy"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#apparent_energy",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "apparent_energy"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#active_power",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "active_power"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#active_energy",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "active_energy"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#percent",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "percent"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#setpoint_power",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "setpoint_power"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#current",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "current"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#volume",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "volume"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#state_of_charge",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "state_of_charge"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#reactive_power",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "reactive_power"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#humidity",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "humidity"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#supply_frequency",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "supply_frequency"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#setpoint_temperature",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "setpoint_temperature"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#on_off",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "on_off"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#voltage",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "voltage"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#temperature",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "temperature"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#thermal_energy",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "thermal_energy"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#apparent_power",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "apparent_power"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#mode",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "mode"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#volatile_organic_compounds",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "volatile_organic_compounds"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#illuminance",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "illuminance"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/measurement#power_factor",
+      "baseIri" : "https://w3id.org/fedecom/measurement",
+      "labels" : {
+        "IRI-based" : "power_factor"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Represents the attribute or characteristic measured in a measurement."
+    },
+    "id" : "18"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "4",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "2",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/fedecom/measurement#Measurement",
+    "baseIri" : "https://w3id.org/fedecom/measurement",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Measurement",
+      "undefined" : "Measurement"
+    },
+    "comment" : {
+      "undefined" : "A quantitative observation or value obtained from a sensor, instrument, or calculation."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "9",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "11",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "13",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "19",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "26",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "28",
+    "type" : "owl:someValuesFrom"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/fedecom/measurement#measuresOn",
+    "baseIri" : "https://w3id.org/fedecom/measurement",
+    "range" : "2",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measuresOn",
+      "undefined" : "measures on"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Links a measurement to the entity or object on which the measurement was taken."
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/fedecom/measurement#alternativeID",
+    "baseIri" : "https://w3id.org/fedecom/measurement",
+    "range" : "5",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "alternativeID",
+      "undefined" : "alternative ID"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Alternative identifier for a Measurement"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/fedecom/measurement#timeResolution",
+    "baseIri" : "https://w3id.org/fedecom/measurement",
+    "range" : "8",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "timeResolution",
+      "undefined" : "time resolution"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The temporal granularity at which data is captured or aggregated."
+    },
+    "attributes" : [ "allValues", "datatype" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/fedecom/measurement#energyAccumulated",
+    "baseIri" : "https://w3id.org/fedecom/measurement",
+    "range" : "10",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "energyAccumulated",
+      "undefined" : "energy accumulated"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Boolean that establishes is the measurement value is cumulative or not."
+    },
+    "attributes" : [ "allValues", "datatype" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/fedecom/measurement#measurementID",
+    "baseIri" : "https://w3id.org/fedecom/measurement",
+    "range" : "12",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measurementID",
+      "undefined" : "measurement ID"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The ID of a measurement"
+    },
+    "attributes" : [ "allValues", "datatype" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/fedecom/measurement#hasAPIProvider",
+    "baseIri" : "https://w3id.org/fedecom/measurement",
+    "range" : "14",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasAPIProvider",
+      "undefined" : "has API provider"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Relates a measurement to the entity that provides an Application Programming Interface (API) for accessing or interacting with it."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://w3id.org/fedecom/measurement#measurementBy",
+    "baseIri" : "https://w3id.org/fedecom/measurement",
+    "range" : "2",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measurementBy",
+      "undefined" : "measurement by"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Relates a measurement to the agent or instrument that performed or generated it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/fedecom/measurement#measuresProperty",
+    "baseIri" : "https://w3id.org/fedecom/measurement",
+    "range" : "18",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measuresProperty",
+      "undefined" : "measures property"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Relates a measurement to the specific property or characteristic being observed."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/fedecom/measurement#APIParameter",
+    "baseIri" : "https://w3id.org/fedecom/measurement",
+    "range" : "6",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "APIParameter",
+      "undefined" : "API parameter"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Parameters to obtain a Measurement from its API."
+    },
+    "attributes" : [ "allValues", "datatype" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/fedecom/measurement#measuresProperty",
+    "baseIri" : "https://w3id.org/fedecom/measurement",
+    "range" : "18",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measuresProperty",
+      "undefined" : "measures property"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Relates a measurement to the specific property or characteristic being observed."
+    },
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/fedecom/measurement#hasAPIProvider",
+    "baseIri" : "https://w3id.org/fedecom/measurement",
+    "range" : "14",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasAPIProvider",
+      "undefined" : "has API provider"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Relates a measurement to the entity that provides an Application Programming Interface (API) for accessing or interacting with it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/fedecom/measurement#hasDirection",
+    "baseIri" : "https://w3id.org/fedecom/measurement",
+    "range" : "16",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDirection",
+      "undefined" : "has direction"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Relates a measurement or flow to its directional context."
+    },
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/fedecom/measurement#makesMeasurement",
+    "baseIri" : "https://w3id.org/fedecom/measurement",
+    "range" : "1",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "makesMeasurement",
+      "undefined" : "makes measurement"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Links an agent (e.g., a sensor, device, or system) to the measurement it produces."
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/fedecom/measurement#phase",
+    "baseIri" : "https://w3id.org/fedecom/measurement",
+    "range" : "24",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "phase",
+      "undefined" : "phase"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The alternating current (AC) phase the Measurement corresponds to."
+    },
+    "attributes" : [ "allValues", "datatype" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://w3id.org/fedecom/measurement#middlewareScalingFactor",
+    "baseIri" : "https://w3id.org/fedecom/measurement",
+    "range" : "27",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "middlewareScalingFactor",
+      "undefined" : "middleware scaling factor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The scaling factor used to convert the raw values (i.e. the measurements that come directly from the API in a specific unit) to the target units of the target platform."
+    },
+    "attributes" : [ "allValues", "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/fedecom/measurement#hasDirection",
+    "baseIri" : "https://w3id.org/fedecom/measurement",
+    "range" : "16",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDirection",
+      "undefined" : "has direction"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Relates a measurement or flow to its directional context."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "28"
+  } ]
+}

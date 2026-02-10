@@ -1,0 +1,527 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "0"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "1"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/fedecom/measurement#hasDirection"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/fedecom/measurement#MeasurementDirection"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/fedecom/measurement#measuresProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/fedecom/measurement#Property"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/fedecom/measurement#APIParameter"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/fedecom/measurement#energyAccumulated"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/fedecom/measurement#measurementID"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/fedecom/measurement#middlewareScalingFactor"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/fedecom/measurement#phase"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/fedecom/measurement#timeResolution"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "0"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "1"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "2"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "3"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/fedecom/measurement#hasAPIProvider"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/fedecom/measurement#APIProvider"
+  } ]
+}, {
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#example",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@value" : "http://purl.org/NET/rdflicense/cc-by4.0"
+  } ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Ignacio Lázaro (Tekniker) <ignacio.lazaro@tekniker.es>\nAndoni Osorio (Tekniker) <andoni.osorio@tekniker.es>\nDaniel Werner (Fraunhofer ISE) <daniel.werner@ise.fraunhofer.de>"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : ""
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "This ontology module includes the necessary classes and properties to model and characterize mesurements."
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "Measurement: Measurement Characterization module for the FEDECOM Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "measurement"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/fedecom/measurement#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#AEM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#APIProvider" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#APIParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Parameters to obtain a Measurement from its API."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "API parameter"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#APIProvider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The provider of the API that exposes the measurements for a Pilot."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "API provider"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "AEM, FLEXO"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#AUGE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#APIProvider" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#Export",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#MeasurementDirection" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#FLEXO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#APIProvider" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#Import",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#MeasurementDirection" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#Measurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A quantitative observation or value obtained from a sensor, instrument, or calculation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid9"
+  }, {
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
+  }, {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
+  }, {
+    "@id" : "_:genid17"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#MeasurementDirection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It determines how the measured quantity flows or is interpreted in terms of directionality."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Measurement direction"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "import, export, signed"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#Property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the attribute or characteristic measured in a measurement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Property"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "active energy, humidity, current"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#Signed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#MeasurementDirection" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#VEO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#APIProvider" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#active_energy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#active_power",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#alternativeID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Alternative identifier for a Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "alternative ID"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#apparent_energy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#apparent_power",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#current",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#energyAccumulated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Boolean that establishes is the measurement value is cumulative or not."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "energy accumulated"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#hasAPIProvider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a measurement to the entity that provides an Application Programming Interface (API) for accessing or interacting with it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fedecom/measurement#Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has API provider"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/fedecom/measurement#APIProvider"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#hasDirection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a measurement or flow to its directional context."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fedecom/measurement#Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has direction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/fedecom/measurement#MeasurementDirection"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#humidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#illuminance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#makesMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links an agent (e.g., a sensor, device, or system) to the measurement it produces."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "makes measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/fedecom/measurement#Measurement"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#measurementBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a measurement to the agent or instrument that performed or generated it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fedecom/measurement#Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "measurement by"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#measurementID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The ID of a measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "measurement ID"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#measuresOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a measurement to the entity or object on which the measurement was taken."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fedecom/measurement#Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "measures on"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#measuresProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a measurement to the specific property or characteristic being observed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fedecom/measurement#Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "measures property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/fedecom/measurement#Property"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#middlewareScalingFactor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The scaling factor used to convert the raw values (i.e. the measurements that come directly from the API in a specific unit) to the target units of the target platform."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "middleware scaling factor"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#mode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#on_off",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#percent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#phase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The alternating current (AC) phase the Measurement corresponds to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "phase"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#power_factor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#reactive_energy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#reactive_power",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#setpoint_power",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#setpoint_temperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#state_of_charge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#supply_frequency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#temperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#thermal_energy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#timeResolution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The temporal granularity at which data is captured or aggregated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "time resolution"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#volatile_organic_compounds",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#voltage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/measurement#volume",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/measurement#Property" ]
+} ]

@@ -1,0 +1,379 @@
+<https://w3id.org/fedecom/measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/fedecom/measurement> <http://creativecommons.org/ns#license> "http://purl.org/NET/rdflicense/cc-by4.0" .
+<https://w3id.org/fedecom/measurement> <http://purl.org/dc/terms/contributor> "Ignacio Lázaro (Tekniker) <ignacio.lazaro@tekniker.es>\nAndoni Osorio (Tekniker) <andoni.osorio@tekniker.es>\nDaniel Werner (Fraunhofer ISE) <daniel.werner@ise.fraunhofer.de>" .
+<https://w3id.org/fedecom/measurement> <http://purl.org/dc/terms/created> "" .
+<https://w3id.org/fedecom/measurement> <http://purl.org/dc/terms/creator> "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>" .
+<https://w3id.org/fedecom/measurement> <http://purl.org/dc/terms/description> "This ontology module includes the necessary classes and properties to model and characterize mesurements." .
+<https://w3id.org/fedecom/measurement> <http://purl.org/dc/terms/title> "Measurement: Measurement Characterization module for the FEDECOM Ontology" .
+<https://w3id.org/fedecom/measurement> <http://purl.org/vocab/vann/preferredNamespacePrefix> "measurement" .
+<https://w3id.org/fedecom/measurement> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/fedecom/measurement#" .
+<https://w3id.org/fedecom/measurement> <http://www.w3.org/2002/07/owl#versionInfo> "" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fedecom/measurement#hasAPIProvider
+<https://w3id.org/fedecom/measurement#hasAPIProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/measurement#hasAPIProvider> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/measurement#Measurement> .
+<https://w3id.org/fedecom/measurement#hasAPIProvider> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/measurement#APIProvider> .
+<https://w3id.org/fedecom/measurement#hasAPIProvider> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a measurement to the entity that provides an Application Programming Interface (API) for accessing or interacting with it." .
+<https://w3id.org/fedecom/measurement#hasAPIProvider> <http://www.w3.org/2000/01/rdf-schema#label> "has API provider" .
+<https://w3id.org/fedecom/measurement#hasAPIProvider> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/measurement#hasDirection
+<https://w3id.org/fedecom/measurement#hasDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/measurement#hasDirection> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/measurement#Measurement> .
+<https://w3id.org/fedecom/measurement#hasDirection> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/measurement#MeasurementDirection> .
+<https://w3id.org/fedecom/measurement#hasDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a measurement or flow to its directional context." .
+<https://w3id.org/fedecom/measurement#hasDirection> <http://www.w3.org/2000/01/rdf-schema#label> "has direction" .
+<https://w3id.org/fedecom/measurement#hasDirection> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/measurement#makesMeasurement
+<https://w3id.org/fedecom/measurement#makesMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/measurement#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/measurement#Measurement> .
+<https://w3id.org/fedecom/measurement#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an agent (e.g., a sensor, device, or system) to the measurement it produces." .
+<https://w3id.org/fedecom/measurement#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "makes measurement" .
+<https://w3id.org/fedecom/measurement#makesMeasurement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/measurement#measurementBy
+<https://w3id.org/fedecom/measurement#measurementBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/measurement#measurementBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/measurement#Measurement> .
+<https://w3id.org/fedecom/measurement#measurementBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a measurement to the agent or instrument that performed or generated it." .
+<https://w3id.org/fedecom/measurement#measurementBy> <http://www.w3.org/2000/01/rdf-schema#label> "measurement by" .
+<https://w3id.org/fedecom/measurement#measurementBy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/measurement#measuresOn
+<https://w3id.org/fedecom/measurement#measuresOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/measurement#measuresOn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/measurement#Measurement> .
+<https://w3id.org/fedecom/measurement#measuresOn> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a measurement to the entity or object on which the measurement was taken." .
+<https://w3id.org/fedecom/measurement#measuresOn> <http://www.w3.org/2000/01/rdf-schema#label> "measures on" .
+<https://w3id.org/fedecom/measurement#measuresOn> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/measurement#measuresProperty
+<https://w3id.org/fedecom/measurement#measuresProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/measurement#measuresProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fedecom/measurement#Measurement> .
+<https://w3id.org/fedecom/measurement#measuresProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fedecom/measurement#Property> .
+<https://w3id.org/fedecom/measurement#measuresProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a measurement to the specific property or characteristic being observed." .
+<https://w3id.org/fedecom/measurement#measuresProperty> <http://www.w3.org/2000/01/rdf-schema#label> "measures property" .
+<https://w3id.org/fedecom/measurement#measuresProperty> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fedecom/measurement#APIParameter
+<https://w3id.org/fedecom/measurement#APIParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/measurement#APIParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Parameters to obtain a Measurement from its API." .
+<https://w3id.org/fedecom/measurement#APIParameter> <http://www.w3.org/2000/01/rdf-schema#label> "API parameter" .
+<https://w3id.org/fedecom/measurement#APIParameter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/measurement#alternativeID
+<https://w3id.org/fedecom/measurement#alternativeID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/measurement#alternativeID> <http://www.w3.org/2000/01/rdf-schema#comment> "Alternative identifier for a Measurement" .
+<https://w3id.org/fedecom/measurement#alternativeID> <http://www.w3.org/2000/01/rdf-schema#label> "alternative ID" .
+<https://w3id.org/fedecom/measurement#alternativeID> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/measurement#energyAccumulated
+<https://w3id.org/fedecom/measurement#energyAccumulated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/measurement#energyAccumulated> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid1 <http://www.w3.org/2002/07/owl#oneOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/fedecom/measurement#energyAccumulated> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean that establishes is the measurement value is cumulative or not." .
+<https://w3id.org/fedecom/measurement#energyAccumulated> <http://www.w3.org/2000/01/rdf-schema#label> "energy accumulated" .
+<https://w3id.org/fedecom/measurement#energyAccumulated> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/measurement#measurementID
+<https://w3id.org/fedecom/measurement#measurementID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/measurement#measurementID> <http://www.w3.org/2000/01/rdf-schema#comment> "The ID of a measurement" .
+<https://w3id.org/fedecom/measurement#measurementID> <http://www.w3.org/2000/01/rdf-schema#label> "measurement ID" .
+<https://w3id.org/fedecom/measurement#measurementID> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/measurement#middlewareScalingFactor
+<https://w3id.org/fedecom/measurement#middlewareScalingFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/measurement#middlewareScalingFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "The scaling factor used to convert the raw values (i.e. the measurements that come directly from the API in a specific unit) to the target units of the target platform." .
+<https://w3id.org/fedecom/measurement#middlewareScalingFactor> <http://www.w3.org/2000/01/rdf-schema#label> "middleware scaling factor" .
+<https://w3id.org/fedecom/measurement#middlewareScalingFactor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/measurement#phase
+<https://w3id.org/fedecom/measurement#phase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/measurement#phase> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid4 <http://www.w3.org/2002/07/owl#oneOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/fedecom/measurement#phase> <http://www.w3.org/2000/01/rdf-schema#comment> "The alternating current (AC) phase the Measurement corresponds to." .
+<https://w3id.org/fedecom/measurement#phase> <http://www.w3.org/2000/01/rdf-schema#label> "phase" .
+<https://w3id.org/fedecom/measurement#phase> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/measurement#timeResolution
+<https://w3id.org/fedecom/measurement#timeResolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/measurement#timeResolution> <http://www.w3.org/2000/01/rdf-schema#comment> "The temporal granularity at which data is captured or aggregated." .
+<https://w3id.org/fedecom/measurement#timeResolution> <http://www.w3.org/2000/01/rdf-schema#label> "time resolution" .
+<https://w3id.org/fedecom/measurement#timeResolution> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fedecom/measurement#APIProvider
+<https://w3id.org/fedecom/measurement#APIProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/measurement#APIProvider> <http://www.w3.org/2000/01/rdf-schema#comment> "The provider of the API that exposes the measurements for a Pilot." .
+<https://w3id.org/fedecom/measurement#APIProvider> <http://www.w3.org/2000/01/rdf-schema#label> "API provider" .
+<https://w3id.org/fedecom/measurement#APIProvider> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/fedecom/measurement#APIProvider> <http://www.w3.org/2004/02/skos/core#example> "AEM, FLEXO" .
+# 
+# https://w3id.org/fedecom/measurement#Measurement
+<https://w3id.org/fedecom/measurement#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/measurement#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/measurement#hasAPIProvider> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/measurement#APIProvider> .
+<https://w3id.org/fedecom/measurement#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/measurement#hasDirection> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/measurement#MeasurementDirection> .
+<https://w3id.org/fedecom/measurement#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/measurement#measuresProperty> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fedecom/measurement#Property> .
+<https://w3id.org/fedecom/measurement#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/measurement#APIParameter> .
+_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/fedecom/measurement#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/measurement#energyAccumulated> .
+_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/fedecom/measurement#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/measurement#measurementID> .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/fedecom/measurement#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/measurement#middlewareScalingFactor> .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/fedecom/measurement#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/measurement#phase> .
+_:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/fedecom/measurement#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fedecom/measurement#timeResolution> .
+_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/fedecom/measurement#Measurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A quantitative observation or value obtained from a sensor, instrument, or calculation." .
+<https://w3id.org/fedecom/measurement#Measurement> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement" .
+<https://w3id.org/fedecom/measurement#Measurement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/measurement#MeasurementDirection
+<https://w3id.org/fedecom/measurement#MeasurementDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/measurement#MeasurementDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "It determines how the measured quantity flows or is interpreted in terms of directionality." .
+<https://w3id.org/fedecom/measurement#MeasurementDirection> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement direction" .
+<https://w3id.org/fedecom/measurement#MeasurementDirection> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/fedecom/measurement#MeasurementDirection> <http://www.w3.org/2004/02/skos/core#example> "import, export, signed" .
+# 
+# https://w3id.org/fedecom/measurement#Property
+<https://w3id.org/fedecom/measurement#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/measurement#Property> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the attribute or characteristic measured in a measurement." .
+<https://w3id.org/fedecom/measurement#Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property" .
+<https://w3id.org/fedecom/measurement#Property> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/fedecom/measurement#Property> <http://www.w3.org/2004/02/skos/core#example> "active energy, humidity, current" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fedecom/measurement#AEM
+<https://w3id.org/fedecom/measurement#AEM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#AEM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#APIProvider> .
+# 
+# https://w3id.org/fedecom/measurement#AUGE
+<https://w3id.org/fedecom/measurement#AUGE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#AUGE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#APIProvider> .
+# 
+# https://w3id.org/fedecom/measurement#Export
+<https://w3id.org/fedecom/measurement#Export> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#Export> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#MeasurementDirection> .
+# 
+# https://w3id.org/fedecom/measurement#FLEXO
+<https://w3id.org/fedecom/measurement#FLEXO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#FLEXO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#APIProvider> .
+# 
+# https://w3id.org/fedecom/measurement#Import
+<https://w3id.org/fedecom/measurement#Import> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#Import> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#MeasurementDirection> .
+# 
+# https://w3id.org/fedecom/measurement#Signed
+<https://w3id.org/fedecom/measurement#Signed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#Signed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#MeasurementDirection> .
+# 
+# https://w3id.org/fedecom/measurement#VEO
+<https://w3id.org/fedecom/measurement#VEO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#VEO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#APIProvider> .
+# 
+# https://w3id.org/fedecom/measurement#active_energy
+<https://w3id.org/fedecom/measurement#active_energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#active_energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# https://w3id.org/fedecom/measurement#active_power
+<https://w3id.org/fedecom/measurement#active_power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#active_power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# https://w3id.org/fedecom/measurement#apparent_energy
+<https://w3id.org/fedecom/measurement#apparent_energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#apparent_energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# https://w3id.org/fedecom/measurement#apparent_power
+<https://w3id.org/fedecom/measurement#apparent_power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#apparent_power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# https://w3id.org/fedecom/measurement#current
+<https://w3id.org/fedecom/measurement#current> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#current> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# https://w3id.org/fedecom/measurement#humidity
+<https://w3id.org/fedecom/measurement#humidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#humidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# https://w3id.org/fedecom/measurement#illuminance
+<https://w3id.org/fedecom/measurement#illuminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#illuminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# https://w3id.org/fedecom/measurement#mode
+<https://w3id.org/fedecom/measurement#mode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#mode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# https://w3id.org/fedecom/measurement#on_off
+<https://w3id.org/fedecom/measurement#on_off> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#on_off> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# https://w3id.org/fedecom/measurement#percent
+<https://w3id.org/fedecom/measurement#percent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#percent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# https://w3id.org/fedecom/measurement#power_factor
+<https://w3id.org/fedecom/measurement#power_factor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#power_factor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# https://w3id.org/fedecom/measurement#reactive_energy
+<https://w3id.org/fedecom/measurement#reactive_energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#reactive_energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# https://w3id.org/fedecom/measurement#reactive_power
+<https://w3id.org/fedecom/measurement#reactive_power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#reactive_power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# https://w3id.org/fedecom/measurement#setpoint_power
+<https://w3id.org/fedecom/measurement#setpoint_power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#setpoint_power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# https://w3id.org/fedecom/measurement#setpoint_temperature
+<https://w3id.org/fedecom/measurement#setpoint_temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#setpoint_temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# https://w3id.org/fedecom/measurement#state_of_charge
+<https://w3id.org/fedecom/measurement#state_of_charge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#state_of_charge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# https://w3id.org/fedecom/measurement#supply_frequency
+<https://w3id.org/fedecom/measurement#supply_frequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#supply_frequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# https://w3id.org/fedecom/measurement#temperature
+<https://w3id.org/fedecom/measurement#temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# https://w3id.org/fedecom/measurement#thermal_energy
+<https://w3id.org/fedecom/measurement#thermal_energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#thermal_energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# https://w3id.org/fedecom/measurement#volatile_organic_compounds
+<https://w3id.org/fedecom/measurement#volatile_organic_compounds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#volatile_organic_compounds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# https://w3id.org/fedecom/measurement#voltage
+<https://w3id.org/fedecom/measurement#voltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#voltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# https://w3id.org/fedecom/measurement#volume
+<https://w3id.org/fedecom/measurement#volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/measurement#volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/measurement#Property> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

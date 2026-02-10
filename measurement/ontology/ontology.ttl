@@ -1,0 +1,422 @@
+@prefix : <https://w3id.org/fedecom/measurement#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/fedecom/measurement> .
+
+<https://w3id.org/fedecom/measurement> rdf:type owl:Ontology ;
+                                        <http://creativecommons.org/ns#license> "http://purl.org/NET/rdflicense/cc-by4.0" ;
+                                        <http://purl.org/dc/terms/contributor> """Ignacio Lázaro (Tekniker) <ignacio.lazaro@tekniker.es>
+Andoni Osorio (Tekniker) <andoni.osorio@tekniker.es>
+Daniel Werner (Fraunhofer ISE) <daniel.werner@ise.fraunhofer.de>""" ;
+                                        <http://purl.org/dc/terms/created> "" ;
+                                        <http://purl.org/dc/terms/creator> "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>" ;
+                                        <http://purl.org/dc/terms/description> "This ontology module includes the necessary classes and properties to model and characterize mesurements." ;
+                                        <http://purl.org/dc/terms/title> "Measurement: Measurement Characterization module for the FEDECOM Ontology" ;
+                                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "measurement" ;
+                                        <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/fedecom/measurement#" ;
+                                        owl:versionInfo "" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/fedecom/measurement#hasAPIProvider
+:hasAPIProvider rdf:type owl:ObjectProperty ;
+                rdfs:domain :Measurement ;
+                rdfs:range :APIProvider ;
+                rdfs:comment "Relates a measurement to the entity that provides an Application Programming Interface (API) for accessing or interacting with it." ;
+                rdfs:label "has API provider" ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/measurement#hasDirection
+:hasDirection rdf:type owl:ObjectProperty ;
+              rdfs:domain :Measurement ;
+              rdfs:range :MeasurementDirection ;
+              rdfs:comment "Relates a measurement or flow to its directional context." ;
+              rdfs:label "has direction" ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/measurement#makesMeasurement
+:makesMeasurement rdf:type owl:ObjectProperty ;
+                  rdfs:range :Measurement ;
+                  rdfs:comment "Links an agent (e.g., a sensor, device, or system) to the measurement it produces." ;
+                  rdfs:label "makes measurement" ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/measurement#measurementBy
+:measurementBy rdf:type owl:ObjectProperty ;
+               rdfs:domain :Measurement ;
+               rdfs:comment "Relates a measurement to the agent or instrument that performed or generated it." ;
+               rdfs:label "measurement by" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/measurement#measuresOn
+:measuresOn rdf:type owl:ObjectProperty ;
+            rdfs:domain :Measurement ;
+            rdfs:comment "Links a measurement to the entity or object on which the measurement was taken." ;
+            rdfs:label "measures on" ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/measurement#measuresProperty
+:measuresProperty rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Measurement ;
+                  rdfs:range :Property ;
+                  rdfs:comment "Relates a measurement to the specific property or characteristic being observed." ;
+                  rdfs:label "measures property" ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/fedecom/measurement#APIParameter
+:APIParameter rdf:type owl:DatatypeProperty ;
+              rdfs:comment "Parameters to obtain a Measurement from its API." ;
+              rdfs:label "API parameter" ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/measurement#alternativeID
+:alternativeID rdf:type owl:DatatypeProperty ;
+               rdfs:comment "Alternative identifier for a Measurement" ;
+               rdfs:label "alternative ID" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/measurement#energyAccumulated
+:energyAccumulated rdf:type owl:DatatypeProperty ;
+                   rdfs:range [ rdf:type rdfs:Datatype ;
+                                owl:oneOf [ rdf:type rdf:List ;
+                                            rdf:first 0 ;
+                                            rdf:rest [ rdf:type rdf:List ;
+                                                       rdf:first 1 ;
+                                                       rdf:rest rdf:nil
+                                                     ]
+                                          ]
+                              ] ;
+                   rdfs:comment "Boolean that establishes is the measurement value is cumulative or not." ;
+                   rdfs:label "energy accumulated" ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/measurement#measurementID
+:measurementID rdf:type owl:DatatypeProperty ;
+               rdfs:comment "The ID of a measurement" ;
+               rdfs:label "measurement ID" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/measurement#middlewareScalingFactor
+:middlewareScalingFactor rdf:type owl:DatatypeProperty ;
+                         rdfs:comment "The scaling factor used to convert the raw values (i.e. the measurements that come directly from the API in a specific unit) to the target units of the target platform." ;
+                         rdfs:label "middleware scaling factor" ;
+                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/measurement#phase
+:phase rdf:type owl:DatatypeProperty ;
+       rdfs:range [ rdf:type rdfs:Datatype ;
+                    owl:oneOf [ rdf:type rdf:List ;
+                                rdf:first 0 ;
+                                rdf:rest [ rdf:type rdf:List ;
+                                           rdf:first 1 ;
+                                           rdf:rest [ rdf:type rdf:List ;
+                                                      rdf:first 2 ;
+                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                 rdf:first 3 ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ]
+                              ]
+                  ] ;
+       rdfs:comment "The alternating current (AC) phase the Measurement corresponds to." ;
+       rdfs:label "phase" ;
+       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/measurement#timeResolution
+:timeResolution rdf:type owl:DatatypeProperty ;
+                rdfs:comment "The temporal granularity at which data is captured or aggregated." ;
+                rdfs:label "time resolution" ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/fedecom/measurement#APIProvider
+:APIProvider rdf:type owl:Class ;
+             rdfs:comment "The provider of the API that exposes the measurements for a Pilot." ;
+             rdfs:label "API provider" ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" ;
+             <http://www.w3.org/2004/02/skos/core#example> "AEM, FLEXO" .
+
+
+###  https://w3id.org/fedecom/measurement#Measurement
+:Measurement rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasAPIProvider ;
+                               owl:someValuesFrom :APIProvider
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasDirection ;
+                               owl:someValuesFrom :MeasurementDirection
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :measuresProperty ;
+                               owl:someValuesFrom :Property
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :APIParameter ;
+                               owl:allValuesFrom xsd:string
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :energyAccumulated ;
+                               owl:allValuesFrom xsd:boolean
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :measurementID ;
+                               owl:allValuesFrom xsd:string
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :middlewareScalingFactor ;
+                               owl:allValuesFrom xsd:string
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :phase ;
+                               owl:allValuesFrom xsd:integer
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :timeResolution ;
+                               owl:allValuesFrom xsd:string
+                             ] ;
+             rdfs:comment "A quantitative observation or value obtained from a sensor, instrument, or calculation." ;
+             rdfs:label "Measurement" ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/measurement#MeasurementDirection
+:MeasurementDirection rdf:type owl:Class ;
+                      rdfs:comment "It determines how the measured quantity flows or is interpreted in terms of directionality." ;
+                      rdfs:label "Measurement direction" ;
+                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" ;
+                      <http://www.w3.org/2004/02/skos/core#example> "import, export, signed" .
+
+
+###  https://w3id.org/fedecom/measurement#Property
+:Property rdf:type owl:Class ;
+          rdfs:comment "Represents the attribute or characteristic measured in a measurement." ;
+          rdfs:label "Property" ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" ;
+          <http://www.w3.org/2004/02/skos/core#example> "active energy, humidity, current" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/fedecom/measurement#AEM
+:AEM rdf:type owl:NamedIndividual ,
+              :APIProvider .
+
+
+###  https://w3id.org/fedecom/measurement#AUGE
+:AUGE rdf:type owl:NamedIndividual ,
+               :APIProvider .
+
+
+###  https://w3id.org/fedecom/measurement#Export
+:Export rdf:type owl:NamedIndividual ,
+                 :MeasurementDirection .
+
+
+###  https://w3id.org/fedecom/measurement#FLEXO
+:FLEXO rdf:type owl:NamedIndividual ,
+                :APIProvider .
+
+
+###  https://w3id.org/fedecom/measurement#Import
+:Import rdf:type owl:NamedIndividual ,
+                 :MeasurementDirection .
+
+
+###  https://w3id.org/fedecom/measurement#Signed
+:Signed rdf:type owl:NamedIndividual ,
+                 :MeasurementDirection .
+
+
+###  https://w3id.org/fedecom/measurement#VEO
+:VEO rdf:type owl:NamedIndividual ,
+              :APIProvider .
+
+
+###  https://w3id.org/fedecom/measurement#active_energy
+:active_energy rdf:type owl:NamedIndividual ,
+                        :Property .
+
+
+###  https://w3id.org/fedecom/measurement#active_power
+:active_power rdf:type owl:NamedIndividual ,
+                       :Property .
+
+
+###  https://w3id.org/fedecom/measurement#apparent_energy
+:apparent_energy rdf:type owl:NamedIndividual ,
+                          :Property .
+
+
+###  https://w3id.org/fedecom/measurement#apparent_power
+:apparent_power rdf:type owl:NamedIndividual ,
+                         :Property .
+
+
+###  https://w3id.org/fedecom/measurement#current
+:current rdf:type owl:NamedIndividual ,
+                  :Property .
+
+
+###  https://w3id.org/fedecom/measurement#humidity
+:humidity rdf:type owl:NamedIndividual ,
+                   :Property .
+
+
+###  https://w3id.org/fedecom/measurement#illuminance
+:illuminance rdf:type owl:NamedIndividual ,
+                      :Property .
+
+
+###  https://w3id.org/fedecom/measurement#mode
+:mode rdf:type owl:NamedIndividual ,
+               :Property .
+
+
+###  https://w3id.org/fedecom/measurement#on_off
+:on_off rdf:type owl:NamedIndividual ,
+                 :Property .
+
+
+###  https://w3id.org/fedecom/measurement#percent
+:percent rdf:type owl:NamedIndividual ,
+                  :Property .
+
+
+###  https://w3id.org/fedecom/measurement#power_factor
+:power_factor rdf:type owl:NamedIndividual ,
+                       :Property .
+
+
+###  https://w3id.org/fedecom/measurement#reactive_energy
+:reactive_energy rdf:type owl:NamedIndividual ,
+                          :Property .
+
+
+###  https://w3id.org/fedecom/measurement#reactive_power
+:reactive_power rdf:type owl:NamedIndividual ,
+                         :Property .
+
+
+###  https://w3id.org/fedecom/measurement#setpoint_power
+:setpoint_power rdf:type owl:NamedIndividual ,
+                         :Property .
+
+
+###  https://w3id.org/fedecom/measurement#setpoint_temperature
+:setpoint_temperature rdf:type owl:NamedIndividual ,
+                               :Property .
+
+
+###  https://w3id.org/fedecom/measurement#state_of_charge
+:state_of_charge rdf:type owl:NamedIndividual ,
+                          :Property .
+
+
+###  https://w3id.org/fedecom/measurement#supply_frequency
+:supply_frequency rdf:type owl:NamedIndividual ,
+                           :Property .
+
+
+###  https://w3id.org/fedecom/measurement#temperature
+:temperature rdf:type owl:NamedIndividual ,
+                      :Property .
+
+
+###  https://w3id.org/fedecom/measurement#thermal_energy
+:thermal_energy rdf:type owl:NamedIndividual ,
+                         :Property .
+
+
+###  https://w3id.org/fedecom/measurement#volatile_organic_compounds
+:volatile_organic_compounds rdf:type owl:NamedIndividual ,
+                                     :Property .
+
+
+###  https://w3id.org/fedecom/measurement#voltage
+:voltage rdf:type owl:NamedIndividual ,
+                  :Property .
+
+
+###  https://w3id.org/fedecom/measurement#volume
+:volume rdf:type owl:NamedIndividual ,
+                 :Property .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

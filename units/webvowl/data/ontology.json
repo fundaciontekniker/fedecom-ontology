@@ -1,0 +1,426 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://schema.org", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/fedecom/units" ],
+    "title" : {
+      "undefined" : "Units: Units of Measurement module for the FEDECOM Ontology"
+    },
+    "iri" : "https://w3id.org/fedecom/units",
+    "author" : [ "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>" ],
+    "description" : {
+      "undefined" : "This ontology module includes the necessary classes and properties to support units of measurement."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/rdflicense/cc-by4.0",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "units",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/fedecom/units#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Units: Units of Measurement module for the FEDECOM Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Literal"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/fedecom/units#UnitOfMeasure",
+    "baseIri" : "https://w3id.org/fedecom/units",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "Ampere, Volt, Hertz",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UnitOfMeasure",
+      "undefined" : "unit of measure"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/fedecom/units#CubicMeterHour",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "CubicMeterHour"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/units#Watt",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "Watt"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/units#CubicMeter",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "CubicMeter"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/units#MegaWattHour",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "MegaWattHour"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/units#SquareMeter",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "SquareMeter"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/units#Hertz",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "Hertz"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/units#KiloWattHour",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "KiloWattHour"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/units#Volt",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "Volt"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/units#WattHour",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "WattHour"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/units#Liter",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "Liter"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/units#KiloWattPeak",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "KiloWattPeak"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/units#KiloWatt",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "KiloWatt"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/units#Year",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "Year"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/units#DegreeCelsius",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "DegreeCelsius"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/units#PerUnit",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "PerUnit"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/units#VoltAmpereReactive",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "VoltAmpereReactive"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/units#KiloVoltAmpere",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "KiloVoltAmpere"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/units#Percentage",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "Percentage"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/units#AmpereHour",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "AmpereHour"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/units#Ampere",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "Ampere"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/units#Radian",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "Radian"
+      }
+    }, {
+      "iri" : "https://w3id.org/fedecom/units#Degree",
+      "baseIri" : "https://w3id.org/fedecom/units",
+      "labels" : {
+        "IRI-based" : "Degree"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Defines the standard unit used to express the value of a measurement or property."
+    },
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/fedecom/units#symbol",
+    "baseIri" : "https://w3id.org/fedecom/units",
+    "range" : "2",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "Wh, V, W, Hz",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "symbol"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Relates a unit of measure to its standard symbolic representation."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/fedecom/units#value",
+    "baseIri" : "https://w3id.org/fedecom/units",
+    "range" : "5",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "value"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Numeric representation of a measurement, characteristic or other."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/fedecom/units#minimum",
+    "baseIri" : "https://w3id.org/fedecom/units",
+    "range" : "9",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "minimum"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Minimum value for a measurement, characteristic or other."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://schema.org/name",
+    "baseIri" : "http://schema.org",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/fedecom/units#hasUnit",
+    "baseIri" : "https://w3id.org/fedecom/units",
+    "range" : "1",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "undefined" : "has unit"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Used to define the unit in which a value (for, for example, a measurement or property) is reported in."
+    },
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/fedecom/units#maximum",
+    "baseIri" : "https://w3id.org/fedecom/units",
+    "range" : "7",
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "maximum"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Minimum value for a measurement, characteristic or other."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "12"
+  } ]
+}

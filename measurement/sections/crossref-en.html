@@ -1,0 +1,1142 @@
+<h2 id="crossreference" class="list">Cross reference for Measurement: Measurement Characterization module for the FEDECOM Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Measurement: Measurement Characterization module for the FEDECOM Ontology.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#APIProvider" title="https://w3id.org/fedecom/measurement#APIProvider">API provider</a>
+      </li>
+      <li>
+         <a href="#Measurement" title="https://w3id.org/fedecom/measurement#Measurement">Measurement</a>
+      </li>
+      <li>
+         <a href="#MeasurementDirection"
+            title="https://w3id.org/fedecom/measurement#MeasurementDirection">Measurement direction</a>
+      </li>
+      <li>
+         <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+      </li>
+   </ul>
+   <div class="entity" id="APIProvider">
+      <h3>API provider<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#APIProvider</p>
+      <div class="comment">
+         <span class="markdown">The provider of the API that exposes the measurements for a Pilot.</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>AEM, FLEXO</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasAPIProvider"
+               title="https://w3id.org/fedecom/measurement#hasAPIProvider">has API provider</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#AEM" title="https://w3id.org/fedecom/measurement#AEM">a e m</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#AUGE" title="https://w3id.org/fedecom/measurement#AUGE">a u g e</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#FLEXO" title="https://w3id.org/fedecom/measurement#FLEXO">f l e x o</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#VEO" title="https://w3id.org/fedecom/measurement#VEO">v e o</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Measurement">
+      <h3>Measurement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#Measurement</p>
+      <div class="comment">
+         <span class="markdown">A quantitative observation or value obtained from a sensor, instrument, or calculation.</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasAPIProvider"
+               title="https://w3id.org/fedecom/measurement#hasAPIProvider">has API provider</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasDirection"
+               title="https://w3id.org/fedecom/measurement#hasDirection">has direction</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#measurementBy"
+               title="https://w3id.org/fedecom/measurement#measurementBy">measurement by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#measuresOn" title="https://w3id.org/fedecom/measurement#measuresOn">measures on</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#measuresProperty"
+               title="https://w3id.org/fedecom/measurement#measuresProperty">measures property</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#makesMeasurement"
+               title="https://w3id.org/fedecom/measurement#makesMeasurement">makes measurement</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MeasurementDirection">
+      <h3>Measurement direction<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#MeasurementDirection</p>
+      <div class="comment">
+         <span class="markdown">It determines how the measured quantity flows or is interpreted in terms of directionality.</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>import, export, signed</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasDirection"
+               title="https://w3id.org/fedecom/measurement#hasDirection">has direction</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#Export" title="https://w3id.org/fedecom/measurement#Export">export</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Import" title="https://w3id.org/fedecom/measurement#Import">import</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Signed" title="https://w3id.org/fedecom/measurement#Signed">signed</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Property">
+      <h3>Property<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#Property</p>
+      <div class="comment">
+         <span class="markdown">Represents the attribute or characteristic measured in a measurement.</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>active energy, humidity, current</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#measuresProperty"
+               title="https://w3id.org/fedecom/measurement#measuresProperty">measures property</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#active_energy"
+               title="https://w3id.org/fedecom/measurement#active_energy">active energy</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#active_power"
+               title="https://w3id.org/fedecom/measurement#active_power">active power</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#apparent_energy"
+               title="https://w3id.org/fedecom/measurement#apparent_energy">apparent energy</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#apparent_power"
+               title="https://w3id.org/fedecom/measurement#apparent_power">apparent power</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#current" title="https://w3id.org/fedecom/measurement#current">current</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#humidity" title="https://w3id.org/fedecom/measurement#humidity">humidity</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#illuminance" title="https://w3id.org/fedecom/measurement#illuminance">illuminance</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#mode" title="https://w3id.org/fedecom/measurement#mode">mode</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#on_off" title="https://w3id.org/fedecom/measurement#on_off">on off</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#percent" title="https://w3id.org/fedecom/measurement#percent">percent</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#power_factor"
+               title="https://w3id.org/fedecom/measurement#power_factor">power factor</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#reactive_energy"
+               title="https://w3id.org/fedecom/measurement#reactive_energy">reactive energy</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#reactive_power"
+               title="https://w3id.org/fedecom/measurement#reactive_power">reactive power</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#setpoint_power"
+               title="https://w3id.org/fedecom/measurement#setpoint_power">setpoint power</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#setpoint_temperature"
+               title="https://w3id.org/fedecom/measurement#setpoint_temperature">setpoint temperature</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#state_of_charge"
+               title="https://w3id.org/fedecom/measurement#state_of_charge">state of charge</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#supply_frequency"
+               title="https://w3id.org/fedecom/measurement#supply_frequency">supply frequency</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#temperature" title="https://w3id.org/fedecom/measurement#temperature">temperature</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#thermal_energy"
+               title="https://w3id.org/fedecom/measurement#thermal_energy">thermal energy</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#volatile_organic_compounds"
+               title="https://w3id.org/fedecom/measurement#volatile_organic_compounds">volatile organic compounds</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#voltage" title="https://w3id.org/fedecom/measurement#voltage">voltage</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#volume" title="https://w3id.org/fedecom/measurement#volume">volume</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasAPIProvider"
+            title="https://w3id.org/fedecom/measurement#hasAPIProvider">has API provider</a>
+      </li>
+      <li>
+         <a href="#hasDirection"
+            title="https://w3id.org/fedecom/measurement#hasDirection">has direction</a>
+      </li>
+      <li>
+         <a href="#makesMeasurement"
+            title="https://w3id.org/fedecom/measurement#makesMeasurement">makes measurement</a>
+      </li>
+      <li>
+         <a href="#measurementBy"
+            title="https://w3id.org/fedecom/measurement#measurementBy">measurement by</a>
+      </li>
+      <li>
+         <a href="#measuresOn" title="https://w3id.org/fedecom/measurement#measuresOn">measures on</a>
+      </li>
+      <li>
+         <a href="#measuresProperty"
+            title="https://w3id.org/fedecom/measurement#measuresProperty">measures property</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasAPIProvider">
+      <h3>has API provider<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#hasAPIProvider</p>
+      <div class="comment">
+         <span class="markdown">Relates a measurement to the entity that provides an Application Programming Interface (API) for accessing or interacting with it.</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Measurement" title="https://w3id.org/fedecom/measurement#Measurement">Measurement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#APIProvider" title="https://w3id.org/fedecom/measurement#APIProvider">API provider</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDirection">
+      <h3>has direction<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#hasDirection</p>
+      <div class="comment">
+         <span class="markdown">Relates a measurement or flow to its directional context.</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Measurement" title="https://w3id.org/fedecom/measurement#Measurement">Measurement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#MeasurementDirection"
+                  title="https://w3id.org/fedecom/measurement#MeasurementDirection">Measurement direction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="makesMeasurement">
+      <h3>makes measurement<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#makesMeasurement</p>
+      <div class="comment">
+         <span class="markdown">Links an agent (e.g., a sensor, device, or system) to the measurement it produces.</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Measurement" title="https://w3id.org/fedecom/measurement#Measurement">Measurement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="measurementBy">
+      <h3>measurement by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#measurementBy</p>
+      <div class="comment">
+         <span class="markdown">Relates a measurement to the agent or instrument that performed or generated it.</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Measurement" title="https://w3id.org/fedecom/measurement#Measurement">Measurement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="measuresOn">
+      <h3>measures on<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#measuresOn</p>
+      <div class="comment">
+         <span class="markdown">Links a measurement to the entity or object on which the measurement was taken.</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Measurement" title="https://w3id.org/fedecom/measurement#Measurement">Measurement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="measuresProperty">
+      <h3>measures property<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#measuresProperty</p>
+      <div class="comment">
+         <span class="markdown">Relates a measurement to the specific property or characteristic being observed.</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Measurement" title="https://w3id.org/fedecom/measurement#Measurement">Measurement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#alternativeID"
+            title="https://w3id.org/fedecom/measurement#alternativeID">alternative ID</a>
+      </li>
+      <li>
+         <a href="#APIParameter"
+            title="https://w3id.org/fedecom/measurement#APIParameter">API parameter</a>
+      </li>
+      <li>
+         <a href="#energyAccumulated"
+            title="https://w3id.org/fedecom/measurement#energyAccumulated">energy accumulated</a>
+      </li>
+      <li>
+         <a href="#measurementID"
+            title="https://w3id.org/fedecom/measurement#measurementID">measurement ID</a>
+      </li>
+      <li>
+         <a href="#middlewareScalingFactor"
+            title="https://w3id.org/fedecom/measurement#middlewareScalingFactor">middleware scaling factor</a>
+      </li>
+      <li>
+         <a href="#phase" title="https://w3id.org/fedecom/measurement#phase">phase</a>
+      </li>
+      <li>
+         <a href="#timeResolution"
+            title="https://w3id.org/fedecom/measurement#timeResolution">time resolution</a>
+      </li>
+   </ul>
+   <div class="entity" id="alternativeID">
+      <h3>alternative ID<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#alternativeID</p>
+      <div class="comment">
+         <span class="markdown">Alternative identifier for a Measurement</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+   </div>
+   <div class="entity" id="APIParameter">
+      <h3>API parameter<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#APIParameter</p>
+      <div class="comment">
+         <span class="markdown">Parameters to obtain a Measurement from its API.</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+   </div>
+   <div class="entity" id="energyAccumulated">
+      <h3>energy accumulated<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#energyAccumulated</p>
+      <div class="comment">
+         <span class="markdown">Boolean that establishes is the measurement value is cumulative or not.</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>{ "0" , "1" }</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="measurementID">
+      <h3>measurement ID<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#measurementID</p>
+      <div class="comment">
+         <span class="markdown">The ID of a measurement</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+   </div>
+   <div class="entity" id="middlewareScalingFactor">
+      <h3>middleware scaling factor<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#middlewareScalingFactor</p>
+      <div class="comment">
+         <span class="markdown">The scaling factor used to convert the raw values (i.e. the measurements that come directly from the API in a specific unit) to the target units of the target platform.</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+   </div>
+   <div class="entity" id="phase">
+      <h3>phase<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#phase</p>
+      <div class="comment">
+         <span class="markdown">The alternating current (AC) phase the Measurement corresponds to.</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>{ "0" , "1" , "2" , "3" }</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="timeResolution">
+      <h3>time resolution<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#timeResolution</p>
+      <div class="comment">
+         <span class="markdown">The temporal granularity at which data is captured or aggregated.</span>
+      </div>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+   </div>
+</div><div id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#AEM" title="https://w3id.org/fedecom/measurement#AEM">
+            <span>a e m</span>
+         </a>
+      </li>
+      <li>
+         <a href="#AUGE" title="https://w3id.org/fedecom/measurement#AUGE">
+            <span>a u g e</span>
+         </a>
+      </li>
+      <li>
+         <a href="#active_energy"
+            title="https://w3id.org/fedecom/measurement#active_energy">
+            <span>active energy</span>
+         </a>
+      </li>
+      <li>
+         <a href="#active_power"
+            title="https://w3id.org/fedecom/measurement#active_power">
+            <span>active power</span>
+         </a>
+      </li>
+      <li>
+         <a href="#apparent_energy"
+            title="https://w3id.org/fedecom/measurement#apparent_energy">
+            <span>apparent energy</span>
+         </a>
+      </li>
+      <li>
+         <a href="#apparent_power"
+            title="https://w3id.org/fedecom/measurement#apparent_power">
+            <span>apparent power</span>
+         </a>
+      </li>
+      <li>
+         <a href="#current" title="https://w3id.org/fedecom/measurement#current">
+            <span>current</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Export" title="https://w3id.org/fedecom/measurement#Export">
+            <span>export</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FLEXO" title="https://w3id.org/fedecom/measurement#FLEXO">
+            <span>f l e x o</span>
+         </a>
+      </li>
+      <li>
+         <a href="#humidity" title="https://w3id.org/fedecom/measurement#humidity">
+            <span>humidity</span>
+         </a>
+      </li>
+      <li>
+         <a href="#illuminance" title="https://w3id.org/fedecom/measurement#illuminance">
+            <span>illuminance</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Import" title="https://w3id.org/fedecom/measurement#Import">
+            <span>import</span>
+         </a>
+      </li>
+      <li>
+         <a href="#mode" title="https://w3id.org/fedecom/measurement#mode">
+            <span>mode</span>
+         </a>
+      </li>
+      <li>
+         <a href="#on_off" title="https://w3id.org/fedecom/measurement#on_off">
+            <span>on off</span>
+         </a>
+      </li>
+      <li>
+         <a href="#percent" title="https://w3id.org/fedecom/measurement#percent">
+            <span>percent</span>
+         </a>
+      </li>
+      <li>
+         <a href="#power_factor"
+            title="https://w3id.org/fedecom/measurement#power_factor">
+            <span>power factor</span>
+         </a>
+      </li>
+      <li>
+         <a href="#reactive_energy"
+            title="https://w3id.org/fedecom/measurement#reactive_energy">
+            <span>reactive energy</span>
+         </a>
+      </li>
+      <li>
+         <a href="#reactive_power"
+            title="https://w3id.org/fedecom/measurement#reactive_power">
+            <span>reactive power</span>
+         </a>
+      </li>
+      <li>
+         <a href="#setpoint_power"
+            title="https://w3id.org/fedecom/measurement#setpoint_power">
+            <span>setpoint power</span>
+         </a>
+      </li>
+      <li>
+         <a href="#setpoint_temperature"
+            title="https://w3id.org/fedecom/measurement#setpoint_temperature">
+            <span>setpoint temperature</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Signed" title="https://w3id.org/fedecom/measurement#Signed">
+            <span>signed</span>
+         </a>
+      </li>
+      <li>
+         <a href="#state_of_charge"
+            title="https://w3id.org/fedecom/measurement#state_of_charge">
+            <span>state of charge</span>
+         </a>
+      </li>
+      <li>
+         <a href="#supply_frequency"
+            title="https://w3id.org/fedecom/measurement#supply_frequency">
+            <span>supply frequency</span>
+         </a>
+      </li>
+      <li>
+         <a href="#temperature" title="https://w3id.org/fedecom/measurement#temperature">
+            <span>temperature</span>
+         </a>
+      </li>
+      <li>
+         <a href="#thermal_energy"
+            title="https://w3id.org/fedecom/measurement#thermal_energy">
+            <span>thermal energy</span>
+         </a>
+      </li>
+      <li>
+         <a href="#VEO" title="https://w3id.org/fedecom/measurement#VEO">
+            <span>v e o</span>
+         </a>
+      </li>
+      <li>
+         <a href="#volatile_organic_compounds"
+            title="https://w3id.org/fedecom/measurement#volatile_organic_compounds">
+            <span>volatile organic compounds</span>
+         </a>
+      </li>
+      <li>
+         <a href="#voltage" title="https://w3id.org/fedecom/measurement#voltage">
+            <span>voltage</span>
+         </a>
+      </li>
+      <li>
+         <a href="#volume" title="https://w3id.org/fedecom/measurement#volume">
+            <span>volume</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="AEM">
+      <h3>a e m<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#AEM</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#APIProvider" title="https://w3id.org/fedecom/measurement#APIProvider">API provider</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="AUGE">
+      <h3>a u g e<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#AUGE</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#APIProvider" title="https://w3id.org/fedecom/measurement#APIProvider">API provider</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="active_energy">
+      <h3>active energy<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#active_energy</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="active_power">
+      <h3>active power<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#active_power</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="apparent_energy">
+      <h3>apparent energy<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#apparent_energy</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="apparent_power">
+      <h3>apparent power<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#apparent_power</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="current">
+      <h3>current<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#current</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Export">
+      <h3>export<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#Export</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#MeasurementDirection"
+               title="https://w3id.org/fedecom/measurement#MeasurementDirection">Measurement direction</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FLEXO">
+      <h3>f l e x o<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#FLEXO</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#APIProvider" title="https://w3id.org/fedecom/measurement#APIProvider">API provider</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="humidity">
+      <h3>humidity<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#humidity</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="illuminance">
+      <h3>illuminance<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#illuminance</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Import">
+      <h3>import<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#Import</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#MeasurementDirection"
+               title="https://w3id.org/fedecom/measurement#MeasurementDirection">Measurement direction</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="mode">
+      <h3>mode<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#mode</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="on_off">
+      <h3>on off<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#on_off</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="percent">
+      <h3>percent<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#percent</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="power_factor">
+      <h3>power factor<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#power_factor</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="reactive_energy">
+      <h3>reactive energy<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#reactive_energy</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="reactive_power">
+      <h3>reactive power<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#reactive_power</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="setpoint_power">
+      <h3>setpoint power<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#setpoint_power</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="setpoint_temperature">
+      <h3>setpoint temperature<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#setpoint_temperature</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Signed">
+      <h3>signed<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#Signed</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#MeasurementDirection"
+               title="https://w3id.org/fedecom/measurement#MeasurementDirection">Measurement direction</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="state_of_charge">
+      <h3>state of charge<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#state_of_charge</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="supply_frequency">
+      <h3>supply frequency<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#supply_frequency</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="temperature">
+      <h3>temperature<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#temperature</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="thermal_energy">
+      <h3>thermal energy<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#thermal_energy</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="VEO">
+      <h3>v e o<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#VEO</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#APIProvider" title="https://w3id.org/fedecom/measurement#APIProvider">API provider</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="volatile_organic_compounds">
+      <h3>volatile organic compounds<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#volatile_organic_compounds</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="voltage">
+      <h3>voltage<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#voltage</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="volume">
+      <h3>volume<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/fedecom/measurement#volume</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Property" title="https://w3id.org/fedecom/measurement#Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

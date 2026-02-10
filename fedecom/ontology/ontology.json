@@ -1,0 +1,66 @@
+[ {
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/fedecom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@value" : "http://purl.org/NET/rdflicense/cc-by4.0"
+  } ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Ignacio Lázaro (Tekniker) <ignacio.lazaro@tekniker.es>\nAndoni Osorio (Tekniker) <andoni.osorio@tekniker.es>\nMarko Jelić (Institut Mihajlo Pupin) <marko.jelic@pupin.rs>\nSpyros Tzavikas (Grid Singularity) <spyros@gridsingularity.com>\nDaniel Werner (Fraunhofer ISE) <daniel.werner@ise.fraunhofer.de>"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : ""
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "The FEDECOM ontology is a modular ontology designed to formally model energy communities in terms of the characterization of their buildings, energy assets, and other relevant resources, together with the observations and measurements associated with them."
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "FEDECOM Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "fedecom"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/fedecom#"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/fedecom/battery"
+  }, {
+    "@id" : "https://w3id.org/fedecom/energyasset"
+  }, {
+    "@id" : "https://w3id.org/fedecom/lec-building"
+  }, {
+    "@id" : "https://w3id.org/fedecom/measurement"
+  }, {
+    "@id" : "https://w3id.org/fedecom/units"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : ""
+  } ]
+} ]

@@ -1,0 +1,251 @@
+<https://w3id.org/fedecom/units> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/fedecom/units> <http://creativecommons.org/ns#license> "http://purl.org/NET/rdflicense/cc-by4.0" .
+<https://w3id.org/fedecom/units> <http://purl.org/dc/terms/created> "" .
+<https://w3id.org/fedecom/units> <http://purl.org/dc/terms/creator> "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>" .
+<https://w3id.org/fedecom/units> <http://purl.org/dc/terms/description> "This ontology module includes the necessary classes and properties to support units of measurement." .
+<https://w3id.org/fedecom/units> <http://purl.org/dc/terms/title> "Units: Units of Measurement module for the FEDECOM Ontology" .
+<https://w3id.org/fedecom/units> <http://purl.org/vocab/vann/preferredNamespacePrefix> "units" .
+<https://w3id.org/fedecom/units> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/fedecom/units#" .
+<https://w3id.org/fedecom/units> <http://www.w3.org/2002/07/owl#versionInfo> "" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fedecom/units#hasUnit
+<https://w3id.org/fedecom/units#hasUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fedecom/units#hasUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to define the unit in which a value (for, for example, a measurement or property) is reported in." .
+<https://w3id.org/fedecom/units#hasUnit> <http://www.w3.org/2000/01/rdf-schema#label> "has unit" .
+<https://w3id.org/fedecom/units#hasUnit> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/name
+<http://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/fedecom/units#maximum
+<https://w3id.org/fedecom/units#maximum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/units#maximum> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum value for a measurement, characteristic or other." .
+<https://w3id.org/fedecom/units#maximum> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/units#minimum
+<https://w3id.org/fedecom/units#minimum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/units#minimum> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum value for a measurement, characteristic or other." .
+<https://w3id.org/fedecom/units#minimum> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fedecom/units#symbol
+<https://w3id.org/fedecom/units#symbol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/units#symbol> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a unit of measure to its standard symbolic representation." .
+<https://w3id.org/fedecom/units#symbol> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/fedecom/units#symbol> <http://www.w3.org/2004/02/skos/core#example> "Wh, V, W, Hz" .
+# 
+# https://w3id.org/fedecom/units#value
+<https://w3id.org/fedecom/units#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fedecom/units#value> <http://www.w3.org/2000/01/rdf-schema#comment> "Numeric representation of a measurement, characteristic or other." .
+<https://w3id.org/fedecom/units#value> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fedecom/units#UnitOfMeasure
+<https://w3id.org/fedecom/units#UnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fedecom/units#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the standard unit used to express the value of a measurement or property." .
+<https://w3id.org/fedecom/units#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "unit of measure" .
+<https://w3id.org/fedecom/units#UnitOfMeasure> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/fedecom/units#UnitOfMeasure> <http://www.w3.org/2004/02/skos/core#example> "Ampere, Volt, Hertz" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fedecom/units#Ampere
+<https://w3id.org/fedecom/units#Ampere> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#Ampere> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#Ampere> <http://schema.org/name> "Ampere" .
+<https://w3id.org/fedecom/units#Ampere> <https://w3id.org/fedecom/units#symbol> "A" .
+# 
+# https://w3id.org/fedecom/units#AmpereHour
+<https://w3id.org/fedecom/units#AmpereHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#AmpereHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#AmpereHour> <http://schema.org/name> "Ampere-hour" .
+<https://w3id.org/fedecom/units#AmpereHour> <https://w3id.org/fedecom/units#symbol> "Ah" .
+# 
+# https://w3id.org/fedecom/units#CubicMeter
+<https://w3id.org/fedecom/units#CubicMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#CubicMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#CubicMeter> <http://schema.org/name> "cubic meter" .
+<https://w3id.org/fedecom/units#CubicMeter> <https://w3id.org/fedecom/units#symbol> "m3" .
+# 
+# https://w3id.org/fedecom/units#CubicMeterHour
+<https://w3id.org/fedecom/units#CubicMeterHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#CubicMeterHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#CubicMeterHour> <http://schema.org/name> "cubic meter per hour" .
+<https://w3id.org/fedecom/units#CubicMeterHour> <https://w3id.org/fedecom/units#symbol> "m3h" .
+# 
+# https://w3id.org/fedecom/units#Degree
+<https://w3id.org/fedecom/units#Degree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#Degree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#Degree> <http://schema.org/name> "degree" .
+<https://w3id.org/fedecom/units#Degree> <https://w3id.org/fedecom/units#symbol> "°" .
+# 
+# https://w3id.org/fedecom/units#DegreeCelsius
+<https://w3id.org/fedecom/units#DegreeCelsius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#DegreeCelsius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#DegreeCelsius> <http://schema.org/name> "degree Celsius" .
+<https://w3id.org/fedecom/units#DegreeCelsius> <https://w3id.org/fedecom/units#symbol> "°C" .
+# 
+# https://w3id.org/fedecom/units#Hertz
+<https://w3id.org/fedecom/units#Hertz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#Hertz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#Hertz> <http://schema.org/name> "Hertz" .
+<https://w3id.org/fedecom/units#Hertz> <https://w3id.org/fedecom/units#symbol> "Hz" .
+# 
+# https://w3id.org/fedecom/units#KiloVoltAmpere
+<https://w3id.org/fedecom/units#KiloVoltAmpere> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#KiloVoltAmpere> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#KiloVoltAmpere> <http://schema.org/name> "kilovolt-ampere" .
+<https://w3id.org/fedecom/units#KiloVoltAmpere> <https://w3id.org/fedecom/units#symbol> "kVA" .
+# 
+# https://w3id.org/fedecom/units#KiloWatt
+<https://w3id.org/fedecom/units#KiloWatt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#KiloWatt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#KiloWatt> <http://schema.org/name> "kilowatt" .
+<https://w3id.org/fedecom/units#KiloWatt> <https://w3id.org/fedecom/units#symbol> "kW" .
+# 
+# https://w3id.org/fedecom/units#KiloWattHour
+<https://w3id.org/fedecom/units#KiloWattHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#KiloWattHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#KiloWattHour> <http://schema.org/name> "kilowatt-hour" .
+<https://w3id.org/fedecom/units#KiloWattHour> <https://w3id.org/fedecom/units#symbol> "kWh" .
+# 
+# https://w3id.org/fedecom/units#KiloWattPeak
+<https://w3id.org/fedecom/units#KiloWattPeak> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#KiloWattPeak> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#KiloWattPeak> <http://schema.org/name> "kilowatt peak" .
+<https://w3id.org/fedecom/units#KiloWattPeak> <https://w3id.org/fedecom/units#symbol> "kWp" .
+# 
+# https://w3id.org/fedecom/units#Liter
+<https://w3id.org/fedecom/units#Liter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#Liter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#Liter> <http://schema.org/name> "liter" .
+<https://w3id.org/fedecom/units#Liter> <https://w3id.org/fedecom/units#symbol> "L" .
+# 
+# https://w3id.org/fedecom/units#MegaWattHour
+<https://w3id.org/fedecom/units#MegaWattHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#MegaWattHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#MegaWattHour> <http://schema.org/name> "megawatt-hour" .
+<https://w3id.org/fedecom/units#MegaWattHour> <https://w3id.org/fedecom/units#symbol> "MWh" .
+# 
+# https://w3id.org/fedecom/units#PerUnit
+<https://w3id.org/fedecom/units#PerUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#PerUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#PerUnit> <http://schema.org/name> "per unit" .
+<https://w3id.org/fedecom/units#PerUnit> <https://w3id.org/fedecom/units#symbol> "pu" .
+# 
+# https://w3id.org/fedecom/units#Percentage
+<https://w3id.org/fedecom/units#Percentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#Percentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#Percentage> <http://schema.org/name> "percent" .
+<https://w3id.org/fedecom/units#Percentage> <https://w3id.org/fedecom/units#symbol> "%" .
+# 
+# https://w3id.org/fedecom/units#Radian
+<https://w3id.org/fedecom/units#Radian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#Radian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#Radian> <http://schema.org/name> "radian" .
+<https://w3id.org/fedecom/units#Radian> <https://w3id.org/fedecom/units#symbol> "rad" .
+# 
+# https://w3id.org/fedecom/units#SquareMeter
+<https://w3id.org/fedecom/units#SquareMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#SquareMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#SquareMeter> <http://schema.org/name> "square meter" .
+<https://w3id.org/fedecom/units#SquareMeter> <https://w3id.org/fedecom/units#symbol> "m2" .
+# 
+# https://w3id.org/fedecom/units#Volt
+<https://w3id.org/fedecom/units#Volt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#Volt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#Volt> <https://w3id.org/fedecom/units#symbol> "V" .
+<https://w3id.org/fedecom/units#Volt> <https://w3id.org/fedecom/units#symbol> "Volt" .
+# 
+# https://w3id.org/fedecom/units#VoltAmpereReactive
+<https://w3id.org/fedecom/units#VoltAmpereReactive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#VoltAmpereReactive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#VoltAmpereReactive> <http://schema.org/name> "Volt-ampere reactive" .
+<https://w3id.org/fedecom/units#VoltAmpereReactive> <https://w3id.org/fedecom/units#symbol> "VAR" .
+# 
+# https://w3id.org/fedecom/units#Watt
+<https://w3id.org/fedecom/units#Watt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#Watt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#Watt> <http://schema.org/name> "Watt" .
+<https://w3id.org/fedecom/units#Watt> <https://w3id.org/fedecom/units#symbol> "W" .
+# 
+# https://w3id.org/fedecom/units#WattHour
+<https://w3id.org/fedecom/units#WattHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#WattHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#WattHour> <http://schema.org/name> "Watt-hour" .
+<https://w3id.org/fedecom/units#WattHour> <https://w3id.org/fedecom/units#symbol> "Wh" .
+# 
+# https://w3id.org/fedecom/units#Year
+<https://w3id.org/fedecom/units#Year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fedecom/units#Year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/fedecom/units#UnitOfMeasure> .
+<https://w3id.org/fedecom/units#Year> <http://schema.org/name> "years" .
+<https://w3id.org/fedecom/units#Year> <https://w3id.org/fedecom/units#symbol> "years" .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

@@ -1,0 +1,501 @@
+@prefix : <https://w3id.org/fedecom/battery#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/fedecom/battery> .
+
+<https://w3id.org/fedecom/battery> rdf:type owl:Ontology ;
+                                    owl:imports <https://w3id.org/fedecom/units> ;
+                                    <http://creativecommons.org/ns#license> "http://purl.org/NET/rdflicense/cc-by4.0" ;
+                                    <http://purl.org/dc/terms/contributor> """Ignacio Lázaro (Tekniker) <ignacio.lazaro@tekniker.es>
+Andoni Osorio (Tekniker) <andoni.osorio@tekniker.es>
+Marko Jelić (Institut Mihajlo Pupin) <marko.jelic@pupin.rs>
+Spyros Tzavikas (Grid Singularity) <spyros@gridsingularity.com>""" ;
+                                    <http://purl.org/dc/terms/created> "" ;
+                                    <http://purl.org/dc/terms/creator> "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>" ;
+                                    <http://purl.org/dc/terms/description> "This ontology module includes the necessary classes and properties to model and characterize batteries." ;
+                                    <http://purl.org/dc/terms/title> "Battery: Battery Characterization module for the FEDECOM Ontology" ;
+                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "battery" ;
+                                    <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/fedecom/battery#" ;
+                                    owl:versionInfo "" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/fedecom/battery#hasCharacteristic
+:hasCharacteristic rdf:type owl:ObjectProperty ;
+                   rdfs:comment "Links a battery to a general feature or property that describes its nature, such as chemistry type, capacity, or performance attributes." ;
+                   rdfs:label "has characteristic" ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#hasChargeCurrent
+:hasChargeCurrent rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :hasCharacteristic ;
+                  rdfs:domain :Battery ;
+                  rdfs:range :ChargeCurrent ;
+                  rdfs:comment "Relates a battery to the value of electric current supplied during charging." ;
+                  rdfs:label "has charge current" ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#hasChargePower
+:hasChargePower rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :hasCharacteristic ;
+                rdfs:domain :Battery ;
+                rdfs:range :ChargePower ;
+                rdfs:comment "Relates a battery to the amount of power delivered during charging." ;
+                rdfs:label "has charge power" ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#hasDischargeCurrent
+:hasDischargeCurrent rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :hasCharacteristic ;
+                     rdfs:domain :Battery ;
+                     rdfs:range :DischargeCurrent ;
+                     rdfs:comment "Relates a battery to the value of electric current drawn during discharge." ;
+                     rdfs:label "has discharge current" ;
+                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#hasDischargePower
+:hasDischargePower rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasCharacteristic ;
+                   rdfs:domain :Battery ;
+                   rdfs:range :DischargePower ;
+                   rdfs:comment "Relates a battery to the amount of power output during discharge." ;
+                   rdfs:label "has discharge power" ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#hasLifetime
+:hasLifetime rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasCharacteristic ;
+             rdfs:domain :Battery ;
+             rdfs:range :BatteryLifetime ;
+             rdfs:comment "Relates a battery to its expected operational duration." ;
+             rdfs:label "has lifetime" ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#hasLossRate
+:hasLossRate rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasCharacteristic ;
+             rdfs:domain :Battery ;
+             rdfs:range :LossRate ;
+             rdfs:comment "Relates a battery to the rate at which it loses energy or capacity over time." ;
+             rdfs:label "has loss rate" ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#hasManufacturer
+:hasManufacturer rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Battery ;
+                 rdfs:range :Manufacturer ;
+                 rdfs:comment "Links a battery to the entity (company or organization) that produced it." ;
+                 rdfs:label "has manufacturer" ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#hasModel
+:hasModel rdf:type owl:ObjectProperty ;
+          rdfs:domain :Battery ;
+          rdfs:range :Model ;
+          rdfs:comment "Links a battery to its specific product designation or identifier." ;
+          rdfs:label "has model" ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#hasOpenCircuitVoltage
+:hasOpenCircuitVoltage rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :hasCharacteristic ;
+                       rdfs:comment "Relates a battery to its voltage when not connected to any load or charging source." ;
+                       rdfs:label "has open circuit voltage" ;
+                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverDOD
+:hasOpenCircuitVoltageOverDOD rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf :hasOpenCircuitVoltage ;
+                              rdfs:domain :Battery ;
+                              rdfs:range :OpenCircuitVoltageOverDOD ;
+                              rdfs:comment "Relates a battery to the functional relationship between open circuit voltage and depth of discharge." ;
+                              rdfs:label "has open circuit voltage over Depth of Discharge" ;
+                              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#hasOpenCircuitVoltageOverSOC
+:hasOpenCircuitVoltageOverSOC rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf :hasOpenCircuitVoltage ;
+                              rdfs:domain :Battery ;
+                              rdfs:range :OpenCircuitVoltageOverSOC ;
+                              rdfs:comment "Relates a battery to the functional relationship between open circuit voltage and state of charge." ;
+                              rdfs:label "has open circuit voltage over State of Charge" ;
+                              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#hasPowerDelivery
+:hasPowerDelivery rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :hasCharacteristic ;
+                  rdfs:domain :Battery ;
+                  rdfs:range :PowerDelivery ;
+                  rdfs:comment "Relates a battery to its ability to supply power to a load." ;
+                  rdfs:label "has power delivery" ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#hasSOC
+:hasSOC rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :hasCharacteristic ;
+        rdfs:domain :Battery ;
+        rdfs:range :SOC ;
+        rdfs:comment "Relates a battery to its current level of charge." ;
+        rdfs:label "has state of charge" ;
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#hasStorageLevel
+:hasStorageLevel rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :hasCharacteristic ;
+                 rdfs:domain :Battery ;
+                 rdfs:range :StorageLevel ;
+                 rdfs:comment "Relates a battery to the amount of energy stored at a given time." ;
+                 rdfs:label "has storage level" ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#hasVoltage
+:hasVoltage rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasCharacteristic ;
+            rdfs:domain :Battery ;
+            rdfs:range :Voltage ;
+            rdfs:comment "Relates a battery to its operating electrical potential difference." ;
+            rdfs:label "has voltage" ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://schema.org/name
+<http://schema.org/name> rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/fedecom/battery#conversionFactor
+:conversionFactor rdf:type owl:DatatypeProperty ;
+                  rdfs:label "conversion factor" ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  https://w3id.org/fedecom/battery#conversionFactor_in
+:conversionFactor_in rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :conversionFactor ;
+                     rdfs:label "conversion factor in" ;
+                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  https://w3id.org/fedecom/battery#conversionFactor_out
+:conversionFactor_out rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :conversionFactor ;
+                      rdfs:label "conversion factor out" ;
+                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  https://w3id.org/fedecom/battery#maximum
+:maximum rdf:type owl:DatatypeProperty ;
+         rdfs:comment "Maximum value for a given characteristic." ;
+         rdfs:label "maximum" ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#maximumCycles
+:maximumCycles rdf:type owl:DatatypeProperty ;
+               rdfs:comment "Maximum number of cycles." ;
+               rdfs:label "maximum cycles" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#minimum
+:minimum rdf:type owl:DatatypeProperty ;
+         rdfs:comment "Minimum value for a given characteristic." ;
+         rdfs:label "minimum" ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/fedecom/battery#Battery
+:Battery rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasChargeCurrent ;
+                           owl:someValuesFrom :ChargeCurrent
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasChargePower ;
+                           owl:someValuesFrom :ChargePower
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasDischargeCurrent ;
+                           owl:someValuesFrom :DischargeCurrent
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasDischargePower ;
+                           owl:someValuesFrom :DischargePower
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasLifetime ;
+                           owl:someValuesFrom :BatteryLifetime
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasLossRate ;
+                           owl:someValuesFrom :LossRate
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasManufacturer ;
+                           owl:someValuesFrom :Manufacturer
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasModel ;
+                           owl:someValuesFrom :Model
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasOpenCircuitVoltageOverDOD ;
+                           owl:someValuesFrom :OpenCircuitVoltageOverDOD
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasOpenCircuitVoltageOverSOC ;
+                           owl:someValuesFrom :OpenCircuitVoltageOverSOC
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasPowerDelivery ;
+                           owl:someValuesFrom :PowerDelivery
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasSOC ;
+                           owl:someValuesFrom :SOC
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasStorageLevel ;
+                           owl:someValuesFrom :StorageLevel
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasVoltage ;
+                           owl:someValuesFrom :Voltage
+                         ] ;
+         rdfs:comment "A device that stores chemical energy and converts it into electrical energy through electrochemical reactions." ;
+         rdfs:label "Battery" ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#BatteryChemistryType
+:BatteryChemistryType rdf:type owl:Class ;
+                      rdfs:comment "The specific chemical composition and technology used in a battery." ;
+                      rdfs:label "Battery chemistry type" ;
+                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" ;
+                      <http://www.w3.org/2004/02/skos/core#example> "Lithium-ion, Lead-acid, Nickel-metal hydride" .
+
+
+###  https://w3id.org/fedecom/battery#BatteryLifetime
+:BatteryLifetime rdf:type owl:Class ;
+                 rdfs:comment "The total period a battery can function effectively before its capacity drops below a usable threshold, often measured in cycles or years." ;
+                 rdfs:label "Battery lifetime" ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#Capacity
+:Capacity rdf:type owl:Class ;
+          rdfs:comment "The amount of electric charge a battery can store." ;
+          rdfs:label "Capacity" ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#ChargeCapacity
+:ChargeCapacity rdf:type owl:Class ;
+                rdfs:subClassOf :Capacity ;
+                rdfs:comment "The maximum amount of charge that can be stored during charging, usually equal to the battery’s rated capacity." ;
+                rdfs:label "Charge capacity" ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#ChargeCurrent
+:ChargeCurrent rdf:type owl:Class ;
+               rdfs:subClassOf :Current ;
+               rdfs:comment "The rate at which current flows into the battery during charging." ;
+               rdfs:label "Charge current" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#ChargePower
+:ChargePower rdf:type owl:Class ;
+             rdfs:subClassOf :Power ;
+             rdfs:comment "The rate at which energy is supplied to the battery during charging." ;
+             rdfs:label "Charge power" ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#Current
+:Current rdf:type owl:Class ;
+         rdfs:comment "The flow of electric charge through a circuit." ;
+         rdfs:label "Current" ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#DischargeCurrent
+:DischargeCurrent rdf:type owl:Class ;
+                  rdfs:subClassOf :Current ;
+                  rdfs:comment "The rate at which current flows out of the battery during discharge." ;
+                  rdfs:label "Discharge current" ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#DischargePower
+:DischargePower rdf:type owl:Class ;
+                rdfs:subClassOf :Power ;
+                rdfs:comment "The rate at which energy is delivered from the battery during discharge." ;
+                rdfs:label "Discharge power" ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#Energy
+:Energy rdf:type owl:Class ;
+        rdfs:comment "The total amount of work a battery can perform." ;
+        rdfs:label "Energy" ;
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#LossRate
+:LossRate rdf:type owl:Class ;
+          rdfs:comment "The rate at which a battery loses stored energy over time, often due to self-discharge or inefficiencies." ;
+          rdfs:label "Loss rate" ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#Manufacturer
+:Manufacturer rdf:type owl:Class ;
+              rdfs:comment "The company that produces the battery." ;
+              rdfs:label "Manufacturer" ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#Model
+:Model rdf:type owl:Class ;
+       rdfs:comment "The specific product designation or name given by the manufacturer." ;
+       rdfs:label "Model" ;
+       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#OpenCircuitVoltage
+:OpenCircuitVoltage rdf:type owl:Class ;
+                    rdfs:subClassOf :Voltage ;
+                    rdfs:comment "The voltage of a battery when it is not connected to any load or circuit (no current flowing)." ;
+                    rdfs:label "Open circuit voltage" ;
+                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#OpenCircuitVoltageOverDOD
+:OpenCircuitVoltageOverDOD rdf:type owl:Class ;
+                           rdfs:subClassOf :OpenCircuitVoltage ;
+                           rdfs:comment "The relationship between Open Circuit Voltage and the percentage of energy discharged from the battery." ;
+                           rdfs:label "Open circuit voltage over Depth of Discharge" ;
+                           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#OpenCircuitVoltageOverSOC
+:OpenCircuitVoltageOverSOC rdf:type owl:Class ;
+                           rdfs:subClassOf :OpenCircuitVoltage ;
+                           rdfs:comment "The relationship between Open Circuit Voltage and the percentage of energy remaining in the battery." ;
+                           rdfs:label "Open circuit voltage over State of Charge" ;
+                           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#Power
+:Power rdf:type owl:Class ;
+       rdfs:comment "How quickly the battery can deliver or absorb energy during discharge or charge" ;
+       rdfs:label "Power" ;
+       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#PowerDelivery
+:PowerDelivery rdf:type owl:Class ;
+               rdfs:comment "The ability of the battery to supply power to a load." ;
+               rdfs:label "Power delivery" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#SOC
+:SOC rdf:type owl:Class ;
+     rdfs:comment "The current level of charge in the battery compared to its full capacity." ;
+     rdfs:label "State of charge" ;
+     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#StorageLevel
+:StorageLevel rdf:type owl:Class ;
+              rdfs:comment "Indicates how much energy is stored in the battery at a given time." ;
+              rdfs:label "Storage level" ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/battery#Voltage
+:Voltage rdf:type owl:Class ;
+         rdfs:comment "The force that drives electric current through a circuit. It varies with the battery’s state of charge and load conditions." ;
+         rdfs:label "Voltage" ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

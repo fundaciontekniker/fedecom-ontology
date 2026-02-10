@@ -1,0 +1,321 @@
+[ {
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#example",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@value" : "http://purl.org/NET/rdflicense/cc-by4.0"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : ""
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "This ontology module includes the necessary classes and properties to support units of measurement."
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "Units: Units of Measurement module for the FEDECOM Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "units"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/fedecom/units#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#Ampere",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "http://schema.org/name" : [ {
+    "@value" : "Ampere"
+  } ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "A"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#AmpereHour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "http://schema.org/name" : [ {
+    "@value" : "Ampere-hour"
+  } ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "Ah"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#CubicMeter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "http://schema.org/name" : [ {
+    "@value" : "cubic meter"
+  } ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "m3"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#CubicMeterHour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "http://schema.org/name" : [ {
+    "@value" : "cubic meter per hour"
+  } ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "m3h"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#Degree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "http://schema.org/name" : [ {
+    "@value" : "degree"
+  } ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "°"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#DegreeCelsius",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "http://schema.org/name" : [ {
+    "@value" : "degree Celsius"
+  } ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "°C"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#Hertz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "http://schema.org/name" : [ {
+    "@value" : "Hertz"
+  } ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "Hz"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#KiloVoltAmpere",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "http://schema.org/name" : [ {
+    "@value" : "kilovolt-ampere"
+  } ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "kVA"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#KiloWatt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "http://schema.org/name" : [ {
+    "@value" : "kilowatt"
+  } ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "kW"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#KiloWattHour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "http://schema.org/name" : [ {
+    "@value" : "kilowatt-hour"
+  } ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "kWh"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#KiloWattPeak",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "http://schema.org/name" : [ {
+    "@value" : "kilowatt peak"
+  } ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "kWp"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#Liter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "http://schema.org/name" : [ {
+    "@value" : "liter"
+  } ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "L"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#MegaWattHour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "http://schema.org/name" : [ {
+    "@value" : "megawatt-hour"
+  } ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "MWh"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#PerUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "http://schema.org/name" : [ {
+    "@value" : "per unit"
+  } ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "pu"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#Percentage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "http://schema.org/name" : [ {
+    "@value" : "percent"
+  } ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "%"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#Radian",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "http://schema.org/name" : [ {
+    "@value" : "radian"
+  } ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "rad"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#SquareMeter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "http://schema.org/name" : [ {
+    "@value" : "square meter"
+  } ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "m2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#UnitOfMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Defines the standard unit used to express the value of a measurement or property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "unit of measure"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Ampere, Volt, Hertz"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#Volt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "V"
+  }, {
+    "@value" : "Volt"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#VoltAmpereReactive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "http://schema.org/name" : [ {
+    "@value" : "Volt-ampere reactive"
+  } ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "VAR"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#Watt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "http://schema.org/name" : [ {
+    "@value" : "Watt"
+  } ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "W"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#WattHour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "http://schema.org/name" : [ {
+    "@value" : "Watt-hour"
+  } ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "Wh"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#Year",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/fedecom/units#UnitOfMeasure" ],
+  "http://schema.org/name" : [ {
+    "@value" : "years"
+  } ],
+  "https://w3id.org/fedecom/units#symbol" : [ {
+    "@value" : "years"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#hasUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Used to define the unit in which a value (for, for example, a measurement or property) is reported in."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has unit"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#maximum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Minimum value for a measurement, characteristic or other."
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#minimum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Minimum value for a measurement, characteristic or other."
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#symbol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a unit of measure to its standard symbolic representation."
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Wh, V, W, Hz"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fedecom/units#value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Numeric representation of a measurement, characteristic or other."
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+} ]

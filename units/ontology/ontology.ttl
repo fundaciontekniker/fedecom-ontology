@@ -1,0 +1,273 @@
+@prefix : <https://w3id.org/fedecom/units#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/fedecom/units> .
+
+<https://w3id.org/fedecom/units> rdf:type owl:Ontology ;
+                                  <http://creativecommons.org/ns#license> "http://purl.org/NET/rdflicense/cc-by4.0" ;
+                                  <http://purl.org/dc/terms/created> "" ;
+                                  <http://purl.org/dc/terms/creator> "Cristina Aceta (Tekniker) <cristina.aceta@tekniker.es>" ;
+                                  <http://purl.org/dc/terms/description> "This ontology module includes the necessary classes and properties to support units of measurement." ;
+                                  <http://purl.org/dc/terms/title> "Units: Units of Measurement module for the FEDECOM Ontology" ;
+                                  <http://purl.org/vocab/vann/preferredNamespacePrefix> "units" ;
+                                  <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/fedecom/units#" ;
+                                  owl:versionInfo "" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/fedecom/units#hasUnit
+:hasUnit rdf:type owl:ObjectProperty ;
+         rdfs:comment "Used to define the unit in which a value (for, for example, a measurement or property) is reported in." ;
+         rdfs:label "has unit" ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://schema.org/name
+<http://schema.org/name> rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/fedecom/units#maximum
+:maximum rdf:type owl:DatatypeProperty ;
+         rdfs:comment "Minimum value for a measurement, characteristic or other." ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/units#minimum
+:minimum rdf:type owl:DatatypeProperty ;
+         rdfs:comment "Minimum value for a measurement, characteristic or other." ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fedecom/units#symbol
+:symbol rdf:type owl:DatatypeProperty ;
+        rdfs:comment "Relates a unit of measure to its standard symbolic representation." ;
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" ;
+        <http://www.w3.org/2004/02/skos/core#example> "Wh, V, W, Hz" .
+
+
+###  https://w3id.org/fedecom/units#value
+:value rdf:type owl:DatatypeProperty ;
+       rdfs:comment "Numeric representation of a measurement, characteristic or other." ;
+       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/fedecom/units#UnitOfMeasure
+:UnitOfMeasure rdf:type owl:Class ;
+               rdfs:comment "Defines the standard unit used to express the value of a measurement or property." ;
+               rdfs:label "unit of measure" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" ;
+               <http://www.w3.org/2004/02/skos/core#example> "Ampere, Volt, Hertz" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/fedecom/units#Ampere
+:Ampere rdf:type owl:NamedIndividual ,
+                 :UnitOfMeasure ;
+        <http://schema.org/name> "Ampere" ;
+        :symbol "A" .
+
+
+###  https://w3id.org/fedecom/units#AmpereHour
+:AmpereHour rdf:type owl:NamedIndividual ,
+                     :UnitOfMeasure ;
+            <http://schema.org/name> "Ampere-hour" ;
+            :symbol "Ah" .
+
+
+###  https://w3id.org/fedecom/units#CubicMeter
+:CubicMeter rdf:type owl:NamedIndividual ,
+                     :UnitOfMeasure ;
+            <http://schema.org/name> "cubic meter" ;
+            :symbol "m3" .
+
+
+###  https://w3id.org/fedecom/units#CubicMeterHour
+:CubicMeterHour rdf:type owl:NamedIndividual ,
+                         :UnitOfMeasure ;
+                <http://schema.org/name> "cubic meter per hour" ;
+                :symbol "m3h" .
+
+
+###  https://w3id.org/fedecom/units#Degree
+:Degree rdf:type owl:NamedIndividual ,
+                 :UnitOfMeasure ;
+        <http://schema.org/name> "degree" ;
+        :symbol "°" .
+
+
+###  https://w3id.org/fedecom/units#DegreeCelsius
+:DegreeCelsius rdf:type owl:NamedIndividual ,
+                        :UnitOfMeasure ;
+               <http://schema.org/name> "degree Celsius" ;
+               :symbol "°C" .
+
+
+###  https://w3id.org/fedecom/units#Hertz
+:Hertz rdf:type owl:NamedIndividual ,
+                :UnitOfMeasure ;
+       <http://schema.org/name> "Hertz" ;
+       :symbol "Hz" .
+
+
+###  https://w3id.org/fedecom/units#KiloVoltAmpere
+:KiloVoltAmpere rdf:type owl:NamedIndividual ,
+                         :UnitOfMeasure ;
+                <http://schema.org/name> "kilovolt-ampere" ;
+                :symbol "kVA" .
+
+
+###  https://w3id.org/fedecom/units#KiloWatt
+:KiloWatt rdf:type owl:NamedIndividual ,
+                   :UnitOfMeasure ;
+          <http://schema.org/name> "kilowatt" ;
+          :symbol "kW" .
+
+
+###  https://w3id.org/fedecom/units#KiloWattHour
+:KiloWattHour rdf:type owl:NamedIndividual ,
+                       :UnitOfMeasure ;
+              <http://schema.org/name> "kilowatt-hour" ;
+              :symbol "kWh" .
+
+
+###  https://w3id.org/fedecom/units#KiloWattPeak
+:KiloWattPeak rdf:type owl:NamedIndividual ,
+                       :UnitOfMeasure ;
+              <http://schema.org/name> "kilowatt peak" ;
+              :symbol "kWp" .
+
+
+###  https://w3id.org/fedecom/units#Liter
+:Liter rdf:type owl:NamedIndividual ,
+                :UnitOfMeasure ;
+       <http://schema.org/name> "liter" ;
+       :symbol "L" .
+
+
+###  https://w3id.org/fedecom/units#MegaWattHour
+:MegaWattHour rdf:type owl:NamedIndividual ,
+                       :UnitOfMeasure ;
+              <http://schema.org/name> "megawatt-hour" ;
+              :symbol "MWh" .
+
+
+###  https://w3id.org/fedecom/units#PerUnit
+:PerUnit rdf:type owl:NamedIndividual ,
+                  :UnitOfMeasure ;
+         <http://schema.org/name> "per unit" ;
+         :symbol "pu" .
+
+
+###  https://w3id.org/fedecom/units#Percentage
+:Percentage rdf:type owl:NamedIndividual ,
+                     :UnitOfMeasure ;
+            <http://schema.org/name> "percent" ;
+            :symbol "%" .
+
+
+###  https://w3id.org/fedecom/units#Radian
+:Radian rdf:type owl:NamedIndividual ,
+                 :UnitOfMeasure ;
+        <http://schema.org/name> "radian" ;
+        :symbol "rad" .
+
+
+###  https://w3id.org/fedecom/units#SquareMeter
+:SquareMeter rdf:type owl:NamedIndividual ,
+                      :UnitOfMeasure ;
+             <http://schema.org/name> "square meter" ;
+             :symbol "m2" .
+
+
+###  https://w3id.org/fedecom/units#Volt
+:Volt rdf:type owl:NamedIndividual ,
+               :UnitOfMeasure ;
+      :symbol "V" ,
+              "Volt" .
+
+
+###  https://w3id.org/fedecom/units#VoltAmpereReactive
+:VoltAmpereReactive rdf:type owl:NamedIndividual ,
+                             :UnitOfMeasure ;
+                    <http://schema.org/name> "Volt-ampere reactive" ;
+                    :symbol "VAR" .
+
+
+###  https://w3id.org/fedecom/units#Watt
+:Watt rdf:type owl:NamedIndividual ,
+               :UnitOfMeasure ;
+      <http://schema.org/name> "Watt" ;
+      :symbol "W" .
+
+
+###  https://w3id.org/fedecom/units#WattHour
+:WattHour rdf:type owl:NamedIndividual ,
+                   :UnitOfMeasure ;
+          <http://schema.org/name> "Watt-hour" ;
+          :symbol "Wh" .
+
+
+###  https://w3id.org/fedecom/units#Year
+:Year rdf:type owl:NamedIndividual ,
+               :UnitOfMeasure ;
+      <http://schema.org/name> "years" ;
+      :symbol "years" .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
