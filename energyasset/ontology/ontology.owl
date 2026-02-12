@@ -1,0 +1,2697 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/fedecom/energyasset"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/fedecom/energyasset">
+    <Prefix name="" IRI="http://www.semanticweb.org/caceta/ontologies/2024/9/untitled-ontology-65/"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="ns" IRI="http://creativecommons.org/ns#"/>
+    <Prefix name="ns1" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="bibo" IRI="http://purl.org/ontology/bibo/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Import>https://w3id.org/hpont</Import>
+    <Import>https://w3id.org/fedecom/battery</Import>
+    <Import>https://w3id.org/fedecom/units</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="ns:license"/>
+        <Literal>http://purl.org/NET/rdflicense/cc-by4.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+        <Literal>Ignacio Lázaro (Tekniker) &lt;ignacio.lazaro@tekniker.es&gt;
+Andoni Osorio (Tekniker) &lt;andoni.osorio@tekniker.es&gt;
+Marko Jelić (Institut Mihajlo Pupin) &lt;marko.jelic@pupin.rs&gt;
+Spyros Tzavikas (Grid Singularity) &lt;spyros@gridsingularity.com&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <Literal>Cristina Aceta (Tekniker) &lt;cristina.aceta@tekniker.es&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+        <Literal>This ontology module includes the necessary classes and properties to model energy assets.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+        <Literal>Energy Asset: Energy Asset module for the FEDECOM Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal>energyasset</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal>https://w3id.org/fedecom/energyasset#</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal></Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://w3id.org/fedecom/battery#Battery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AirHandlingUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Azimuth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiomassBoiler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiomassBurner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boiler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Burner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BypassDamper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#COPCooling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#COPHeating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Capacity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Characteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChargeFlowRate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chiller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoefficientOfPerformance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ColdStorageTank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Collector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CombinedHeatPower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Component"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CondensingGasBoiler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ControlParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConventionalGasBoiler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConversionEfficiency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Damper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DischargeFlowRate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DistrictHeatingPlant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EVCharger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EVChargingPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Efficiency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricBoiler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricCapacity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricEfficiency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricHeater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricMeter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electrolizer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergyFlowRate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extractor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FanCoil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlowRate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FuelCell"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FumeRecuperator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GridMeter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#H2StorageTank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HVAC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatMeter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatStorageTank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighTemperatureCircuit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumidityTemperatureSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalGasBoiler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OperatingLimits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PVSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Power"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PowerFlowRate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PowerRating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resistance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#STC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmartMeter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StorageTank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StorageTankVolume"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubMeter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermalCapacity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermalEfficiency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermalStorageTank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tilt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VoltageTransformer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Volume"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3WayValve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/hpont#CoolingHeatPump"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/hpont#HeatingHeatPump"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/hpont#ReversibleHeatPump"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAzimuth"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCOPHeating"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCOPcooling"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCapacity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasChargeFlowRate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasChargingPoint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCoefficientOfPerformance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasConversionEfficiency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDischargeFlowRate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEfficiency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasElectricCapacity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasElectricEfficiency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOperatingLimits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPower"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPowerRating"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasResistance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStorageCapacity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStorageTankVolume"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTarget"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasThermalCapacity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasThermalEfficiency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTilt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVolume"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSubMeterOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://schema.org/name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#connectionType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCapacityRange"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMaximumPowerRating"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOperatingLimits"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSetpoint"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasState"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isGenerationEquipment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numberOfPanels"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LIC_PV2"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://w3id.org/fedecom/battery#Battery"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirHandlingUnit"/>
+        <Class IRI="#HVAC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirHandlingUnit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCapacity"/>
+            <Class IRI="#Capacity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirHandlingUnit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEfficiency"/>
+            <Class IRI="#Efficiency"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Azimuth"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiomassBoiler"/>
+        <Class IRI="#Boiler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiomassBurner"/>
+        <Class IRI="#Burner"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boiler"/>
+        <Class IRI="#HVAC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boiler"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCapacity"/>
+            <Class IRI="#Capacity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boiler"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEfficiency"/>
+            <Class IRI="#Efficiency"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boiler"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasResistance"/>
+            <Class IRI="#Resistance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boiler"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#isGenerationEquipment"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Burner"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BypassDamper"/>
+        <Class IRI="#Damper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#COPCooling"/>
+        <Class IRI="#CoefficientOfPerformance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#COPHeating"/>
+        <Class IRI="#CoefficientOfPerformance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Capacity"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChargeFlowRate"/>
+        <Class IRI="#FlowRate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chiller"/>
+        <Class IRI="#HVAC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chiller"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCapacity"/>
+            <Class IRI="#Capacity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chiller"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasConversionEfficiency"/>
+            <Class IRI="#ConversionEfficiency"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoefficientOfPerformance"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ColdStorageTank"/>
+        <Class IRI="#StorageTank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Collector"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CombinedHeatPower"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CombinedHeatPower"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasElectricCapacity"/>
+            <Class IRI="#ElectricCapacity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CombinedHeatPower"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasElectricEfficiency"/>
+            <Class IRI="#ElectricEfficiency"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CombinedHeatPower"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasThermalCapacity"/>
+            <Class IRI="#ThermalCapacity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CombinedHeatPower"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasThermalEfficiency"/>
+            <Class IRI="#ThermalEfficiency"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CombinedHeatPower"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#isGenerationEquipment"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CondensingGasBoiler"/>
+        <Class IRI="#NaturalGasBoiler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConventionalGasBoiler"/>
+        <Class IRI="#NaturalGasBoiler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConversionEfficiency"/>
+        <Class IRI="#Efficiency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Damper"/>
+        <Class IRI="#HVAC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Device"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://schema.org/name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DischargeFlowRate"/>
+        <Class IRI="#FlowRate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DistrictHeatingPlant"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EVCharger"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EVCharger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCapacity"/>
+            <Class IRI="#Capacity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EVCharger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCoefficientOfPerformance"/>
+            <Class IRI="#CoefficientOfPerformance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EVCharger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOperatingLimits"/>
+            <Class IRI="#OperatingLimits"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EVChargingPoint"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Efficiency"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricBoiler"/>
+        <Class IRI="#Boiler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricCapacity"/>
+        <Class IRI="#Capacity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricEfficiency"/>
+        <Class IRI="#Efficiency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricHeater"/>
+        <Class IRI="#Heater"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricHeater"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasState"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricMeter"/>
+        <Class IRI="#Meter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electrolizer"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electrolizer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPower"/>
+            <Class IRI="#Power"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnergyFlowRate"/>
+        <Class IRI="#FlowRate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Extractor"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FanCoil"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlowRate"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FuelCell"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FumeRecuperator"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GridMeter"/>
+        <Class IRI="#Meter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#H2StorageTank"/>
+        <Class IRI="#StorageTank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HVAC"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatMeter"/>
+        <Class IRI="#Meter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatStorageTank"/>
+        <Class IRI="#StorageTank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heater"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighTemperatureCircuit"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumidityTemperatureSensor"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meter"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalGasBoiler"/>
+        <Class IRI="#Boiler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OperatingLimits"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PVSystem"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PVSystem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAzimuth"/>
+            <Class IRI="#Azimuth"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PVSystem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTilt"/>
+            <Class IRI="#Tilt"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Power"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PowerFlowRate"/>
+        <Class IRI="#FlowRate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PowerRating"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resistance"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#STC"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#STC"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCapacity"/>
+            <Class IRI="#Capacity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensor"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmartMeter"/>
+        <Class IRI="#Meter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StorageTank"/>
+        <Class IRI="#Tank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StorageTank"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasChargeFlowRate"/>
+            <Class IRI="#ChargeFlowRate"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StorageTank"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasDischargeFlowRate"/>
+            <Class IRI="#DischargeFlowRate"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StorageTank"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasVolume"/>
+            <Class IRI="#Volume"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StorageTank"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#connectionType"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StorageTankVolume"/>
+        <Class IRI="#Volume"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubMeter"/>
+        <Class IRI="#Meter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubMeter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubMeterOf"/>
+            <Class IRI="#Meter"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tank"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermalCapacity"/>
+        <Class IRI="#Capacity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermalEfficiency"/>
+        <Class IRI="#Efficiency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermalStorageTank"/>
+        <Class IRI="#StorageTank"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tilt"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VoltageTransformer"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VoltageTransformer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPowerRating"/>
+            <Class IRI="#PowerRating"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Volume"/>
+        <Class IRI="#Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3WayValve"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/hpont#CoolingHeatPump"/>
+        <Class IRI="https://w3id.org/hpont#HeatPumpSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/hpont#HeatPumpSystem"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/hpont#HeatPumpSystem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCapacity"/>
+            <Class IRI="#Capacity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/hpont#HeatPumpSystem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCoefficientOfPerformance"/>
+            <Class IRI="#CoefficientOfPerformance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/hpont#HeatPumpSystem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStorageTankVolume"/>
+            <Class IRI="#StorageTankVolume"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/hpont#HeatPumpSystem"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#isGenerationEquipment"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/hpont#HeatingHeatPump"/>
+        <Class IRI="https://w3id.org/hpont#HeatPumpSystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/hpont#ReversibleHeatPump"/>
+        <Class IRI="https://w3id.org/hpont#HeatPumpSystem"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAzimuth"/>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCOPHeating"/>
+        <ObjectProperty IRI="#hasCoefficientOfPerformance"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCOPcooling"/>
+        <ObjectProperty IRI="#hasCoefficientOfPerformance"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCapacity"/>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasChargeFlowRate"/>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCoefficientOfPerformance"/>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasConversionEfficiency"/>
+        <ObjectProperty IRI="#hasEfficiency"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDischargeFlowRate"/>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEfficiency"/>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasElectricCapacity"/>
+        <ObjectProperty IRI="#hasCapacity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasElectricEfficiency"/>
+        <ObjectProperty IRI="#hasEfficiency"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasOperatingLimits"/>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPower"/>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPowerRating"/>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStorageCapacity"/>
+        <ObjectProperty IRI="#hasCapacity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStorageTankVolume"/>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasThermalCapacity"/>
+        <ObjectProperty IRI="#hasCapacity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasThermalEfficiency"/>
+        <ObjectProperty IRI="#hasEfficiency"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTilt"/>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasVolume"/>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAzimuth"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCOPHeating"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCOPcooling"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCapacity"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasChargeFlowRate"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasChargingPoint"/>
+        <Class IRI="#EVCharger"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCoefficientOfPerformance"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasConversionEfficiency"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDischargeFlowRate"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEfficiency"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasElectricCapacity"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasElectricEfficiency"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasModel"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOperatingLimits"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPower"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPowerRating"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasResistance"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStorageCapacity"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStorageTankVolume"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTarget"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasThermalCapacity"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasThermalEfficiency"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTilt"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVolume"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubMeterOf"/>
+        <Class IRI="#SubMeter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAzimuth"/>
+        <Class IRI="#Azimuth"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCOPHeating"/>
+        <Class IRI="#COPHeating"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCOPcooling"/>
+        <Class IRI="#COPCooling"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCapacity"/>
+        <Class IRI="#Capacity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+        <Class IRI="#Characteristic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasChargeFlowRate"/>
+        <Class IRI="#ChargeFlowRate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasChargingPoint"/>
+        <Class IRI="#EVChargingPoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCoefficientOfPerformance"/>
+        <Class IRI="#CoefficientOfPerformance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasConversionEfficiency"/>
+        <Class IRI="#ConversionEfficiency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDischargeFlowRate"/>
+        <Class IRI="#DischargeFlowRate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEfficiency"/>
+        <Class IRI="#Efficiency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasElectricCapacity"/>
+        <Class IRI="#ElectricCapacity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasElectricEfficiency"/>
+        <Class IRI="#ElectricEfficiency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOperatingLimits"/>
+        <Class IRI="#OperatingLimits"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPower"/>
+        <Class IRI="#Power"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPowerRating"/>
+        <Class IRI="#PowerRating"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasResistance"/>
+        <Class IRI="#Resistance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStorageTankVolume"/>
+        <Class IRI="#StorageTankVolume"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasThermalCapacity"/>
+        <Class IRI="#ThermalCapacity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasThermalEfficiency"/>
+        <Class IRI="#ThermalEfficiency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTilt"/>
+        <Class IRI="#Tilt"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasVolume"/>
+        <Class IRI="#Volume"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSubMeterOf"/>
+        <Class IRI="#Meter"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasCapacityRange"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#connectionType"/>
+        <Class IRI="#StorageTank"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#connectionType"/>
+        <DataOneOf>
+            <Literal>parallel</Literal>
+            <Literal>series</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AirHandlingUnit</IRI>
+        <Literal>A device that conditions and circulates air as part of an HVAC system, typically including fans, filters, and heat exchangers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AirHandlingUnit</IRI>
+        <Literal>Air Handling Unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#AirHandlingUnit</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Azimuth</IRI>
+        <Literal>The angular measurement in the horizontal plane between a reference direction (usually true north) and the direction of a solar panel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Azimuth</IRI>
+        <Literal>Azimuth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Azimuth</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BiomassBoiler</IRI>
+        <Literal>A boiler that uses biomass (organic material) as fuel to produce heat or steam.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BiomassBoiler</IRI>
+        <Literal>Biomass Boiler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#BiomassBoiler</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BiomassBurner</IRI>
+        <Literal>A burner designed to combust biomass fuel for heat generation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BiomassBurner</IRI>
+        <Literal>Biomass Burner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#BiomassBurner</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Boiler</IRI>
+        <Literal>A device that heats water or produces steam for heating or power generation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Boiler</IRI>
+        <Literal>Boiler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Boiler</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Burner</IRI>
+        <Literal>A component that mixes fuel and air and initiates combustion to produce heat.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Burner</IRI>
+        <Literal>Burner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Burner</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BypassDamper</IRI>
+        <Literal>A damper that redirects airflow to maintain pressure or temperature balance in HVAC systems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BypassDamper</IRI>
+        <Literal>Bypass Damper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#BypassDamper</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#COPCooling</IRI>
+        <Literal>The coefficient of performance for cooling mode.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#COPCooling</IRI>
+        <Literal>COP Cooling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#COPCooling</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#COPHeating</IRI>
+        <Literal>The coefficient of performance for heating mode.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#COPHeating</IRI>
+        <Literal>COP Heating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#COPHeating</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Capacity</IRI>
+        <Literal>The maximum amount of energy, power, or material that a system or component can store, produce, or handle under specified conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Capacity</IRI>
+        <Literal>Capacity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Capacity</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Characteristic</IRI>
+        <Literal>A property or attribute that describes a specific feature or quality of an entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Characteristic</IRI>
+        <Literal>Characteristic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Characteristic</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChargeFlowRate</IRI>
+        <Literal>The rate at which energy or material is added to a storage system during charging.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChargeFlowRate</IRI>
+        <Literal>Charge Flow Rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#ChargeFlowRate</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Chiller</IRI>
+        <Literal>A device that removes heat from a liquid via vapor-compression or absorption refrigeration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Chiller</IRI>
+        <Literal>Chiller</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Chiller</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CoefficientOfPerformance</IRI>
+        <Literal>A ratio that measures the efficiency of a heating or cooling system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CoefficientOfPerformance</IRI>
+        <Literal>Coefficient of Performance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#CoefficientOfPerformance</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ColdStorageTank</IRI>
+        <Literal>A tank used to store chilled water or other fluids for cooling applications.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ColdStorageTank</IRI>
+        <Literal>Cold Storage Tank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#ColdStorageTank</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Collector</IRI>
+        <Literal>A component that captures and transfers energy, typically solar thermal collectors for heat.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Collector</IRI>
+        <Literal>Collector</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Collector</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CombinedHeatPower</IRI>
+        <Literal>A system that simultaneously generates electricity and useful heat from a single energy source.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CombinedHeatPower</IRI>
+        <Literal>Combined Heat Power</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#CombinedHeatPower</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Component</IRI>
+        <Literal>An individual part or element of a system that performs a specific function.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Component</IRI>
+        <Literal>Component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Component</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CondensingGasBoiler</IRI>
+        <Literal>A high-efficiency gas boiler that recovers latent heat from exhaust gases by condensing water vapor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CondensingGasBoiler</IRI>
+        <Literal>Condensing Gas Boiler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#CondensingGasBoiler</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ControlParameter</IRI>
+        <Literal>A variable or setting used to regulate or adjust the behavior of a system or process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ControlParameter</IRI>
+        <Literal>Control Parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#ControlParameter</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConventionalGasBoiler</IRI>
+        <Literal>A standard gas-fired boiler that heats water without condensing exhaust gases.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ConventionalGasBoiler</IRI>
+        <Literal>Conventional Gas Boiler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#ConventionalGasBoiler</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConversionEfficiency</IRI>
+        <Literal>The efficiency with which a system converts one form of energy into another (e.g., chemical to electrical).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ConversionEfficiency</IRI>
+        <Literal>Conversion Efficiency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#ConversionEfficiency</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Damper</IRI>
+        <Literal>A device that regulates airflow in ducts or ventilation systems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Damper</IRI>
+        <Literal>Damper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Damper</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Device</IRI>
+        <Literal>A physical or virtual entity designed to perform a specific function within a system, typically involving measurement, control, conversion, or communication of energy, signals, or materials.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Device</IRI>
+        <Literal>Device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Device</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DischargeFlowRate</IRI>
+        <Literal>The rate at which energy or material is removed from a storage system during discharging.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DischargeFlowRate</IRI>
+        <Literal>Discharge Flow Rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#DischargeFlowRate</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DistrictHeatingPlant</IRI>
+        <Literal>A centralized facility that produces heat and distributes it to multiple buildings through a network.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DistrictHeatingPlant</IRI>
+        <Literal>Electric Heating Plant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#DistrictHeatingPlant</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EVCharger</IRI>
+        <Literal>A device that supplies electric energy to recharge electric vehicle batteries.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EVCharger</IRI>
+        <Literal>EV Charger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#EVCharger</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EVChargingPoint</IRI>
+        <Literal>A physical location equipped with an EV charger for vehicle charging.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EVChargingPoint</IRI>
+        <Literal>EV Charging Point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#EVChargingPoint</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Efficiency</IRI>
+        <Literal>The ratio of useful output (energy, power, or work) to the total input.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Efficiency</IRI>
+        <Literal>Efficiency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Efficiency</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ElectricBoiler</IRI>
+        <Literal>A boiler that uses electrical energy to heat water or produce steam.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ElectricBoiler</IRI>
+        <Literal>Electric Boiler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#ElectricBoiler</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ElectricEfficiency</IRI>
+        <Literal>The efficiency of converting electrical energy into useful work or another energy form.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ElectricEfficiency</IRI>
+        <Literal>Electric Efficiency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#ElectricEfficiency</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ElectricHeater</IRI>
+        <Literal>A device that converts electrical energy into heat.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ElectricHeater</IRI>
+        <Literal>Electric Heater</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#ElectricHeater</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ElectricMeter</IRI>
+        <Literal>A meter that measures electrical energy consumption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ElectricMeter</IRI>
+        <Literal>Electric Meter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#ElectricMeter</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Electrolizer</IRI>
+        <Literal>A device that uses electricity to split water into hydrogen and oxygen through electrolysis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Electrolizer</IRI>
+        <Literal>Electrolizer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Electrolizer</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EnergyFlowRate</IRI>
+        <Literal>The amount of energy transferred per unit of time through a system or component.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EnergyFlowRate</IRI>
+        <Literal>Energy Flow Rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#EnergyFlowRate</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Extractor</IRI>
+        <Literal>A fan or device that removes air, fumes, or gases from a space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Extractor</IRI>
+        <Literal>Extractor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Extractor</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FanCoil</IRI>
+        <Literal>A unit consisting of a fan and a heat exchanger coil used for heating or cooling air.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FanCoil</IRI>
+        <Literal>Fan Coil</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#FanCoil</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FlowRate</IRI>
+        <Literal>The volume or mass of a substance (e.g., fluid, gas) passing through a point or system per unit of time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FlowRate</IRI>
+        <Literal>Flow Rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#FlowRate</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FuelCell</IRI>
+        <Literal>A device that converts chemical energy from hydrogen or other fuels into electricity through electrochemical reactions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FuelCell</IRI>
+        <Literal>Fuel Cell</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#FuelCell</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FumeRecuperator</IRI>
+        <Literal>A heat recovery device that captures heat from exhaust fumes for reuse.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FumeRecuperator</IRI>
+        <Literal>Fume Recuperator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#FumeRecuperator</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GridMeter</IRI>
+        <Literal>A meter that measures energy exchanged between a building and the electrical grid.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GridMeter</IRI>
+        <Literal>Grid Meter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#GridMeter</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#H2StorageTank</IRI>
+        <Literal>A tank specifically designed to store hydrogen safely under controlled conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#H2StorageTank</IRI>
+        <Literal>Hydrogen Storage Tank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#H2StorageTank</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HVAC</IRI>
+        <Literal>Heating, Ventilation, and Air Conditioning equipment that regulate indoor climate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HVAC</IRI>
+        <Literal>Heating Ventilation Air Conditioning Equipment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#HVAC</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HeatMeter</IRI>
+        <Literal>A meter that measures thermal energy consumption.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HeatMeter</IRI>
+        <Literal>Heat Meter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#HeatMeter</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HeatStorageTank</IRI>
+        <Literal>A tank that stores thermal energy, typically in the form of hot water or other heat-retaining materials.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HeatStorageTank</IRI>
+        <Literal>Heat Storage Tank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#HeatStorageTank</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Heater</IRI>
+        <Literal>A device that converts energy (typically electrical, thermal, or chemical) into heat for the purpose of warming air, water, or other substances within a system or space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Heater</IRI>
+        <Literal>Heater</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Heater</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HighTemperatureCircuit</IRI>
+        <Literal>A heating circuit designed to operate at high temperatures, typically for industrial or specialized applications.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HighTemperatureCircuit</IRI>
+        <Literal>High Temperature Circuit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#HighTemperatureCircuit</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HumidityTemperatureSensor</IRI>
+        <Literal>A sensor that measures both humidity and temperature in an environment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HumidityTemperatureSensor</IRI>
+        <Literal>Humidity-Temperature Sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#HumidityTemperatureSensor</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Meter</IRI>
+        <Literal>A device that measures and records the consumption or flow of energy or resources.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Meter</IRI>
+        <Literal>Meter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Meter</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OperatingLimits</IRI>
+        <Literal>The predefined boundaries or thresholds within which a system or component can operate safely and effectively.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OperatingLimits</IRI>
+        <Literal>Operating Limits</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#OperatingLimits</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PVSystem</IRI>
+        <Literal>A photovoltaic system that converts solar energy into electrical energy using solar panels and associated components.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PVSystem</IRI>
+        <Literal>Photovoltaic System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#PVSystem</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Power</IRI>
+        <Literal>The rate at which energy is transferred, converted, or consumed by a system or component.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Power</IRI>
+        <Literal>Power</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Power</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PowerFlowRate</IRI>
+        <Literal>The rate at which power is transmitted or distributed through a system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PowerFlowRate</IRI>
+        <Literal>Power Flow Rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#PowerFlowRate</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PowerRating</IRI>
+        <Literal>The maximum continuous power that a device or system can deliver or handle under specified conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PowerRating</IRI>
+        <Literal>Power Rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#PowerRating</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Resistance</IRI>
+        <Literal>A measure of the opposition to the flow of electric current.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Resistance</IRI>
+        <Literal>Resistance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Resistance</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sensor</IRI>
+        <Literal>A device that detects and measures physical properties (e.g., temperature, pressure, light) and converts them into signals for monitoring or control.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sensor</IRI>
+        <Literal>Sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Sensor</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SmartMeter</IRI>
+        <Literal>An advanced meter that records consumption and communicates data digitally for monitoring and control.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SmartMeter</IRI>
+        <Literal>Smart Meter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#SmartMeter</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StorageTank</IRI>
+        <Literal>A container designed to store liquids or gases for later use.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#StorageTank</IRI>
+        <Literal>Storage Tank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#StorageTank</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StorageTankVolume</IRI>
+        <Literal>The total internal volume of a tank designed to store fluids or gases.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#StorageTankVolume</IRI>
+        <Literal>Storage Tank Volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#StorageTankVolume</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SubMeter</IRI>
+        <Literal>A meter installed downstream of a main meter to measure consumption for a specific area or device.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SubMeter</IRI>
+        <Literal>Submeter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#SubMeter</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ThermalEfficiency</IRI>
+        <Literal>The efficiency of converting thermal energy into useful work or another energy form.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ThermalEfficiency</IRI>
+        <Literal>Thermal Efficiency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#ThermalEfficiency</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ThermalStorageTank</IRI>
+        <Literal>A tank that stores thermal energy for heating or cooling purposes, often using phase-change materials or water.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ThermalStorageTank</IRI>
+        <Literal>Thermal Storage Tank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#ThermalStorageTank</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tilt</IRI>
+        <Literal>The angle between a surface (e.g., solar panel) and the horizontal plane.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Tilt</IRI>
+        <Literal>Tilt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Tilt</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VoltageTransformer</IRI>
+        <Literal>An electrical device that changes the voltage level of alternating current (AC) in a power system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VoltageTransformer</IRI>
+        <Literal>Voltage Transformer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#VoltageTransformer</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Volume</IRI>
+        <Literal>The amount of three-dimensional space occupied by an object or substance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Volume</IRI>
+        <Literal>Volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#Volume</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#connectionType</IRI>
+        <Literal>Specifies the type of connection configuration for an asset.
+Allowed values:
+
+parallel – Components are connected in parallel, sharing input and output points to maintain equal voltage.
+series – Components are connected in sequence, so the same current flows through each component.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#connectionType</IRI>
+        <Literal>connection type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#connectionType</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAzimuth</IRI>
+        <Literal>Indicates the azimuth angle associated with an asset, typically for orientation purposes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAzimuth</IRI>
+        <Literal>has azimuth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasAzimuth</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCOPHeating</IRI>
+        <Literal>Specifies the COP for heating mode of an asset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCOPHeating</IRI>
+        <Literal>has COP heating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasCOPHeating</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCOPcooling</IRI>
+        <Literal>Specifies the COP for cooling mode of an asset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCOPcooling</IRI>
+        <Literal>has COP cooling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasCOPcooling</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCapacity</IRI>
+        <Literal>Links an asset to its overall capacity (energy, power, or material).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCapacity</IRI>
+        <Literal>has capacity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasCapacity</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCapacityRange</IRI>
+        <Literal>Defines the range of capacity values for an asset (minimum and maximum).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCapacityRange</IRI>
+        <Literal>capacity range</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasCapacityRange</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCharacteristic</IRI>
+        <Literal>Relates an asset to a specific characteristic or attribute that describes its properties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCharacteristic</IRI>
+        <Literal>has characteristic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasCharacteristic</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasChargeFlowRate</IRI>
+        <Literal>Links an asset to the rate at which it charges energy or material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasChargeFlowRate</IRI>
+        <Literal>has charge flow rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasChargeFlowRate</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasChargingPoint</IRI>
+        <Literal>Links an asset to a charging point for electric vehicles or devices.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasChargingPoint</IRI>
+        <Literal>has charging point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasChargingPoint</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCoefficientOfPerformance</IRI>
+        <Literal>Associates an asset with its COP value, representing efficiency in heating or cooling.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCoefficientOfPerformance</IRI>
+        <Literal>has coefficient of performance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasCoefficientOfPerformance</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasConversionEfficiency</IRI>
+        <Literal>Specifies the efficiency of an asset in converting one energy form to another.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasConversionEfficiency</IRI>
+        <Literal>has conversion efficiency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasConversionEfficiency</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDischargeFlowRate</IRI>
+        <Literal>Links an asset to the rate at which it discharges energy or material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDischargeFlowRate</IRI>
+        <Literal>has discharge flow rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasDischargeFlowRate</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasEfficiency</IRI>
+        <Literal>Relates an asset to its overall efficiency.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasEfficiency</IRI>
+        <Literal>has efficiency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasEfficiency</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasElectricCapacity</IRI>
+        <Literal>Specifies the electrical capacity of an asset, such as a battery or PV system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasElectricCapacity</IRI>
+        <Literal>has electric capacity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasElectricCapacity</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasElectricEfficiency</IRI>
+        <Literal>Indicates the efficiency of electrical energy conversion for an asset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasElectricEfficiency</IRI>
+        <Literal>has electric efficiency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasElectricEfficiency</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMaximumPowerRating</IRI>
+        <Literal>Specifies the maximum power rating of an asset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasMaximumPowerRating</IRI>
+        <Literal>maximum power rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasMaximumPowerRating</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasModel</IRI>
+        <Literal>Associates an asset with its model identifier or specification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasModel</IRI>
+        <Literal>has model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasModel</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasOperatingLimits</IRI>
+        <Literal>Links an asset to its operational boundaries or thresholds.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasOperatingLimits</IRI>
+        <Literal>has operating limits</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasOperatingLimits</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPower</IRI>
+        <Literal>Associates an asset with its power value (rate of energy transfer).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPower</IRI>
+        <Literal>has power</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasPower</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPowerRating</IRI>
+        <Literal>Specifies the maximum power rating of an asset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPowerRating</IRI>
+        <Literal>has power rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasPowerRating</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasResistance</IRI>
+        <Literal>Links an asset to its electrical resistance value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasResistance</IRI>
+        <Literal>has resistance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasResistance</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSetpoint</IRI>
+        <Literal>Indicates the target value or setpoint for controlling an asset (e.g., temperature, pressure).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSetpoint</IRI>
+        <Literal>setpoint</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasSetpoint</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasState</IRI>
+        <Literal>Represents the current operational state of an asset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasState</IRI>
+        <Literal>state</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasState</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasStorageCapacity</IRI>
+        <Literal>Associates an asset with its ability to store energy or material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasStorageCapacity</IRI>
+        <Literal>has storage capacity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasStorageCapacity</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasStorageTankVolume</IRI>
+        <Literal>Links an asset to the volume of its storage tank.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasStorageTankVolume</IRI>
+        <Literal>has storage tank volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasStorageTankVolume</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTarget</IRI>
+        <Literal>Relates an asset with the space it works for.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTarget</IRI>
+        <Literal>has target</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasTarget</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasThermalCapacity</IRI>
+        <Literal>Relates an asset to its thermal capacity, indicating heat storage or transfer capability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasThermalCapacity</IRI>
+        <Literal>has thermal capacity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasThermalCapacity</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasThermalEfficiency</IRI>
+        <Literal>Indicates the efficiency of thermal energy conversion for an asset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasThermalEfficiency</IRI>
+        <Literal>has thermal efficiency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasThermalEfficiency</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTilt</IRI>
+        <Literal>Indicates the tilt angle of an asset (e.g., solar panel).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTilt</IRI>
+        <Literal>has tilt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasTilt</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasVolume</IRI>
+        <Literal>Associates an asset with its physical volume.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasVolume</IRI>
+        <Literal>has volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#hasVolume</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isGenerationEquipment</IRI>
+        <Literal>Boolean property indicating whether an asset functions as generation equipment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isGenerationEquipment</IRI>
+        <Literal>is generation equipment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#isGenerationEquipment</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isSubMeterOf</IRI>
+        <Literal>Defines a hierarchical relationship where a sub-meter asset belongs to a main meter asset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isSubMeterOf</IRI>
+        <Literal>is submeter of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#isSubMeterOf</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#numberOfPanels</IRI>
+        <Literal>Specifies the number of panels associated with a PV system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#numberOfPanels</IRI>
+        <Literal>number of panels</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#numberOfPanels</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#3WayValve</IRI>
+        <Literal>A valve with three ports used to control the flow and mixing of fluids in heating or cooling circuits.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#3WayValve</IRI>
+        <Literal>3-Way Valve</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#3WayValve</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

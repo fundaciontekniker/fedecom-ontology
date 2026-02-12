@@ -1,0 +1,562 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/fedecom/units"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/fedecom/units">
+    <Prefix name="" IRI="https://w3id.org/fedecom/units/"/>
+    <Prefix name="ns" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
+    <Prefix name="ns1" IRI="http://creativecommons.org/ns#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="units" IRI="http://w3id.org/fedecom/units#"/>
+    <Prefix name="schema" IRI="http://schema.org/"/>
+    <Prefix name="units1" IRI="https://w3id.org/fedecom/units#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="ns1:license"/>
+        <Literal>http://purl.org/NET/rdflicense/cc-by4.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <Literal>Cristina Aceta (Tekniker) &lt;cristina.aceta@tekniker.es&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+        <Literal>This ontology module includes the necessary classes and properties to support units of measurement.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+        <Literal>Units: Units of Measurement module for the FEDECOM Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal>units</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal>https://w3id.org/fedecom/units#</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal></Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#UnitOfMeasure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUnit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maximum"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minimum"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#symbol"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#value"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ampere"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AmpereHour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CubicMeter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CubicMeterHour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Degree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DegreeCelsius"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hertz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KiloVoltAmpere"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KiloWatt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KiloWattHour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KiloWattPeak"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Liter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MegaWattHour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PerUnit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Percentage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Radian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SquareMeter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Volt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VoltAmpereReactive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Watt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WattHour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Year"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns1:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#Ampere"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#AmpereHour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#CubicMeter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#CubicMeterHour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#Degree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#DegreeCelsius"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#Hertz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#KiloVoltAmpere"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#KiloWatt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#KiloWattHour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#KiloWattPeak"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#Liter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#MegaWattHour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#PerUnit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#Percentage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#Radian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#SquareMeter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#Volt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#VoltAmpereReactive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#Watt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#WattHour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitOfMeasure"/>
+        <NamedIndividual IRI="#Year"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#Ampere"/>
+        <Literal>Ampere</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#Ampere"/>
+        <Literal>A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#AmpereHour"/>
+        <Literal>Ampere-hour</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#AmpereHour"/>
+        <Literal>Ah</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#CubicMeter"/>
+        <Literal>cubic meter</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#CubicMeter"/>
+        <Literal>m3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#CubicMeterHour"/>
+        <Literal>cubic meter per hour</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#CubicMeterHour"/>
+        <Literal>m3h</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#Degree"/>
+        <Literal>degree</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#Degree"/>
+        <Literal>°</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#DegreeCelsius"/>
+        <Literal>degree Celsius</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#DegreeCelsius"/>
+        <Literal>°C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#Hertz"/>
+        <Literal>Hertz</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#Hertz"/>
+        <Literal>Hz</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#KiloVoltAmpere"/>
+        <Literal>kilovolt-ampere</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#KiloVoltAmpere"/>
+        <Literal>kVA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#KiloWatt"/>
+        <Literal>kilowatt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#KiloWatt"/>
+        <Literal>kW</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#KiloWattHour"/>
+        <Literal>kilowatt-hour</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#KiloWattHour"/>
+        <Literal>kWh</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#KiloWattPeak"/>
+        <Literal>kilowatt peak</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#KiloWattPeak"/>
+        <Literal>kWp</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#Liter"/>
+        <Literal>liter</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#Liter"/>
+        <Literal>L</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#MegaWattHour"/>
+        <Literal>megawatt-hour</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#MegaWattHour"/>
+        <Literal>MWh</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#PerUnit"/>
+        <Literal>per unit</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#PerUnit"/>
+        <Literal>pu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#Percentage"/>
+        <Literal>percent</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#Percentage"/>
+        <Literal>%</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#Radian"/>
+        <Literal>radian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#Radian"/>
+        <Literal>rad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#SquareMeter"/>
+        <Literal>square meter</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#SquareMeter"/>
+        <Literal>m2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#Volt"/>
+        <Literal>V</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#Volt"/>
+        <Literal>Volt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#VoltAmpereReactive"/>
+        <Literal>Volt-ampere reactive</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#VoltAmpereReactive"/>
+        <Literal>VAR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#Watt"/>
+        <Literal>Watt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#Watt"/>
+        <Literal>W</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#WattHour"/>
+        <Literal>Watt-hour</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#WattHour"/>
+        <Literal>Wh</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#Year"/>
+        <Literal>years</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbol"/>
+        <NamedIndividual IRI="#Year"/>
+        <Literal>years</Literal>
+    </DataPropertyAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UnitOfMeasure</IRI>
+        <Literal>Defines the standard unit used to express the value of a measurement or property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UnitOfMeasure</IRI>
+        <Literal>unit of measure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#UnitOfMeasure</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>#UnitOfMeasure</IRI>
+        <Literal>Ampere, Volt, Hertz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasUnit</IRI>
+        <Literal>Used to define the unit in which a value (for, for example, a measurement or property) is reported in.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasUnit</IRI>
+        <Literal>has unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#hasUnit</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#maximum</IRI>
+        <Literal>Minimum value for a measurement, characteristic or other.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#maximum</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#minimum</IRI>
+        <Literal>Minimum value for a measurement, characteristic or other.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#minimum</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#symbol</IRI>
+        <Literal>Relates a unit of measure to its standard symbolic representation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#symbol</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>#symbol</IRI>
+        <Literal>Wh, V, W, Hz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#value</IRI>
+        <Literal>Numeric representation of a measurement, characteristic or other.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#value</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

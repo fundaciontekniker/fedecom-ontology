@@ -1,0 +1,735 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/fedecom/measurement"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/fedecom/measurement">
+    <Prefix name="" IRI="https://w3id.org/fedecom/measurement/"/>
+    <Prefix name="ns" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
+    <Prefix name="ns1" IRI="http://creativecommons.org/ns#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="ns1:license"/>
+        <Literal>http://purl.org/NET/rdflicense/cc-by4.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+        <Literal>Ignacio Lázaro (Tekniker) &lt;ignacio.lazaro@tekniker.es&gt;
+Andoni Osorio (Tekniker) &lt;andoni.osorio@tekniker.es&gt;
+Daniel Werner (Fraunhofer ISE) &lt;daniel.werner@ise.fraunhofer.de&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <Literal>Cristina Aceta (Tekniker) &lt;cristina.aceta@tekniker.es&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+        <Literal>This ontology module includes the necessary classes and properties to model and characterize mesurements.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+        <Literal>Measurement: Measurement Characterization module for the FEDECOM Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal>measurement</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal>https://w3id.org/fedecom/measurement#</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal></Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#APIProvider"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeasurementDirection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Property"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAPIProvider"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDirection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#makesMeasurement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measurementBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measuresOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measuresProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#APIParameter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#alternativeID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#energyAccumulated"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#measurementID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#middlewareScalingFactor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#phase"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#timeResolution"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AEM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AUGE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Export"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FLEXO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Import"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Signed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VEO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#active_energy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#active_power"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#apparent_energy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#apparent_power"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#current"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#humidity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#illuminance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#on_off"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#percent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#power_factor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#reactive_energy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#reactive_power"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#setpoint_power"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#setpoint_temperature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#state_of_charge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#supply_frequency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#temperature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#thermal_energy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#volatile_organic_compounds"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#voltage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#volume"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns1:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Measurement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAPIProvider"/>
+            <Class IRI="#APIProvider"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measurement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasDirection"/>
+            <Class IRI="#MeasurementDirection"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measurement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#measuresProperty"/>
+            <Class IRI="#Property"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measurement"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#APIParameter"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measurement"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#energyAccumulated"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measurement"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#measurementID"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measurement"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#middlewareScalingFactor"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measurement"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#phase"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measurement"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#timeResolution"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#APIProvider"/>
+        <NamedIndividual IRI="#AEM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#APIProvider"/>
+        <NamedIndividual IRI="#AUGE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeasurementDirection"/>
+        <NamedIndividual IRI="#Export"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#APIProvider"/>
+        <NamedIndividual IRI="#FLEXO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeasurementDirection"/>
+        <NamedIndividual IRI="#Import"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MeasurementDirection"/>
+        <NamedIndividual IRI="#Signed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#APIProvider"/>
+        <NamedIndividual IRI="#VEO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#active_energy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#active_power"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#apparent_energy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#apparent_power"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#current"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#humidity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#illuminance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#mode"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#on_off"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#percent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#power_factor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#reactive_energy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#reactive_power"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#setpoint_power"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#setpoint_temperature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#state_of_charge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#supply_frequency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#temperature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#thermal_energy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#volatile_organic_compounds"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#voltage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Property"/>
+        <NamedIndividual IRI="#volume"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAPIProvider"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDirection"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measurementBy"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measuresOn"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measuresProperty"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAPIProvider"/>
+        <Class IRI="#APIProvider"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDirection"/>
+        <Class IRI="#MeasurementDirection"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#makesMeasurement"/>
+        <Class IRI="#Measurement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#measuresProperty"/>
+        <Class IRI="#Property"/>
+    </ObjectPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#energyAccumulated"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#phase"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#APIParameter</IRI>
+        <Literal>Parameters to obtain a Measurement from its API.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#APIParameter</IRI>
+        <Literal>API parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#APIParameter</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#APIProvider</IRI>
+        <Literal>The provider of the API that exposes the measurements for a Pilot.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#APIProvider</IRI>
+        <Literal>API provider</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#APIProvider</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>#APIProvider</IRI>
+        <Literal>AEM, FLEXO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Measurement</IRI>
+        <Literal>A quantitative observation or value obtained from a sensor, instrument, or calculation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Measurement</IRI>
+        <Literal>Measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#Measurement</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MeasurementDirection</IRI>
+        <Literal>It determines how the measured quantity flows or is interpreted in terms of directionality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MeasurementDirection</IRI>
+        <Literal>Measurement direction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#MeasurementDirection</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>#MeasurementDirection</IRI>
+        <Literal>import, export, signed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Property</IRI>
+        <Literal>Represents the attribute or characteristic measured in a measurement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Property</IRI>
+        <Literal>Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#Property</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>#Property</IRI>
+        <Literal>active energy, humidity, current</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#alternativeID</IRI>
+        <Literal>Alternative identifier for a Measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#alternativeID</IRI>
+        <Literal>alternative ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#alternativeID</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#energyAccumulated</IRI>
+        <Literal>Boolean that establishes is the measurement value is cumulative or not.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#energyAccumulated</IRI>
+        <Literal>energy accumulated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#energyAccumulated</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAPIProvider</IRI>
+        <Literal>Relates a measurement to the entity that provides an Application Programming Interface (API) for accessing or interacting with it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAPIProvider</IRI>
+        <Literal>has API provider</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#hasAPIProvider</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDirection</IRI>
+        <Literal>Relates a measurement or flow to its directional context.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDirection</IRI>
+        <Literal>has direction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#hasDirection</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#makesMeasurement</IRI>
+        <Literal>Links an agent (e.g., a sensor, device, or system) to the measurement it produces.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#makesMeasurement</IRI>
+        <Literal>makes measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#makesMeasurement</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#measurementBy</IRI>
+        <Literal>Relates a measurement to the agent or instrument that performed or generated it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#measurementBy</IRI>
+        <Literal>measurement by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#measurementBy</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#measurementID</IRI>
+        <Literal>The ID of a measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#measurementID</IRI>
+        <Literal>measurement ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#measurementID</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#measuresOn</IRI>
+        <Literal>Links a measurement to the entity or object on which the measurement was taken.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#measuresOn</IRI>
+        <Literal>measures on</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#measuresOn</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#measuresProperty</IRI>
+        <Literal>Relates a measurement to the specific property or characteristic being observed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#measuresProperty</IRI>
+        <Literal>measures property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#measuresProperty</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#middlewareScalingFactor</IRI>
+        <Literal>The scaling factor used to convert the raw values (i.e. the measurements that come directly from the API in a specific unit) to the target units of the target platform.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#middlewareScalingFactor</IRI>
+        <Literal>middleware scaling factor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#middlewareScalingFactor</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#phase</IRI>
+        <Literal>The alternating current (AC) phase the Measurement corresponds to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#phase</IRI>
+        <Literal>phase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#phase</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#timeResolution</IRI>
+        <Literal>The temporal granularity at which data is captured or aggregated.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#timeResolution</IRI>
+        <Literal>time resolution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns:term_status"/>
+        <IRI>#timeResolution</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
